@@ -1,0 +1,144 @@
+body {
+  font-family: "Nunito", sans-serif !important;
+}
+
+.header-overlay {
+  background-color: #0D2187;
+}
+
+.header-overlay .navbar {
+  padding: 27px 50px;
+}
+
+.header-overlay .navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.header-overlay .navbar-expand-lg .navbar-nav .active {
+  background-color: #fff;
+  color: #0D2187 !important;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.header-overlay .navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.96);
+  border-color: rgba(255, 255, 255, 0.94);
+}
+
+.header-overlay img {
+  width: 118px;
+}
+
+.overlay-div h3 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.overlay-div p {
+  font-size: 12px;
+  color: #fff;
+}
+
+.overlay-div .button {
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #fff;
+  padding: 7px 22px;
+  border-radius: 0;
+}
+
+.overlay-div .m-4 {
+  margin-bottom: 30px;
+}
+
+.overlay-div .img-div img {
+  width: 500px;
+}
+
+.overlay-div .text-div {
+  padding: 54px 56px;
+}
+
+.mobile-section {
+  display: none;
+}
+
+.container-bg-color {
+  background-color: #F7FBFF;
+}
+
+.container-bg-color .brand-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-bg-color .logs {
+  padding: 30px;
+}
+
+.container-bg-color .logs img {
+  width: 100px;
+}
+
+.container-bg-color .logs img .sound-cloud {
+  width: 150px;
+}
+
+.container-bg-color .heading h3 {
+  font-weight: 600;
+}
+
+.container-bg-color .heading p {
+  color: #45536B;
+}
+
+.container-bg-color .business-tools {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 6px #DCE6F5;
+          box-shadow: 0px 3px 6px #DCE6F5;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-bg-color .business-tools span {
+  font-weight: 600;
+}
+
+.container-bg-color .business-tools .paragraph p {
+  color: #45536B;
+}
+
+.container-bg-color .Tools img {
+  width: 35px;
+}
+
+.Succeed-your-business {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-section {
+    display: block;
+  }
+  .mobile-section .menu-navbar {
+    background-color: #f3f2f2;
+  }
+  .mobile-section .header-overlay .navbar-dark .navbar-toggler {
+    color: rgba(0, 0, 0, 0.96) !important;
+    border-color: rgba(0, 0, 0, 0.94) !important;
+  }
+  .header-section {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

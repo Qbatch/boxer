@@ -1,0 +1,128 @@
+body{
+  font-family: 'Nunito', sans-serif!important
+}
+$text-color: #fff;
+$bg-color:#0D2187;
+@mixin Boxer-button {
+  color: $text-color;
+    background-color: transparent;
+    background-image: none;
+    border-color: $text-color;
+    padding: 7px 22px;
+    border-radius: 0;
+}
+.header-overlay{
+  background-color:$bg-color;
+  .navbar{
+    padding: 27px 50px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: $text-color;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+  .navbar-expand-lg .navbar-nav .active {
+  background-color: $text-color;
+   color: $bg-color!important;
+   border-radius: 3px;
+   font-weight: 400;
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.96);
+    border-color: rgba(255, 255, 255, 0.94);
+}
+ img{
+  width: 118px;
+}
+}
+.overlay-div{
+  h3{
+    color: $text-color;
+    font-weight: 600;
+  }
+  p{
+    font-size: 12px;
+    color:#fff
+  }
+  .button{
+    @include Boxer-button
+  }
+  .m-4{
+    margin-bottom: 30px;
+  }
+.img-div{
+    img{
+width:500px;
+  }
+}
+.text-div{
+  padding: 54px 56px;
+}
+}
+
+.mobile-section{
+  display: none;
+
+}
+.container-bg-color{
+  background-color: #F7FBFF;
+  .brand-row{
+    display: flex;
+    justify-content: center;
+  }
+  .logs{
+        padding: 30px;
+        img{
+          width: 100px;
+           .sound-cloud{
+          width: 150px;
+        }
+        }
+
+  }
+  .heading{
+    h3{
+    font-weight: 600;
+    }
+    p{
+      color: #45536B;
+    }
+  }
+  .business-tools{
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #DCE6F5;
+border-radius: 5px;
+width: 80%;
+margin: 0 auto;
+span{
+  font-weight: 600;
+}
+.paragraph p{
+  color: #45536B;
+}
+}
+.Tools{
+  img{
+    width: 35px;
+  }
+}
+  }
+  .Succeed-your-business{
+    background-color: #fff;
+  }
+@media only screen and (max-width: 768px) {
+ .mobile-section{
+  display: block;
+.menu-navbar{
+  background-color: #f3f2f2;
+}
+.header-overlay .navbar-dark .navbar-toggler {
+    color: rgba(0, 0, 0, 0.96)!important;
+    border-color: rgba(0, 0, 0, 0.94)!important;
+}
+}
+.header-section{
+  display: none;
+}
+}
