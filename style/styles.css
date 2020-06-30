@@ -17,13 +17,6 @@ body {
   font-weight: 300;
 }
 
-.header-overlay .navbar-expand-lg .navbar-nav .active {
-  background-color: #fff;
-  color: #0D2187 !important;
-  border-radius: 3px;
-  font-weight: 400;
-}
-
 .header-overlay .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.96);
   border-color: rgba(255, 255, 255, 0.94);
@@ -31,6 +24,20 @@ body {
 
 .header-overlay img {
   width: 118px;
+}
+
+.header-overlay .nav-item .button {
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #fff;
+  padding: 7px 22px;
+  border-radius: 0;
+}
+
+.header-overlay .nav-item .button:hover {
+  background-color: #fff;
+  color: #0D2187;
 }
 
 .overlay-div h3 {
@@ -52,20 +59,22 @@ body {
   border-radius: 0;
 }
 
+.overlay-div .button:hover {
+  background-color: #fff;
+  color: #0D2187;
+}
+
 .overlay-div .m-4 {
   margin-bottom: 30px;
 }
 
 .overlay-div .img-div img {
-  width: 500px;
+  width: 480px;
+  height: auto;
 }
 
 .overlay-div .text-div {
   padding: 54px 56px;
-}
-
-.mobile-section {
-  display: none;
 }
 
 .container-bg-color {
@@ -87,10 +96,11 @@ body {
 
 .container-bg-color .logs img {
   width: 100px;
+  height: 30px;
 }
 
-.container-bg-color .logs img .sound-cloud {
-  width: 150px;
+.container-bg-color .sound-cloud {
+  width: 150px !important;
 }
 
 .container-bg-color .heading h3 {
@@ -123,22 +133,76 @@ body {
 }
 
 .Succeed-your-business {
-  background-color: #fff;
+  background-color: #FFFFFF;
+}
+
+.Succeed-your-business .inner-data {
+  width: 60%;
+}
+
+.Succeed-your-business .inner-data .heading {
+  margin-bottom: 50px;
+}
+
+.Succeed-your-business .inner-data .col-md-6 {
+  margin-bottom: 50px;
+}
+
+.Succeed-your-business .inner-data .col-md-6 h5 {
+  font-weight: 600;
+  color: #273245;
+}
+
+.Succeed-your-business .inner-data .col-md-6 p {
+  color: #45536B;
+  font-size: 14px;
+}
+
+.Succeed-your-business .inner-data .col-md-6 .shipment-img img {
+  width: 175px;
+}
+
+.progress-div {
+  background-color: #0D2187;
+}
+
+.progress-div .container .row .col-md-4 {
+  color: #fff;
+}
+
+.progress-div .container .row .col-md-4 p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .overlay-div .img-div img {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .overlay-div .img-div img {
+    width: 350px;
+  }
+  .overlay-div .text-div {
+    padding: 0px 30px;
+  }
+  .container-bg-color .business-tools {
+    width: 100%;
+    padding: 10px !important;
+    font-size: 13px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .mobile-section {
-    display: block;
+  .overlay-div .img-div img {
+    width: 300px;
   }
-  .mobile-section .menu-navbar {
-    background-color: #f3f2f2;
+  .overlay-div h3 {
+    font-size: 20px;
   }
-  .mobile-section .header-overlay .navbar-dark .navbar-toggler {
-    color: rgba(0, 0, 0, 0.96) !important;
-    border-color: rgba(0, 0, 0, 0.94) !important;
-  }
-  .header-section {
-    display: none;
+  .overlay-div .text-div {
+    padding: 0px 27px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

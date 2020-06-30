@@ -3,6 +3,7 @@ body{
 }
 $text-color: #fff;
 $bg-color:#0D2187;
+$para-color: #45536B;
 @mixin Boxer-button {
   color: $text-color;
     background-color: transparent;
@@ -25,18 +26,22 @@ $bg-color:#0D2187;
     font-size: 14px;
     font-weight: 300;
 }
-  .navbar-expand-lg .navbar-nav .active {
-  background-color: $text-color;
-   color: $bg-color!important;
-   border-radius: 3px;
-   font-weight: 400;
-}
 .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, 0.96);
     border-color: rgba(255, 255, 255, 0.94);
 }
  img{
   width: 118px;
+}
+.nav-item{
+  .button{
+    @include Boxer-button;
+  }
+  .button:hover{
+
+  background-color: #fff;
+  color: #0D2187;
+  }
 }
 }
 .overlay-div{
@@ -51,22 +56,22 @@ $bg-color:#0D2187;
   .button{
     @include Boxer-button
   }
+  .button:hover{
+  background-color: #fff;
+  color: #0D2187;
+  }
   .m-4{
     margin-bottom: 30px;
   }
 .img-div{
     img{
-width:500px;
+width:480px;
+height: auto;
   }
 }
 .text-div{
   padding: 54px 56px;
 }
-}
-
-.mobile-section{
-  display: none;
-
 }
 .container-bg-color{
   background-color: #F7FBFF;
@@ -78,12 +83,13 @@ width:500px;
         padding: 30px;
         img{
           width: 100px;
-           .sound-cloud{
-          width: 150px;
-        }
+          height: 30px;
         }
 
   }
+    .sound-cloud{
+          width: 150px!important
+        }
   .heading{
     h3{
     font-weight: 600;
@@ -111,21 +117,75 @@ span{
   }
 }
   }
-  .Succeed-your-business{
-    background-color: #fff;
+.Succeed-your-business{
+    background-color:#FFFFFF;
+    .inner-data{
+      width: 60%;
+      .heading{
+        margin-bottom: 50px;
+      }
+      .col-md-6{
+        margin-bottom: 50px;
+        h5{
+          font-weight: 600;
+          color: #273245;
+        }
+        p{
+          color: #45536B;
+          font-size: 14px;
+        }
+          .shipment-img{
+        img{
+          width: 175px;
+        }
+      }
+      }
+
+
+    }
   }
+  .progress-div{
+    background-color: #0D2187;
+    .container{
+      .row{
+        .col-md-4{
+          color: #fff;
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+  .overlay-div .img-div img {
+    width: 450px;
+}
+}
+@media only screen and (max-width: 991px) {
+  .overlay-div .img-div img {
+    width: 350px;
+}
+.overlay-div .text-div {
+    padding: 0px 30px;
+}
+.container-bg-color .business-tools {
+    width: 100%;
+    padding: 10px!important;
+    font-size: 13px;
+
+}
+}
 @media only screen and (max-width: 768px) {
- .mobile-section{
-  display: block;
-.menu-navbar{
-  background-color: #f3f2f2;
+  .overlay-div .img-div img {
+    width: 300px;
 }
-.header-overlay .navbar-dark .navbar-toggler {
-    color: rgba(0, 0, 0, 0.96)!important;
-    border-color: rgba(0, 0, 0, 0.94)!important;
+.overlay-div h3 {
+    font-size: 20px;
 }
+.overlay-div .text-div {
+    padding: 0px 27px;
 }
-.header-section{
-  display: none;
-}
+
+
 }
