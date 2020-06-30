@@ -11,6 +11,9 @@ $bg-color:#0D2187;
     padding: 7px 22px;
     border-radius: 0;
 }
+@mixin heading {
+    font-weight: 600;
+}
 .header-overlay{
   background-color:$bg-color;
   .navbar{
@@ -39,7 +42,7 @@ $bg-color:#0D2187;
 .overlay-div{
   h3{
     color: $text-color;
-    font-weight: 600;
+  @include heading;
   }
   p{
     font-size: 12px;
