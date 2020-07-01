@@ -1,0 +1,39 @@
+.footer{
+    padding: 50px 68px;
+  img{
+width: 150px;
+    margin: 15px 0 0 0;
+  }
+  p{
+    color: #45536B;
+    font-size: 16px;
+  }
+  .inner-list{
+    padding: 28px 14px;
+    li{
+       font-size: 17px;
+    font-weight: 300;
+    padding: 3px 0px;
+    cursor: pointer;
+    }
+  }
+}
+.copy-right{
+  background-color: #0D2187;
+  .d-flex{
+    justify-content: space-between;
+  ul{
+    margin: 14px 5px;
+    li{
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  }
+  p{
+        color: #fff;
+    font-weight: 100;
+    font-size: 13px;
+    margin: 17px 0;
+  }
+}
+}

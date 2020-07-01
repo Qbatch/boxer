@@ -1,52 +1,26 @@
+@import "./Modules/header";
+@import "./Modules/footer";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 body{
-  font-family: 'Nunito', sans-serif!important
+font-family: 'Nunito', sans-serif!important
 }
-$text-color: #fff;
 $bg-color:#0D2187;
 $para-color: #45536B;
 @mixin Boxer-button {
-  color: $text-color;
+  color:#fff;
     background-color: transparent;
     background-image: none;
-    border-color: $text-color;
+    border-color: #fff;
     padding: 7px 22px;
     border-radius: 0;
 }
 @mixin heading {
     font-weight: 600;
 }
-.header-overlay{
-  background-color:$bg-color;
-  .navbar{
-    padding: 27px 50px;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    color: $text-color;
-    padding: 10px 15px;
-    font-size: 14px;
-    font-weight: 300;
-}
-.navbar-dark .navbar-toggler {
-    color: rgba(255, 255, 255, 0.96);
-    border-color: rgba(255, 255, 255, 0.94);
-}
- img{
-  width: 118px;
-}
-.nav-item{
-  .button{
-    @include Boxer-button;
-  }
-  .button:hover{
 
-  background-color: #fff;
-  color: #0D2187;
-  }
-}
-}
 .overlay-div{
   h3{
-    color: $text-color;
+    color: #fff;
   @include heading;
   }
   p{
@@ -98,12 +72,13 @@ height: auto;
       color: #45536B;
     }
   }
-  .business-tools{
+  .business-1{
     background-color: #fff;
     box-shadow: 0px 3px 6px #DCE6F5;
 border-radius: 5px;
 width: 80%;
 margin: 0 auto;
+min-height: 210px;
 span{
   font-weight: 600;
 }
@@ -111,16 +86,27 @@ span{
   color: #45536B;
 }
 }
-.Tools{
+.business-tools{
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #DCE6F5;
+  border-radius: 5px;
+  min-height: 185px;
+  .Tools{
   img{
     width: 35px;
   }
+  span{
+        font-weight: 800;
+  }
 }
+}
+
   }
 .Succeed-your-business{
     background-color:#FFFFFF;
     .inner-data{
       width: 60%;
+      margin: 0 auto;
       .heading{
         margin-bottom: 50px;
       }
@@ -140,9 +126,6 @@ span{
         }
       }
       }
-
-
-    }
   }
   .progress-div{
     background-color: #0D2187;
@@ -150,6 +133,7 @@ span{
       .row{
         .col-md-4{
           color: #fff;
+          padding: 42px 55px;
           p{
             font-size: 14px;
           }
@@ -157,14 +141,143 @@ span{
       }
     }
   }
-  @media only screen and (max-width: 1024px) {
+  .pricing{
+    background-color: #F7FBFF;
+    .inner-pricing-div{
+      box-shadow: 0px 3px 6px #DCE6F5;
+      border-radius: 5px;
+      .user-div{
+          border-bottom: 1px solid #ccc;
+    padding: 27px;
+      }
+      .place-order-button{
+        .button{
+          @include Boxer-button;
+          color: #0D2187;
+          border: 1px solid #0D2187 ;
+        }
+      }
+      .order-list{
+        li{
+           padding:7px 0 7px 80px;
+            font-size: 14px;
+            font-weight: 200;
+        i{
+          margin-right: 10px;
+          color: #0D2187;
+          font-size: 14px;
+        }
+      }
+      }
+    }
+  }
+  .company-intro{
+    img{
+      max-width: 100%;
+    }
+    .detail-img{
+      background-color: #0D2187;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+        padding: 41px;
+            min-height: 487px;
+    p{
+      font-size: 14px;
+    font-weight: 100;
+    }
+    }
+    .customer-says{
+      .reviews{
+     box-shadow: 7px 7px 10px #0000001A;
+        background-color: #F7FBFF;
+         border: 1px solid #BACEE4;
+         border-radius: 5px;
+        p{
+          color: #45536B;
+           font-size: 13px;
+             line-height: 28px;
+            margin-top: 20px;
+              font-weight: 300;
+
+        }
+        .img-info{
+          margin: 7px 13px;
+          h6{
+            font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+          }
+          span{
+            font-weight: 100;
+                font-size: 12px;
+          }
+        }
+      }
+    }
+        h5{
+          color:#45536B;
+        }
+  }
+  .Ask-question{
+    background-color: #F7FBFF;
+    .panel{
+      padding: 20px 0;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+.panel-title > a:before {
+    float: left !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 30px;
+    font-size: 20px;
+    color: #273245;
+}
+.panel-title > a.collapsed:before {
+    float: left !important;
+    content:"\f067";
+}
+.panel-title > a:hover,
+.panel-title > a:active,
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+.panel-title a{
+  color: #273245;
+    font-size: 20px;
+}
+  }
+.started-business{
+  background-color: #0D2187;
+  color: #fff;
+  padding: 35px;
+    text-align: center;
+     .started-buttons {
+          justify-content: center;
+    align-items: center;
+    button{
+      @include Boxer-button;
+    }
+    }
+}
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
   .overlay-div .img-div img {
     width: 450px;
 }
+.Succeed-your-business .pricing .inner-pricing-div .order-list li {
+    padding: 7px 0 7px 60px;
 }
-@media only screen and (max-width: 991px) {
+.Succeed-your-business .pricing .inner-pricing-div .user-div {
+    padding: 15px;
+}
+}
+
+@media (max-width: 991px) {
   .overlay-div .img-div img {
-    width: 350px;
+    width: 350px
 }
 .overlay-div .text-div {
     padding: 0px 30px;
@@ -175,8 +288,33 @@ span{
     font-size: 13px;
 
 }
+.progress-div .container .row .col-md-4 {
+    color: #fff;
+    padding: 42px 7px;
 }
-@media only screen and (max-width: 768px) {
+.pricing .inner-pricing-div .user-div {
+    padding: 11px;
+
+}
+  .pricing-detail{
+    .p-4{
+    padding: 15px !important;
+    font-size: 25px;
+    }
+    h5{
+      font-size: 14px;
+    }
+
+  }
+      .pricing .inner-pricing-div .order-list li {
+    padding: 7px 0 7px 22px
+}
+  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
+    padding: 7px 0 7px 17px;
+    font-size: 12px
+}
+}
+@media (max-width: 768px) {
   .overlay-div .img-div img {
     width: 300px;
 }
@@ -185,7 +323,27 @@ span{
 }
 .overlay-div .text-div {
     padding: 0px 27px;
+    text-align: center;
+    .started-buttons{
+      justify-content: center;
+    }
+}
+.img-div{
+  display: flex;
+  justify-content: center;
 }
 
+.pricing h1{
+      font-size: 27px;
+}
+
+}
+@media (max-width: 767px) {
+.container-bg-color .business-tools {
+    padding: 25px !important;
+}
+.Succeed-your-business .inner-data .col-md-6 h5,.Succeed-your-business .inner-data .col-md-6 p {
+    text-align: center;
+}
 
 }
