@@ -16,7 +16,7 @@
 
 .header-overlay .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.96);
-  border-color: rgba(255, 255, 255, 0.94);
+  border-color: transparent !important;
 }
 
 .header-overlay img {
@@ -35,6 +35,143 @@
 .header-overlay .nav-item .button:hover {
   background-color: #fff;
   color: #0D2187;
+}
+
+.lines-button {
+  position: relative;
+  float: right;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 46px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.lines-button:focus {
+  outline: none;
+}
+
+.lines-button span {
+  display: block;
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: white;
+  border-radius: 0.57143rem;
+}
+
+.lines-button span::before,
+.lines-button span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 0.57143rem;
+  content: "";
+}
+
+.lines-button span::before {
+  top: -15px;
+}
+
+.lines-button span::after {
+  bottom: -15px;
+}
+
+.lines {
+  background: none;
+  display: none;
+}
+
+.lines span {
+  -webkit-transition: background 0s 0.3s;
+  transition: background 0s 0.3s;
+}
+
+.lines span::before,
+.lines span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s;
+}
+
+.lines span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+}
+
+.lines span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+}
+
+.lines.close {
+  background: none;
+}
+
+.lines.close span {
+  background: none;
+}
+
+.lines.close span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.lines.close span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.lines.close span::before,
+.lines.close span::after {
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+
+@media (max-width: 991px) {
+  .lines {
+    display: block;
+  }
+  .header-overlay .nav-item .button {
+    color: #fff;
+    background-color: #0d2287;
+    background-image: none;
+    border-color: #fff;
+    margin: 11px 10px;
+  }
+  .header-overlay .navbar-expand-lg .navbar-nav .nav-link {
+    color: #000;
+  }
+  .navbar-nav {
+    background: #fff;
+    border-radius: 10px;
+  }
+  .header-overlay .navbar {
+    padding: 27px 20px;
+  }
 }
 
 .footer {
@@ -70,6 +207,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 30px;
 }
 
 .copy-right .d-flex ul {
@@ -86,6 +224,45 @@
   font-weight: 100;
   font-size: 13px;
   margin: 17px 0;
+}
+
+@media (max-width: 991px) {
+  .footer .inner-list li {
+    font-size: 12px;
+  }
+  .footer p {
+    font-size: 11px;
+  }
+  .footer {
+    padding: 38px 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 22px;
+  }
+}
+
+@media (max-width: 575px) {
+  .copy-right .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-icon .d-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .copyright-2020 {
+    text-align: center;
+  }
 }
 
 body {
@@ -120,6 +297,10 @@ body {
   margin-bottom: 30px;
 }
 
+.overlay-div .img-div {
+  text-align: right;
+}
+
 .overlay-div .img-div img {
   width: 480px;
   height: auto;
@@ -133,7 +314,7 @@ body {
   background-color: #F7FBFF;
 }
 
-.container-bg-color .brand-row {
+.container-bg-color .brand-9 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,6 +368,7 @@ body {
           box-shadow: 0px 3px 6px #DCE6F5;
   border-radius: 5px;
   min-height: 185px;
+  margin: 8px 2px;
 }
 
 .container-bg-color .business-tools .Tools img {
@@ -230,14 +412,11 @@ body {
 
 .Succeed-your-business .progress-div {
   background-color: #0D2187;
-}
-
-.Succeed-your-business .progress-div .container .row .col-md-4 {
   color: #fff;
-  padding: 42px 55px;
+  padding: 10px;
 }
 
-.Succeed-your-business .progress-div .container .row .col-md-4 p {
+.Succeed-your-business .progress-div p {
   font-size: 14px;
 }
 
@@ -287,8 +466,7 @@ body {
   background-color: #0D2187;
   color: #fff;
   border-radius: 0px 10px 10px 0px;
-  padding: 41px;
-  min-height: 487px;
+  padding: 11px 40px;
 }
 
 .Succeed-your-business .company-intro .detail-img p {
@@ -333,6 +511,7 @@ body {
 
 .Succeed-your-business .Ask-question {
   background-color: #F7FBFF;
+  padding: 20px;
 }
 
 .Succeed-your-business .Ask-question .panel {
@@ -391,6 +570,20 @@ body {
   border-radius: 0;
 }
 
+.Succeed-your-business .started-business .started-buttons button:hover {
+  background-color: #fff;
+  color: #0D2187;
+}
+
+@media (max-width: 1200px) {
+  .Succeed-your-business .company-intro .detail-img {
+    padding: 2px 8px;
+  }
+  .Succeed-your-business .company-intro .detail-img p {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 1024px) {
   .overlay-div .img-div img {
     width: 450px;
@@ -400,6 +593,9 @@ body {
   }
   .Succeed-your-business .pricing .inner-pricing-div .user-div {
     padding: 15px;
+  }
+  .Succeed-your-business .company-intro .customer-says .reviews {
+    padding: 10px !important;
   }
 }
 
@@ -432,9 +628,17 @@ body {
   .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 22px;
   }
-  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
-    padding: 7px 0 7px 17px;
-    font-size: 12px;
+  .Succeed-your-business .company-intro .customer-says .reviews p {
+    font-size: 10px;
+    line-height: 24px;
+    margin-top: 5px;
+  }
+  .img-info {
+    margin: 0px 3px !important;
+  }
+  .started-business .heading h1 {
+    font-size: 26px;
+    margin: 9px 0;
   }
 }
 
@@ -465,14 +669,60 @@ body {
   .pricing h1 {
     font-size: 27px;
   }
+  .Succeed-your-business .company-intro .customer-says .reviews {
+    margin: 5px 2px;
+  }
+  .client-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
+    padding: 5px 20px;
+  }
+  .Succeed-your-business .company-intro h1 {
+    font-size: 17px;
+  }
+  .Succeed-your-business .company-intro h5 {
+    font-size: 14px;
+  }
+  .Freq-heading h1 {
+    font-size: 26px;
+  }
+  .started-business .heading h1 {
+    font-size: 19px;
+    margin: 9px 0;
+  }
+  .started-business .heading h6 {
+    font-size: 12x;
+  }
 }
 
 @media (max-width: 767px) {
   .container-bg-color .business-tools {
     padding: 25px !important;
+    margin: 8px 0;
   }
   .Succeed-your-business .inner-data .col-md-6 h5, .Succeed-your-business .inner-data .col-md-6 p {
     text-align: center;
+  }
+  .Succeed-your-business .Ask-question .panel-title a {
+    font-size: 14px;
+  }
+  .Succeed-your-business .Ask-question .panel-title > a:before {
+    padding: 10px 7px;
+    font-size: 14px;
+  }
+  .Succeed-your-business .inner-data {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .company-intro .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=styles.css.map */

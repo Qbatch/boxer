@@ -38,6 +38,7 @@ $para-color: #45536B;
     margin-bottom: 30px;
   }
 .img-div{
+  text-align: right;
     img{
 width:480px;
 height: auto;
@@ -49,7 +50,7 @@ height: auto;
 }
 .container-bg-color{
   background-color: #F7FBFF;
-  .brand-row{
+  .brand-9{
     display: flex;
     justify-content: center;
   }
@@ -91,6 +92,7 @@ span{
   box-shadow: 0px 3px 6px #DCE6F5;
   border-radius: 5px;
   min-height: 185px;
+  margin: 8px 2px;
   .Tools{
   img{
     width: 35px;
@@ -129,20 +131,15 @@ span{
   }
   .progress-div{
     background-color: #0D2187;
-    .container{
-      .row{
-        .col-md-4{
-          color: #fff;
-          padding: 42px 55px;
+        color: #fff;
+    padding: 10px;
           p{
             font-size: 14px;
           }
-        }
-      }
-    }
   }
   .pricing{
     background-color: #F7FBFF;
+
     .inner-pricing-div{
       box-shadow: 0px 3px 6px #DCE6F5;
       border-radius: 5px;
@@ -179,8 +176,8 @@ span{
       background-color: #0D2187;
     color: #fff;
     border-radius: 0px 10px 10px 0px;
-        padding: 41px;
-            min-height: 487px;
+          padding: 11px 40px;
+
     p{
       font-size: 14px;
     font-weight: 100;
@@ -220,6 +217,7 @@ span{
   }
   .Ask-question{
     background-color: #F7FBFF;
+       padding: 20px;
     .panel{
       padding: 20px 0;
       border-top: 1px solid #ccc;
@@ -258,10 +256,21 @@ span{
     button{
       @include Boxer-button;
     }
+    button:hover{
+      background-color: #fff;
+      color:#0D2187 ;
+    }
     }
 }
 }
+
 @media (max-width: 1200px) {
+.Succeed-your-business .company-intro .detail-img {
+    padding: 2px 8px;
+    p{
+   font-size: 13px;
+    }
+}
 }
 @media (max-width: 1024px) {
   .overlay-div .img-div img {
@@ -272,6 +281,9 @@ span{
 }
 .Succeed-your-business .pricing .inner-pricing-div .user-div {
     padding: 15px;
+}
+.Succeed-your-business .company-intro .customer-says .reviews {
+    padding: 10px!important
 }
 }
 
@@ -304,14 +316,25 @@ span{
     h5{
       font-size: 14px;
     }
-
   }
       .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 22px
 }
-  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
-    padding: 7px 0 7px 17px;
-    font-size: 12px
+.Succeed-your-business .company-intro .customer-says .reviews p {
+    font-size: 10px;
+    line-height: 24px;
+    margin-top: 5px;
+}
+.img-info {
+    margin: 0px 3px !important;
+}
+.started-business{
+ .heading{
+   h1{
+         font-size: 26px;
+    margin: 9px 0;
+   }
+ }
 }
 }
 @media (max-width: 768px) {
@@ -336,14 +359,64 @@ span{
 .pricing h1{
       font-size: 27px;
 }
+.Succeed-your-business .company-intro .customer-says .reviews {
+    margin: 5px 2px;
+}
+.client-info{
+  justify-content: center;
+}
+.Succeed-your-business .pricing .inner-pricing-div .order-list li {
+    padding: 5px 20px;
+}
+.Succeed-your-business .company-intro{
+h1{
+  font-size: 17px;
 
+}
+  h5 {
+    font-size: 14px;
+}
+}
+.Freq-heading {
+  h1{
+    font-size: 26px;
+  }
+}
+.started-business{
+  .heading{
+    h1 {
+    font-size: 19px;
+    margin: 9px 0;
+}
+h6{
+  font-size: 12x;
+}
+}
+}
 }
 @media (max-width: 767px) {
 .container-bg-color .business-tools {
     padding: 25px !important;
+        margin: 8px 0;
 }
 .Succeed-your-business .inner-data .col-md-6 h5,.Succeed-your-business .inner-data .col-md-6 p {
     text-align: center;
 }
-
+.Succeed-your-business .Ask-question .panel-title a {
+    font-size: 14px;
+}
+.Succeed-your-business .Ask-question .panel-title > a:before {
+    padding: 10px 7px;
+    font-size: 14px;
+}
+.Succeed-your-business .inner-data {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.company-intro {
+  .d-flex{
+    flex-direction: column;
+  }
+}
 }

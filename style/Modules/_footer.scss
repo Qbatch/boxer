@@ -22,6 +22,7 @@ width: 150px;
   background-color: #0D2187;
   .d-flex{
     justify-content: space-between;
+    margin: 0 30px;
   ul{
     margin: 14px 5px;
     li{
@@ -35,5 +36,39 @@ width: 150px;
     font-size: 13px;
     margin: 17px 0;
   }
+}
+}
+@media (max-width:991px){
+  .footer .inner-list li {
+    font-size: 12px;
+}
+.footer p {
+    font-size: 11px;
+}
+.footer {
+    padding: 38px 10px;
+}
+}
+@media (max-width:768px){
+
+}
+@media (max-width:1024px){
+  .footer {
+    padding: 50px 22px;
+}
+}
+@media (max-width:575px){
+  .copy-right .d-flex {
+
+    flex-direction: column
+}
+.footer-icon{
+  .d-flex{
+        flex-direction: row;
+    justify-content: center;
+  }
+}
+.copyright-2020{
+  text-align: center;
 }
 }
