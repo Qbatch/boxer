@@ -19,7 +19,7 @@
   border-color: transparent !important;
 }
 
-.header-overlay img {
+.header-overlay .navbar-brand img {
   width: 118px;
 }
 
@@ -269,14 +269,15 @@ body {
   font-family: "Nunito", sans-serif !important;
 }
 
-.overlay-div h3 {
+.overlay-div h1 {
   color: #fff;
   font-weight: 600;
 }
 
 .overlay-div p {
-  font-size: 12px;
+  font-size: 15px;
   color: #fff;
+  margin: 22px 0px;
 }
 
 .overlay-div .button {
@@ -302,7 +303,7 @@ body {
 }
 
 .overlay-div .img-div img {
-  width: 480px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -585,9 +586,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .overlay-div .img-div img {
-    width: 450px;
-  }
   .Succeed-your-business .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 60px;
   }
@@ -597,12 +595,14 @@ body {
   .Succeed-your-business .company-intro .customer-says .reviews {
     padding: 10px !important;
   }
+  .overlay-div h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 991px) {
-  .overlay-div .img-div img {
-    width: 350px;
-  }
   .overlay-div .text-div {
     padding: 0px 30px;
   }
@@ -640,12 +640,17 @@ body {
     font-size: 26px;
     margin: 9px 0;
   }
+  .overlay-div p {
+    font-size: 13px;
+    color: #fff;
+    margin: 10px 0px;
+  }
+  .overlay-div h1 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 768px) {
-  .overlay-div .img-div img {
-    width: 300px;
-  }
   .overlay-div h3 {
     font-size: 20px;
   }
@@ -723,6 +728,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .Succeed-your-business .company-intro .customer-says .reviews .img-info {
+    margin: 7px 3px;
+    text-align: center;
+  }
+  .Succeed-your-business .company-intro .detail-img {
+    border-radius: 0;
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
