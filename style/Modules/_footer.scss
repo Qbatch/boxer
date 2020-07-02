@@ -1,3 +1,4 @@
+@import "../varibale";
 .footer{
     padding: 50px 68px;
   img{
@@ -5,7 +6,7 @@ width: 150px;
     margin: 15px 0 0 0;
   }
   p{
-    color: #45536B;
+    color: $base-light;
     font-size: 16px;
   }
   .inner-list{
@@ -19,7 +20,7 @@ width: 150px;
   }
 }
 .copy-right{
-  background-color: #0D2187;
+  background-color: $base-primary;
   .d-flex{
     justify-content: space-between;
     margin: 0 30px;
@@ -31,7 +32,7 @@ width: 150px;
     }
   }
   p{
-        color: #fff;
+        color: $white;
     font-weight: 100;
     font-size: 13px;
     margin: 17px 0;

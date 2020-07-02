@@ -1,16 +1,18 @@
 @import "./Modules/header";
 @import "./Modules/footer";
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import "./fonts";
+@import "./varibale";
 body{
-font-family: 'Nunito', sans-serif!important
+font-family: myFirstFont!important;
 }
-$bg-color:#0D2187;
+$bg-color:$base-primary;
 $para-color: #45536B;
 @mixin Boxer-button {
-  color:#fff;
+  color:$white;
     background-color: transparent;
     background-image: none;
-    border-color: #fff;
+    border-color: $white;
     padding: 7px 22px;
     border-radius: 0;
 }
@@ -20,20 +22,20 @@ $para-color: #45536B;
 
 .overlay-div{
   h1{
-    color: #fff;
-  @include heading;
+    color: $white;
+  @include heading
   }
   p{
  font-size: 15px;
-    color: #fff;
+    color: $white;
     margin: 22px 0px;
   }
   .button{
     @include Boxer-button
   }
   .button:hover{
-  background-color: #fff;
-  color: #0D2187;
+  background-color: $white;
+  color: $base-primary;
   }
   .m-4{
     margin-bottom: 30px;
@@ -50,7 +52,7 @@ height: auto;
 }
 }
 .container-bg-color{
-  background-color: #F7FBFF;
+  background-color: $base-gray-dark;
   .brand-9{
     display: flex;
     justify-content: center;
@@ -75,7 +77,7 @@ height: auto;
     }
   }
   .business-1{
-    background-color: #fff;
+    background-color: $white;
     box-shadow: 0px 3px 6px #DCE6F5;
 border-radius: 5px;
 width: 80%;
@@ -89,7 +91,7 @@ span{
 }
 }
 .business-tools{
-  background-color: #fff;
+  background-color: $white;
   box-shadow: 0px 3px 6px #DCE6F5;
   border-radius: 5px;
   min-height: 185px;
@@ -106,7 +108,7 @@ span{
 
   }
 .Succeed-your-business{
-    background-color:#FFFFFF;
+    background-color:$white;
     .inner-data{
       width: 60%;
       margin: 0 auto;
@@ -131,8 +133,8 @@ span{
       }
   }
   .progress-div{
-    background-color: #0D2187;
-        color: #fff;
+    background-color: $base-primary;
+        color: $white;
     padding: 10px;
           p{
             font-size: 14px;
@@ -151,8 +153,8 @@ span{
       .place-order-button{
         .button{
           @include Boxer-button;
-          color: #0D2187;
-          border: 1px solid #0D2187 ;
+          color: $base-primary;
+          border: 1px solid $base-primary ;
         }
       }
       .order-list{
@@ -162,7 +164,7 @@ span{
             font-weight: 200;
         i{
           margin-right: 10px;
-          color: #0D2187;
+          color: $base-primary;
           font-size: 14px;
         }
       }
@@ -174,8 +176,8 @@ span{
       max-width: 100%;
     }
     .detail-img{
-      background-color: #0D2187;
-    color: #fff;
+      background-color: $base-primary;
+    color: $white;
     border-radius: 0px 10px 10px 0px;
           padding: 11px 40px;
 
@@ -247,8 +249,8 @@ span{
 }
   }
 .started-business{
-  background-color: #0D2187;
-  color: #fff;
+  background-color: $base-primary;
+  color: $white;
   padding: 35px;
     text-align: center;
      .started-buttons {
@@ -258,8 +260,8 @@ span{
       @include Boxer-button;
     }
     button:hover{
-      background-color: #fff;
-      color:#0D2187 ;
+      background-color: $white;
+      color:$base-primary ;
     }
     }
 }
@@ -285,7 +287,7 @@ span{
     padding: 10px!important
 }
 .overlay-div h1 {
-    color: #fff;
+    color: $white;
     font-weight: 600;
     font-size: 30px;
 }
@@ -303,7 +305,7 @@ span{
 
 }
 .progress-div .container .row .col-md-4 {
-    color: #fff;
+    color: $white;
     padding: 42px 7px;
 }
 .pricing .inner-pricing-div .user-div {
@@ -340,7 +342,7 @@ span{
 }
 .overlay-div p {
     font-size: 13px;
-    color: #fff;
+    color: $white;
     margin: 10px 0px;
 }
 .overlay-div h1 {
