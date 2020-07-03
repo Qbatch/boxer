@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap");
 .header-overlay {
   background-color: #0D2187;
 }
@@ -31,7 +28,7 @@
   background-color: transparent;
   background-image: none;
   border-color: #FFFFFF;
-  padding: 7px 22px;
+  padding: 7px 30px;
   border-radius: 0;
 }
 
@@ -160,13 +157,13 @@
   }
   .header-overlay .nav-item .button {
     color: #FFFFFF;
-    background-color: #0d2287;
+    background-color: #3C5BFF;
     background-image: none;
     border-color: #FFFFFF;
     margin: 11px 10px;
   }
   .header-overlay .navbar-expand-lg .navbar-nav .nav-link {
-    color: #45536B !important;
+    color: #45536B;
   }
   .header-overlay .navbar {
     padding: 27px 0px;
@@ -281,13 +278,18 @@
   src: url("Avenr-Font/Avenir-Book.ttf");
 }
 
+@font-face {
+  font-family: bold-font;
+  src: url("Avenr-Font/Avenir Heavy.ttf");
+}
+
 body {
   font-family: myFirstFont !important;
 }
 
 .overlay-div h1 {
   color: #FFFFFF;
-  font-weight: 600;
+  font-family: bold-font;
 }
 
 .overlay-div p {
@@ -301,7 +303,7 @@ body {
   background-color: transparent;
   background-image: none;
   border-color: #FFFFFF;
-  padding: 7px 22px;
+  padding: 7px 30px;
   border-radius: 0;
 }
 
@@ -329,6 +331,7 @@ body {
 
 .container-bg-color {
   background-color: #F3F4F6;
+  padding-bottom: 2em;
 }
 
 .container-bg-color .brand-9 {
@@ -384,7 +387,7 @@ body {
   -webkit-box-shadow: 0px 3px 6px #DCE6F5;
           box-shadow: 0px 3px 6px #DCE6F5;
   border-radius: 5px;
-  min-height: 185px;
+  min-height: 193px;
   margin: 8px 2px;
 }
 
@@ -420,7 +423,8 @@ body {
 
 .Succeed-your-business .inner-data .col-md-6 p {
   color: #45536B;
-  font-size: 14px;
+  font-size: 1em;
+  text-align: left;
 }
 
 .Succeed-your-business .inner-data .col-md-6 .shipment-img img {
@@ -457,10 +461,15 @@ body {
   background-color: transparent;
   background-image: none;
   border-color: #FFFFFF;
-  padding: 7px 22px;
+  padding: 7px 30px;
   border-radius: 0;
   color: #0D2187;
   border: 1px solid #0D2187;
+}
+
+.Succeed-your-business .pricing .inner-pricing-div .place-order-button :hover {
+  background-color: #0D2187;
+  color: #FFFFFF;
 }
 
 .Succeed-your-business .pricing .inner-pricing-div .order-list li {
@@ -475,6 +484,10 @@ body {
   font-size: 14px;
 }
 
+.Succeed-your-business .company-intro .d-flex {
+  padding: 20px 35px;
+}
+
 .Succeed-your-business .company-intro img {
   max-width: 100%;
 }
@@ -483,12 +496,16 @@ body {
   background-color: #0D2187;
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0px;
-  padding: 11px 40px;
+  padding: 20px 30px;
 }
 
 .Succeed-your-business .company-intro .detail-img p {
   font-size: 14px;
   font-weight: 100;
+}
+
+.Succeed-your-business .company-intro .customer-says {
+  margin-bottom: 4em;
 }
 
 .Succeed-your-business .company-intro .customer-says .reviews {
@@ -534,7 +551,6 @@ body {
 .Succeed-your-business .Ask-question .panel {
   padding: 20px 0;
   border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
 }
 
 .Succeed-your-business .Ask-question .panel-title > a:before {
@@ -562,11 +578,20 @@ body {
   font-size: 20px;
 }
 
+.Succeed-your-business .Ask-question .panel-body {
+  padding-left: 45px;
+  font-size: 13px;
+}
+
 .Succeed-your-business .started-business {
   background-color: #0D2187;
   color: #FFFFFF;
   padding: 35px;
   text-align: center;
+}
+
+.Succeed-your-business .started-business .heading h1 {
+  font-family: bold-font;
 }
 
 .Succeed-your-business .started-business .started-buttons {
@@ -583,7 +608,7 @@ body {
   background-color: transparent;
   background-image: none;
   border-color: #FFFFFF;
-  padding: 7px 22px;
+  padding: 7px 30px;
   border-radius: 0;
 }
 
@@ -594,10 +619,10 @@ body {
 
 @media (max-width: 1200px) {
   .Succeed-your-business .company-intro .detail-img {
-    padding: 2px 8px;
+    padding: 2px 35px;
   }
   .Succeed-your-business .company-intro .detail-img p {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
@@ -641,6 +666,9 @@ body {
   .pricing-detail h5 {
     font-size: 14px;
   }
+  .pricing h1 {
+    font-size: 28px;
+  }
   .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 22px;
   }
@@ -664,25 +692,29 @@ body {
   .overlay-div h1 {
     font-size: 24px;
   }
+  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
+    padding: 7px 0 7px 18px;
+    font-size: 0.9em;
+  }
+  .Succeed-your-business .company-intro .detail-img {
+    padding: 2px 6px;
+  }
+  .Succeed-your-business .company-intro .detail-img p {
+    font-size: 0.6em;
+    margin-bottom: 1.2em;
+  }
+  .Succeed-your-business .inner-data {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
-  .overlay-div h3 {
-    font-size: 20px;
-  }
   .overlay-div .text-div {
     padding: 0px 27px;
     text-align: center;
   }
   .overlay-div .text-div .started-buttons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .img-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -750,8 +782,12 @@ body {
     text-align: center;
   }
   .Succeed-your-business .company-intro .detail-img {
-    border-radius: 0;
+    border-radius: 0 0 10px 10px;
     padding: 20px;
+  }
+  .Succeed-your-business .Ask-question .panel-body {
+    padding-left: 26px;
+    font-size: 11px;
   }
 }
 
