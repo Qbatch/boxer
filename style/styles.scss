@@ -184,9 +184,6 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     }
   }
   .company-intro{
-    .d-flex{
-      padding: 20px 35px;
-    }
     img{
       max-width: 100%;
     }
@@ -194,7 +191,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
       background-color: $base-primary;
     color: $white;
     border-radius: 0px 10px 10px 0px;
-    padding: 0px 9px;
+        padding: 6px 38px;
 
     p{
       font-size: 14px;
@@ -269,7 +266,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
 .started-business{
   background-color: $base-primary;
   color: $white;
-  padding: 80px 0;
+  padding: 60px 0;
     text-align: center;
     .heading{
       padding: 1rem;
@@ -308,6 +305,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
           color: $base-light;
           font-size: 1em;
           text-align: left;
+          font-size: 14px;
         }
           .shipment-img{
         img{
@@ -330,8 +328,12 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
 @media (max-width: 1200px) {
 .Succeed-your-business .company-intro .detail-img {
   padding: 2px 35px;
+  h2{
+    font-size: 28px;
+  }
      p{
    font-size: 11px;
+       margin-bottom: 11px;
     }
 }
 }
@@ -429,14 +431,7 @@ h1 {
     padding: 7px 0 7px 18px;
     font-size: 0.9em;
 }
-.Succeed-your-business .company-intro .detail-img{
 
-    padding: 2px 6px;
-p {
-    font-size: 0.6em;
-        margin-bottom: 1.2em;
-}
-}
 .overlay-div .img-div img {
     max-width: 100%;
     height: auto;
@@ -452,6 +447,16 @@ p {
 }
 .company-intro .d-flex {
     padding: 20px 0px!important
+}
+.Succeed-your-business .company-intro .detail-img{
+    padding: 2px 19px;
+h1{
+  font-size: 26px;
+  margin-bottom: 3px!important;
+} p {
+    font-size: 11px;
+    margin-bottom: 6px;
+}
 }
 }
 @media (max-width: 768px) {
@@ -532,11 +537,11 @@ h6{
     padding-left: 26px;
     font-size: 11px;
 }
-.overlay-div .text-div h1 {
-    font-size: 34px;
-}
-.company-intro .d-flex {
-  text-align: center;
+
+.container-bg-color .business-tools {
+  min-height: 200px;
+}.Tools {
+    padding: 25px;
 }
 }
 @media (max-width:575px){

@@ -268,6 +268,10 @@
   src: url("Avenr-Font/Avenir Heavy.ttf");
 }
 
+h1, h2, h3, h6 {
+  font-weight: 600 !important;
+}
+
 body {
   font-family: myFirstFont !important;
 }
@@ -482,10 +486,6 @@ body {
   font-size: 14px;
 }
 
-.Succeed-your-business .company-intro .d-flex {
-  padding: 20px 35px;
-}
-
 .Succeed-your-business .company-intro img {
   max-width: 100%;
 }
@@ -494,7 +494,7 @@ body {
   background-color: #0D2187;
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0px;
-  padding: 0px 9px;
+  padding: 6px 38px;
 }
 
 .Succeed-your-business .company-intro .detail-img p {
@@ -584,7 +584,7 @@ body {
 .Succeed-your-business .started-business {
   background-color: #0D2187;
   color: #FFFFFF;
-  padding: 80px 0;
+  padding: 60px 0;
   text-align: center;
 }
 
@@ -641,6 +641,7 @@ body {
   color: #45536B;
   font-size: 1em;
   text-align: left;
+  font-size: 14px;
 }
 
 .inner-data .col-md-6 .shipment-img img {
@@ -663,8 +664,12 @@ body {
   .Succeed-your-business .company-intro .detail-img {
     padding: 2px 35px;
   }
+  .Succeed-your-business .company-intro .detail-img h2 {
+    font-size: 28px;
+  }
   .Succeed-your-business .company-intro .detail-img p {
     font-size: 11px;
+    margin-bottom: 11px;
   }
 }
 
@@ -755,13 +760,6 @@ body {
     padding: 7px 0 7px 18px;
     font-size: 0.9em;
   }
-  .Succeed-your-business .company-intro .detail-img {
-    padding: 2px 6px;
-  }
-  .Succeed-your-business .company-intro .detail-img p {
-    font-size: 0.6em;
-    margin-bottom: 1.2em;
-  }
   .overlay-div .img-div img {
     max-width: 100%;
     height: auto;
@@ -778,6 +776,17 @@ body {
   }
   .company-intro .d-flex {
     padding: 20px 0px !important;
+  }
+  .Succeed-your-business .company-intro .detail-img {
+    padding: 2px 19px;
+  }
+  .Succeed-your-business .company-intro .detail-img h1 {
+    font-size: 26px;
+    margin-bottom: 3px !important;
+  }
+  .Succeed-your-business .company-intro .detail-img p {
+    font-size: 11px;
+    margin-bottom: 6px;
   }
 }
 
@@ -857,11 +866,11 @@ body {
     padding-left: 26px;
     font-size: 11px;
   }
-  .overlay-div .text-div h1 {
-    font-size: 34px;
+  .container-bg-color .business-tools {
+    min-height: 200px;
   }
-  .company-intro .d-flex {
-    text-align: center;
+  .Tools {
+    padding: 25px;
   }
 }
 
