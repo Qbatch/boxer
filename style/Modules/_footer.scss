@@ -7,15 +7,16 @@ width: 150px;
   }
   p{
     color: $base-light;
-    font-size: 16px;
+    font-size: 14px;
   }
   .inner-list{
     padding: 28px 14px;
     li{
-       font-size: 17px;
+       font-size: 14px;
     font-weight: 300;
     padding: 3px 0px;
     cursor: pointer;
+    color: #525f75;
     }
   }
 }

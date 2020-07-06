@@ -120,7 +120,7 @@ span{
 box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   border-radius: 5px;
   margin: 8px 2px;
-  min-height: 245px;
+  min-height: 270px;
   .Tools{
     padding:50px;
     .track-shipment{
@@ -138,30 +138,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   }
 .Succeed-your-business{
     background-color:$white;
-    .inner-data{
-      width: 60%;
-      margin: 0 auto;
-      .heading{
-        margin-bottom: 50px;
-      }
-      .col-md-6{
-        margin-bottom: 50px;
-        h5{
-          font-weight: 600;
-          color: $heading-color;
-        }
-        p{
-          color: $base-light;
-          font-size: 1em;
-          text-align: left;
-        }
-          .shipment-img{
-        img{
-          width: 175px;
-        }
-      }
-      }
-  }
+
   .progress-div{
     background-color: $base-primary;
         color: $white;
@@ -218,7 +195,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
       background-color: $base-primary;
     color: $white;
     border-radius: 0px 10px 10px 0px;
-    padding: 20px 30px;
+    padding: 0px 9px;
 
     p{
       font-size: 14px;
@@ -315,6 +292,31 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     }
 }
 }
+ .inner-data{
+      .heading{
+        margin-bottom: 50px;
+        p{
+          font-size: 14px;
+        }
+      }
+      .col-md-6{
+        margin-bottom: 50px;
+        h5{
+          font-weight: 600;
+          color: $heading-color;
+        }
+        p{
+          color: $base-light;
+          font-size: 1em;
+          text-align: left;
+        }
+          .shipment-img{
+        img{
+          width: 175px;
+        }
+      }
+      }
+  }
 #main{
   img{
     width: 118px;
@@ -436,10 +438,6 @@ p {
         margin-bottom: 1.2em;
 }
 }
-.Succeed-your-business .inner-data {
-    width: 85%;
-    margin: 0 auto;
-}
 .overlay-div .img-div img {
     max-width: 100%;
     height: auto;
@@ -452,6 +450,9 @@ p {
       margin-left: 0;
     }
   }
+}
+.company-intro .d-flex {
+    padding: 20px 0px!important
 }
 }
 @media (max-width: 768px) {
@@ -470,9 +471,6 @@ p {
 }
 .client-info{
   justify-content: center;
-}
-.Succeed-your-business .pricing .inner-pricing-div .order-list li {
-    padding: 5px 20px;
 }
 .Succeed-your-business .company-intro{
 h1{
@@ -538,12 +536,22 @@ h6{
 .overlay-div .text-div h1 {
     font-size: 34px;
 }
+.company-intro .d-flex {
+  text-align: center;
+}
 }
 @media (max-width:575px){
 .overlay-div .button {
     padding: 7px 18px;
 }
 .overlay-div h1 {
-    font-size: 20px;
+    font-size: 20px!important
+}
+.Succeed-your-business .started-business .started-buttons button {
+    padding: 7px 20px;
+}
+.Succeed-your-business .pricing {
+    background-color: #F7FBFF;
+    padding: 5px!important
 }
 }
