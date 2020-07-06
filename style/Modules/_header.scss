@@ -1,4 +1,12 @@
 @import "../varibale";
+@mixin Boxer-button {
+  color:$white;
+    background-color: transparent;
+    background-image: none;
+    border-color: $white;
+    padding: 7px 30px;
+    border-radius: 0;
+}
 .navbar{
 	z-index: 1000;
   width: 100%;
@@ -42,107 +50,7 @@
   color: $base-primary;
   }
 }
-
-
-.lines-button {
-  position: relative;
-  float: right;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 80px;
-  height: 46px;
-  font-size: 0;
-  text-indent: -9999px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-.lines-button:focus {
-  outline: none;
-}
-.lines-button span {
-  display: block;
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  height: 8px;
-  background: $white;
-  border-radius: 0.57143rem;
-}
-.lines-button span::before,
-.lines-button span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background-color: #bdbcbc;
-  border-radius: 0.57143rem;
-  content: "";
-}
-.lines-button span::before {
-  top: -15px;
-}
-.lines-button span::after {
-  bottom: -15px;
-}
-.lines {
-  background: none;
-  display: none;
-}
-.lines span {
-  -webkit-transition: background 0s 0.3s;
-  transition: background 0s 0.3s;
-}
-.lines span::before,
-.lines span::after {
-  -webkit-transition-duration: 0.3s, 0.3s;
-  transition-duration: 0.3s, 0.3s;
-  -webkit-transition-delay: 0.3s, 0s;
-  transition-delay: 0.3s, 0s;
-}
-.lines span::before {
-  -webkit-transition-property: top, -webkit-transform;
-  transition-property: top, transform;
-}
-.lines span::after {
-  -webkit-transition-property: bottom, -webkit-transform;
-  transition-property: bottom, transform;
-}
-.lines.close {
-  background: none;
-}
-.lines.close span {
-  background: none
-}
-.lines.close span::before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.lines.close span::after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.lines.close span::before,
-.lines.close span::after {
-  -webkit-transition-delay: 0s, 0.3s;
-  transition-delay: 0s, 0.3s;
-}
 @media (max-width:991px){
-.lines {
-  display: block;
-}
 .header-overlay .nav-item .button {
     color:$white;
     background-color: $header-button;
@@ -159,14 +67,86 @@
 .navbar-dark .navbar-brand {
     padding: 5px 18px;
 }
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: $base-light
-}
-.top-border{
-  border-top: 1px solid #ccc;
 
 }
-.bottom-border{
- border-bottom: 1px solid #ccc;
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1003; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #fffffff7; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  img{
+        width: 118px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  }
+  button{
+   @include Boxer-button;
+       background-color: #0d2287;
+  }
 }
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  background-color: #0d2287;
+      display: flex;
+    justify-content: space-between;
+        position: fixed;
+    width: 100%;
+    z-index: 1001;
+}
+.close-btn{
+cursor: pointer;
+    color: #8b98a9!important;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 68px;}
+  .sidebar a {font-size: 14px;}
 }

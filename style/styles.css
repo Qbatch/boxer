@@ -41,124 +41,7 @@
   color: #0D2187;
 }
 
-.lines-button {
-  position: relative;
-  float: right;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 80px;
-  height: 46px;
-  font-size: 0;
-  text-indent: -9999px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-
-.lines-button:focus {
-  outline: none;
-}
-
-.lines-button span {
-  display: block;
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  height: 8px;
-  background: #FFFFFF;
-  border-radius: 0.57143rem;
-}
-
-.lines-button span::before,
-.lines-button span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background-color: #bdbcbc;
-  border-radius: 0.57143rem;
-  content: "";
-}
-
-.lines-button span::before {
-  top: -15px;
-}
-
-.lines-button span::after {
-  bottom: -15px;
-}
-
-.lines {
-  background: none;
-  display: none;
-}
-
-.lines span {
-  -webkit-transition: background 0s 0.3s;
-  transition: background 0s 0.3s;
-}
-
-.lines span::before,
-.lines span::after {
-  -webkit-transition-duration: 0.3s, 0.3s;
-  transition-duration: 0.3s, 0.3s;
-  -webkit-transition-delay: 0.3s, 0s;
-  transition-delay: 0.3s, 0s;
-}
-
-.lines span::before {
-  -webkit-transition-property: top, -webkit-transform;
-  transition-property: top, -webkit-transform;
-  transition-property: top, transform;
-  transition-property: top, transform, -webkit-transform;
-}
-
-.lines span::after {
-  -webkit-transition-property: bottom, -webkit-transform;
-  transition-property: bottom, -webkit-transform;
-  transition-property: bottom, transform;
-  transition-property: bottom, transform, -webkit-transform;
-}
-
-.lines.close {
-  background: none;
-}
-
-.lines.close span {
-  background: none;
-}
-
-.lines.close span::before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.lines.close span::after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.lines.close span::before,
-.lines.close span::after {
-  -webkit-transition-delay: 0s, 0.3s;
-  transition-delay: 0s, 0.3s;
-}
-
 @media (max-width: 991px) {
-  .lines {
-    display: block;
-  }
   .header-overlay .nav-item .button {
     color: #FFFFFF;
     background-color: #3C5BFF;
@@ -175,14 +58,116 @@
   .navbar-dark .navbar-brand {
     padding: 5px 18px;
   }
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #45536B;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1003;
+  /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #fffffff7;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar img {
+  width: 118px;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+
+.sidebar button {
+  color: #FFFFFF;
+  background-color: transparent;
+  background-image: none;
+  border-color: #FFFFFF;
+  padding: 7px 30px;
+  border-radius: 0;
+  background-color: #0d2287;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  padding: 20px;
+  background-color: #0d2287;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+}
+
+.close-btn {
+  cursor: pointer;
+  color: #8b98a9 !important;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 68px;
   }
-  .top-border {
-    border-top: 1px solid #ccc;
-  }
-  .bottom-border {
-    border-bottom: 1px solid #ccc;
+  .sidebar a {
+    font-size: 14px;
   }
 }
 
@@ -297,7 +282,7 @@ body {
 }
 
 .active {
-  background-color: #fff !important;
+  background-color: #FFFFFF !important;
   -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
           box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
 }
@@ -307,7 +292,7 @@ body {
 }
 
 .active .navbar-nav .nav-item .button:hover {
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 
 .active .navbar-nav .nav-item .nav-link {
@@ -317,13 +302,13 @@ body {
 .overlay-div h1 {
   color: #FFFFFF;
   font-family: bold-font;
+  font-size: 32px;
 }
 
 .overlay-div p {
   font-size: 15px;
   color: #FFFFFF;
   margin: 22px 0px;
-  letter-spacing: 1px;
 }
 
 .overlay-div .button {
@@ -356,15 +341,16 @@ body {
 .overlay-div .img-div img {
   max-width: 100%;
   height: auto;
+  margin-left: 80px;
 }
 
 .overlay-div .text-div {
-  padding: 13px 0 0 78px;
+  padding: 54px 0;
 }
 
 .container-bg-color {
   background-color: #F3F4F6;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 }
 
 .container-bg-color .brand-9 {
@@ -484,6 +470,10 @@ body {
 
 .Succeed-your-business .pricing {
   background-color: #F7FBFF;
+}
+
+.Succeed-your-business .pricing h1 {
+  padding-bottom: 4rem;
 }
 
 .Succeed-your-business .pricing .inner-pricing-div {
@@ -631,6 +621,10 @@ body {
   text-align: center;
 }
 
+.Succeed-your-business .started-business .heading {
+  padding: 1rem;
+}
+
 .Succeed-your-business .started-business .heading h1 {
   font-family: bold-font;
 }
@@ -659,6 +653,14 @@ body {
   color: #0D2187;
 }
 
+#main img {
+  width: 118px;
+}
+
+.header-color {
+  background-color: #FFFFFF !important;
+}
+
 .boxer-sidemenu {
   display: none;
 }
@@ -669,12 +671,6 @@ body {
   }
   .Succeed-your-business .company-intro .detail-img p {
     font-size: 11px;
-  }
-  .overlay-div h1 {
-    font-size: 35px;
-  }
-  .overlay-div .text-div {
-    padding: 13px 0 0 20px;
   }
 }
 
@@ -691,15 +687,7 @@ body {
   .overlay-div h1 {
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 30px;
   }
-  .overlay-div .text-div {
-    padding: 13px 0 0 0px;
-  }
-}
-
-#main img {
-  width: 118px;
 }
 
 @media (max-width: 991px) {
@@ -708,6 +696,10 @@ body {
   }
   .boxer-sidemenu {
     display: block;
+    padding-bottom: 60px;
+  }
+  .overlay-div .text-div {
+    padding: 0px 30px;
   }
   .container-bg-color .business-tools {
     width: 100%;
@@ -751,8 +743,19 @@ body {
     color: #FFFFFF;
     margin: 10px 0px;
   }
-  .overlay-div h1 {
-    font-size: 24px;
+  .overlay-div
+.text-div {
+    text-align: center;
+  }
+  .overlay-div
+.text-div h1 {
+    font-size: 40px;
+  }
+  .overlay-div
+.text-div .started-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .Succeed-your-business .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 18px;
@@ -768,6 +771,20 @@ body {
   .Succeed-your-business .inner-data {
     width: 85%;
     margin: 0 auto;
+  }
+  .overlay-div .img-div img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 55px;
+  }
+  .overlay-div .header-control {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .overlay-div .header-control .img-div img {
+    margin-left: 0;
   }
 }
 
@@ -850,120 +867,17 @@ body {
     padding-left: 26px;
     font-size: 11px;
   }
-}
-
-.header-color {
-  background-color: #FFFFFF !important;
-}
-
-/* The sidebar menu */
-.sidebar {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1003;
-  /* Stay on top */
-  top: 0;
-  right: 0;
-  background-color: #fffffff7;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidebar */
-}
-
-.sidebar img {
-  width: 118px;
-  position: absolute;
-  top: 15px;
-  left: 25px;
-}
-
-.sidebar button {
-  color: #FFFFFF;
-  background-color: transparent;
-  background-image: none;
-  border-color: #FFFFFF;
-  padding: 7px 30px;
-  border-radius: 0;
-  background-color: #0d2287;
-}
-
-/* The sidebar links */
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
-  border: none;
-  background-color: transparent;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  -webkit-transition: margin-left .5s;
-  transition: margin-left .5s;
-  /* If you want a transition effect */
-  padding: 20px;
-  background-color: #0d2287;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  z-index: 1001;
-}
-
-.close-btn {
-  cursor: pointer;
-  color: #8b98a9 !important;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 68px;
+  .overlay-div .text-div h1 {
+    font-size: 34px;
   }
-  .sidebar a {
-    font-size: 14px;
+}
+
+@media (max-width: 575px) {
+  .overlay-div .button {
+    padding: 7px 18px;
+  }
+  .overlay-div h1 {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,9 @@
 @import "./Modules/header";
 @import "./Modules/footer";
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 @import "./fonts";
 @import "./varibale";
-body{
+@import "./default"
+;body{
 font-family: myFirstFont!important;
 }
 @mixin Boxer-button {
@@ -22,15 +22,15 @@ font-family: myFirstFont!important;
   border-radius: 0!important;
 }
 .active {
-  background-color: #fff!important;
+  background-color: $white!important;
  box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
  .navbar-nav{
    .nav-item{
      .button{
-       background-color: #0d2287!important
+       background-color: $base-secondary!important
      }
      .button:hover{
-       color: #fff!important
+       color: $white!important
      }
      .nav-link{
        color:#45536b!important;
@@ -41,13 +41,13 @@ font-family: myFirstFont!important;
 .overlay-div{
   h1{
     color: $white;
-  @include heading
+  @include heading;
+  font-size: 32px;
   }
   p{
  font-size: 15px;
     color: $white;
     margin: 22px 0px;
-    letter-spacing: 1px;
   }
   .button{
     @include Boxer-button
@@ -68,15 +68,16 @@ font-family: myFirstFont!important;
     img{
 max-width:100%;
 height: auto;
+margin-left: 80px;
   }
 }
 .text-div{
-padding: 13px 0 0 78px;
+  padding: 54px 0;
 }
 }
 .container-bg-color{
   background-color: $base-gray-dark;
-  padding-bottom:2em;
+  padding-bottom:4em;
   .brand-9{
     display: flex;
     justify-content: center;
@@ -171,7 +172,9 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   }
   .pricing{
     background-color: $background-color;
-
+    h1{
+      padding-bottom: 4rem;
+    }
     .inner-pricing-div{
       box-shadow: 0px 3px 6px #DCE6F5;
       border-radius: 5px;
@@ -293,6 +296,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   padding: 80px 0;
     text-align: center;
     .heading{
+      padding: 1rem;
       h1{
         @include heading;
       }
@@ -311,6 +315,14 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     }
 }
 }
+#main{
+  img{
+    width: 118px;
+  }
+}
+.header-color{
+  background-color: $white!important
+}
 .boxer-sidemenu{
   display: none;
 }
@@ -320,12 +332,6 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
      p{
    font-size: 11px;
     }
-}
-.overlay-div h1 {
-    font-size: 35px;
-}
-.overlay-div .text-div {
-    padding: 13px 0 0 20px;
 }
 }
 @media (max-width: 1024px) {
@@ -342,25 +348,20 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
 .overlay-div h1 {
     color: $white;
     font-weight: 600;
-    font-size: 30px;
-}
-.overlay-div .text-div {
-    padding: 13px 0 0 0px;
 }
 }
-#main{
-  img{
-    width: 118px;
-  }
-}
+
 @media (max-width: 991px) {
 .navbar{
   display: none!important;
 }
 .boxer-sidemenu{
   display: block;
+  padding-bottom: 60px;
 }
-
+.overlay-div .text-div {
+    padding: 0px 30px;
+}
 .container-bg-color .business-tools {
     width: 100%;
     padding: 10px!important;
@@ -413,8 +414,15 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     color: $white;
     margin: 10px 0px;
 }
-.overlay-div h1 {
-    font-size: 24px;
+.overlay-div
+.text-div{
+  text-align: center;
+h1 {
+    font-size: 40px;
+}
+.started-buttons{
+  justify-content: center;
+}
 }
 .Succeed-your-business .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 18px;
@@ -431,6 +439,19 @@ p {
 .Succeed-your-business .inner-data {
     width: 85%;
     margin: 0 auto;
+}
+.overlay-div .img-div img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 55px;
+}
+.overlay-div{
+  .header-control{
+    flex-direction: column;
+    .img-div img{
+      margin-left: 0;
+    }
+  }
 }
 }
 @media (max-width: 768px) {
@@ -514,110 +535,15 @@ h6{
     padding-left: 26px;
     font-size: 11px;
 }
+.overlay-div .text-div h1 {
+    font-size: 34px;
 }
-.header-color{
-  background-color: $white!important
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* The sidebar menu */
-.sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1003; /* Stay on top */
-  top: 0;
-  right: 0;
-  background-color: #fffffff7; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  img{
-        width: 118px;
-    position: absolute;
-    top: 15px;
-    left: 25px;
-  }
-  button{
-   @include Boxer-button;
-       background-color: #0d2287;
-  }
+@media (max-width:575px){
+.overlay-div .button {
+    padding: 7px 18px;
 }
-
-/* The sidebar links */
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+.overlay-div h1 {
+    font-size: 20px;
 }
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
-  border: none;
-  background-color: transparent;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
-  background-color: #0d2287;
-      display: flex;
-    justify-content: space-between;
-        position: fixed;
-    width: 100%;
-    z-index: 1001;
-}
-.close-btn{
-cursor: pointer;
-    color: #8b98a9!important;
-}
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 68px;}
-  .sidebar a {font-size: 14px;}
 }
