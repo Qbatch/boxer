@@ -1,11 +1,18 @@
 @import "../varibale";
-.header-overlay{
-  background-color:$base-primary;
-  .navbar{
-    padding: 27px 50px;
-  }
+.navbar{
+	z-index: 1000;
+  width: 100%;
+  height: 60px;
+  padding: 18px;
+  position: fixed!important;
+  background-color: transparent;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
   .navbar-expand-lg .navbar-nav .nav-link {
-    color:$white;
+    color:$white!important;
     padding: 10px 15px;
     font-size: 14px;
     font-weight: 300;
@@ -27,13 +34,13 @@
     border-color: $white;
     padding: 7px 30px;
     border-radius: 0;
+    margin: 0 0 0 6px;
   }
   .button:hover{
 
   background-color: $white;
   color: $base-primary;
   }
-}
 }
 
 

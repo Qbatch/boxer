@@ -17,7 +17,27 @@ font-family: myFirstFont!important;
 @mixin heading {
     font-family: bold-font;
 }
-
+.jumbotron {
+  background-color: $base-primary!important;
+  border-radius: 0!important;
+}
+.active {
+  background-color: #fff!important;
+ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
+ .navbar-nav{
+   .nav-item{
+     .button{
+       background-color: #0d2287!important
+     }
+     .button:hover{
+       color: #fff!important
+     }
+     .nav-link{
+       color:#45536b!important;
+     }
+   }
+ }
+}
 .overlay-div{
   h1{
     color: $white;
@@ -27,9 +47,14 @@ font-family: myFirstFont!important;
  font-size: 15px;
     color: $white;
     margin: 22px 0px;
+    letter-spacing: 1px;
   }
   .button{
     @include Boxer-button
+  }
+  .get-started-buuton{
+    background-color: $white;
+    color: $base-primary;
   }
   .button:hover{
   background-color: $white;
@@ -46,7 +71,7 @@ height: auto;
   }
 }
 .text-div{
-  padding: 54px 56px;
+padding: 13px 0 0 78px;
 }
 }
 .container-bg-color{
@@ -91,11 +116,15 @@ span{
 }
 .business-tools{
   background-color: $white;
-  box-shadow: 0px 3px 6px #DCE6F5;
+box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   border-radius: 5px;
-  min-height:193px;
   margin: 8px 2px;
+  min-height: 245px;
   .Tools{
+    padding:50px;
+    .track-shipment{
+      margin-bottom: 20px;
+    }
   img{
     width: 35px;
   }
@@ -261,7 +290,7 @@ span{
 .started-business{
   background-color: $base-primary;
   color: $white;
-  padding: 35px;
+  padding: 80px 0;
     text-align: center;
     .heading{
       h1{
@@ -271,6 +300,7 @@ span{
      .started-buttons {
           justify-content: center;
     align-items: center;
+    margin-top: 50px;
     button{
       @include Boxer-button;
     }
@@ -281,12 +311,21 @@ span{
     }
 }
 }
+.boxer-sidemenu{
+  display: none;
+}
 @media (max-width: 1200px) {
 .Succeed-your-business .company-intro .detail-img {
   padding: 2px 35px;
      p{
    font-size: 11px;
     }
+}
+.overlay-div h1 {
+    font-size: 35px;
+}
+.overlay-div .text-div {
+    padding: 13px 0 0 20px;
 }
 }
 @media (max-width: 1024px) {
@@ -305,13 +344,23 @@ span{
     font-weight: 600;
     font-size: 30px;
 }
-}
-
-@media (max-width: 991px) {
-
 .overlay-div .text-div {
-    padding: 0px 30px;
+    padding: 13px 0 0 0px;
 }
+}
+#main{
+  img{
+    width: 118px;
+  }
+}
+@media (max-width: 991px) {
+.navbar{
+  display: none!important;
+}
+.boxer-sidemenu{
+  display: block;
+}
+
 .container-bg-color .business-tools {
     width: 100%;
     padding: 10px!important;
@@ -431,7 +480,6 @@ h6{
 }
 @media (max-width: 767px) {
 .container-bg-color .business-tools {
-    padding: 25px !important;
         margin: 8px 0;
 }
 .Succeed-your-business .inner-data .col-md-6 h5,.Succeed-your-business .inner-data .col-md-6 p {
@@ -468,5 +516,108 @@ h6{
 }
 }
 .header-color{
-  background-color: $white;
+  background-color: $white!important
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1003; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #fffffff7; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  img{
+        width: 118px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  }
+  button{
+   @include Boxer-button;
+       background-color: #0d2287;
+  }
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  background-color: #0d2287;
+      display: flex;
+    justify-content: space-between;
+        position: fixed;
+    width: 100%;
+    z-index: 1001;
+}
+.close-btn{
+cursor: pointer;
+    color: #8b98a9!important;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 68px;}
+  .sidebar a {font-size: 14px;}
 }

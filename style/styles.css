@@ -1,38 +1,42 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
-.header-overlay {
-  background-color: #0D2187;
+.navbar {
+  z-index: 1000;
+  width: 100%;
+  height: 60px;
+  padding: 18px;
+  position: fixed !important;
+  background-color: transparent;
+  -webkit-transition: all ease-out .5s;
+  transition: all ease-out .5s;
 }
 
-.header-overlay .navbar {
-  padding: 27px 50px;
-}
-
-.header-overlay .navbar-expand-lg .navbar-nav .nav-link {
-  color: #FFFFFF;
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #FFFFFF !important;
   padding: 10px 15px;
   font-size: 14px;
   font-weight: 300;
 }
 
-.header-overlay .navbar-dark .navbar-toggler {
+.navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.96);
   border-color: transparent !important;
 }
 
-.header-overlay .navbar-brand img {
+.navbar-brand img {
   width: 118px;
 }
 
-.header-overlay .nav-item .button {
+.nav-item .button {
   color: #FFFFFF;
   background-color: transparent;
   background-image: none;
   border-color: #FFFFFF;
   padding: 7px 30px;
   border-radius: 0;
+  margin: 0 0 0 6px;
 }
 
-.header-overlay .nav-item .button:hover {
+.nav-item .button:hover {
   background-color: #FFFFFF;
   color: #0D2187;
 }
@@ -287,6 +291,29 @@ body {
   font-family: myFirstFont !important;
 }
 
+.jumbotron {
+  background-color: #0D2187 !important;
+  border-radius: 0 !important;
+}
+
+.active {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
+          box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
+}
+
+.active .navbar-nav .nav-item .button {
+  background-color: #0d2287 !important;
+}
+
+.active .navbar-nav .nav-item .button:hover {
+  color: #fff !important;
+}
+
+.active .navbar-nav .nav-item .nav-link {
+  color: #45536b !important;
+}
+
 .overlay-div h1 {
   color: #FFFFFF;
   font-family: bold-font;
@@ -296,6 +323,7 @@ body {
   font-size: 15px;
   color: #FFFFFF;
   margin: 22px 0px;
+  letter-spacing: 1px;
 }
 
 .overlay-div .button {
@@ -305,6 +333,11 @@ body {
   border-color: #FFFFFF;
   padding: 7px 30px;
   border-radius: 0;
+}
+
+.overlay-div .get-started-buuton {
+  background-color: #FFFFFF;
+  color: #0D2187;
 }
 
 .overlay-div .button:hover {
@@ -326,7 +359,7 @@ body {
 }
 
 .overlay-div .text-div {
-  padding: 54px 56px;
+  padding: 13px 0 0 78px;
 }
 
 .container-bg-color {
@@ -384,11 +417,19 @@ body {
 
 .container-bg-color .business-tools {
   background-color: #FFFFFF;
-  -webkit-box-shadow: 0px 3px 6px #DCE6F5;
-          box-shadow: 0px 3px 6px #DCE6F5;
+  -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
+          box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
   border-radius: 5px;
-  min-height: 193px;
   margin: 8px 2px;
+  min-height: 245px;
+}
+
+.container-bg-color .business-tools .Tools {
+  padding: 50px;
+}
+
+.container-bg-color .business-tools .Tools .track-shipment {
+  margin-bottom: 20px;
 }
 
 .container-bg-color .business-tools .Tools img {
@@ -586,7 +627,7 @@ body {
 .Succeed-your-business .started-business {
   background-color: #0D2187;
   color: #FFFFFF;
-  padding: 35px;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -601,6 +642,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
 }
 
 .Succeed-your-business .started-business .started-buttons button {
@@ -617,12 +659,22 @@ body {
   color: #0D2187;
 }
 
+.boxer-sidemenu {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .Succeed-your-business .company-intro .detail-img {
     padding: 2px 35px;
   }
   .Succeed-your-business .company-intro .detail-img p {
     font-size: 11px;
+  }
+  .overlay-div h1 {
+    font-size: 35px;
+  }
+  .overlay-div .text-div {
+    padding: 13px 0 0 20px;
   }
 }
 
@@ -641,11 +693,21 @@ body {
     font-weight: 600;
     font-size: 30px;
   }
+  .overlay-div .text-div {
+    padding: 13px 0 0 0px;
+  }
+}
+
+#main img {
+  width: 118px;
 }
 
 @media (max-width: 991px) {
-  .overlay-div .text-div {
-    padding: 0px 30px;
+  .navbar {
+    display: none !important;
+  }
+  .boxer-sidemenu {
+    display: block;
   }
   .container-bg-color .business-tools {
     width: 100%;
@@ -753,7 +815,6 @@ body {
 
 @media (max-width: 767px) {
   .container-bg-color .business-tools {
-    padding: 25px !important;
     margin: 8px 0;
   }
   .Succeed-your-business .inner-data .col-md-6 h5, .Succeed-your-business .inner-data .col-md-6 p {
@@ -792,6 +853,117 @@ body {
 }
 
 .header-color {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1003;
+  /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #fffffff7;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar img {
+  width: 118px;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+
+.sidebar button {
+  color: #FFFFFF;
+  background-color: transparent;
+  background-image: none;
+  border-color: #FFFFFF;
+  padding: 7px 30px;
+  border-radius: 0;
+  background-color: #0d2287;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  padding: 20px;
+  background-color: #0d2287;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+}
+
+.close-btn {
+  cursor: pointer;
+  color: #8b98a9 !important;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 68px;
+  }
+  .sidebar a {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
