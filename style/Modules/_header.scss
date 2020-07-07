@@ -4,6 +4,7 @@
     background-color: transparent;
     background-image: none;
     border-color: $white;
+    font-weight: 600;
     border-radius: 0;
     text-transform: uppercase;
 }
@@ -26,7 +27,7 @@
     color:$white!important;
     padding: 10px 15px;
      font-size: 16px;
-    font-weight: 600;
+    font-weight: 100;
     letter-spacing: 1px;
 
 }
@@ -70,10 +71,10 @@
   z-index: 1003; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #fffffff7; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  background-color: #fffffff7;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
   img{
         width: 118px;
     position: absolute;
@@ -88,7 +89,7 @@
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -129,5 +130,5 @@ cursor: pointer;
 }
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 68px;}
-  .sidebar a {font-size: 14px;}
+  .sidebar a {font-size: 12px;}
 }

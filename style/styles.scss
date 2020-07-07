@@ -10,7 +10,7 @@ font-family: myFirstFont!important;
   color:$white;
     background-color: transparent;
     background-image: none;
-    border:2px solid $white;
+    border:1.5px solid $white;
     padding:7px 10px;
     border-radius: 0;
     width: 175px;
@@ -50,7 +50,7 @@ font-family: myFirstFont!important;
 .overlay-div{
 
   .text-div{
-     padding: 186px 0;
+     padding: 130px 0;
      height: 600px;
 }
   h1{
@@ -78,7 +78,7 @@ font-family: myFirstFont!important;
   }
 .img-div{
   text-align: right;
-      padding: 130px 0;
+      padding: 100px 0;
   height: 600px;
     img{
 max-width:100%;
@@ -185,7 +185,7 @@ margin: 15px 2px;
         .button{
           @include Boxer-button;
           color: $base-primary;
-          border: 2px solid $base-primary ;
+          border: 1.5px solid $base-primary ;
         }
         :hover{
           background-color: $base-primary;
@@ -256,6 +256,7 @@ margin: 15px 2px;
   }
   .Ask-question{
     background-color: $background-color;
+    padding-bottom: 70px;
     .panel{
       padding: 30px 0;
       border-top: 1px solid $border-color;
@@ -412,7 +413,7 @@ margin: 15px 2px;
     height: 200px;
 }
 .overlay-div .img-div {
-    height: 260px;
+    height: 475px;
 }
 .container-bg-color .business-tools {
     width: 100%;
@@ -512,11 +513,17 @@ h1{
 }
 }
 @media (max-width: 768px) {
-.overlay-div .text-div {
+.overlay-div .text-div ,.Succeed-your-business .started-business{
     padding: 0px 27px;
     text-align: center;
     .started-buttons{
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      button{
+        margin: 8px 0;
+        margin-right: 0!important;
+      }
     }
 }
 .pricing h1{
@@ -548,9 +555,9 @@ h1{
     margin: 9px 0;
 }
 p{
-  font-size: 18x;
+  font-size: 14px!important
 }
-}
+  }
 }
 }
 @media (max-width: 767px) {
@@ -559,6 +566,7 @@ p{
 }
 .Succeed-your-business .inner-data .col-md-6 h5,.Succeed-your-business .inner-data .col-md-6 p {
     text-align: center;
+    font-size: 14px;
 }
 .Succeed-your-business .Ask-question .panel-title a {
     font-size: 14px;
@@ -601,6 +609,12 @@ p{
 .Succeed-your-business .started-business .started-buttons button {
     width: 138px;
     font-size: 14px;
+}
+h3{
+  font-size: 20px!important;
+}
+h1{
+  font-size: 24px!important;
 }
 }
 @media (max-width:575px){
