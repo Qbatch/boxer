@@ -11,11 +11,15 @@ font-family: myFirstFont!important;
     background-color: transparent;
     background-image: none;
     border-color: $white;
-    padding: 7px 30px;
+    padding:7px 0;
     border-radius: 0;
+    width: 175px;
 }
 @mixin heading {
     font-family: bold-font;
+}
+.spacing {
+  padding: 45px 0 !important
 }
 .jumbotron {
   background-color: $base-primary!important;
@@ -39,16 +43,16 @@ font-family: myFirstFont!important;
  }
 }
 .overlay-div{
+
   .text-div{
-  padding: 54px 0;
+     padding: 90px 0;
 }
   h1{
     color: $white;
   @include heading;
-  font-size: 32px;
   }
   p{
- font-size: 15px;
+ font-size: 18px;
     color: $white;
     margin: 22px 0px;
   }
@@ -78,7 +82,7 @@ margin-left: 80px;
 }
 .container-bg-color{
   background-color: $base-gray-dark;
-  padding-bottom:4em;
+  padding-bottom:8em;
   .brand-9{
     display: flex;
     justify-content: center;
@@ -99,7 +103,9 @@ margin-left: 80px;
     font-weight: 600;
     }
     p{
-      color: $base-light;;
+      color: #535d73;
+      font-size: 18px;
+
     }
   }
   .business-1{
@@ -124,12 +130,20 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     padding:50px;
     .track-shipment{
       margin-bottom: 20px;
+
+    }
+   .paragraph {
+   p{
+        color: $paragraph-color;
+        font-size: 18px;
+      }
     }
   img{
     width: 35px;
   }
   span{
         font-weight: 800;
+        font-size: 20px;
   }
 }
 }
@@ -143,7 +157,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
         color: $white;
     padding: 10px;
           p{
-            font-size: 14px;
+            font-size: 18px;
           }
   }
   .pricing{
@@ -154,10 +168,10 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     .inner-pricing-div{
       box-shadow: 0px 3px 6px #DCE6F5;
       border-radius: 5px;
-      background-color: #fff;
+      background-color: $white;
       .user-div{
-          border-bottom: 1px solid $border-color;
-    padding: 27px;
+          border-bottom: 1px solid #eae8e8;
+    padding: 30px;
       }
       .place-order-button{
         .button{
@@ -206,9 +220,10 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
         background-color: $background-color;
          border: 1px solid #BACEE4;
          border-radius: 5px;
+         padding: 30px 20px;
         p{
           color: $base-light;;
-           font-size: 13px;
+           font-size: 18x;
              line-height: 28px;
             margin-top: 20px;
               font-weight: 300;
@@ -234,7 +249,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   .Ask-question{
     background-color: $background-color;
     .panel{
-      padding: 20px 0;
+      padding: 30px 0;
       border-top: 1px solid $border-color;
     }
 .panel-title > a:before {
@@ -269,15 +284,17 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   padding: 60px 0;
     text-align: center;
     .heading{
-      padding: 1rem;
       h1{
         @include heading;
+      }
+      p{
+        font-size: 18px;
       }
     }
      .started-buttons {
           justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     button{
       @include Boxer-button;
     }
@@ -290,14 +307,15 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
 }
  .inner-data{
       .heading{
-          padding: 35px 0;
           h3{
                 padding: 17px 0;
           }
-        p{
-          font-size: 14px;
-        }
+
       }
+        p{
+          font-size: 18px;
+          color:$base-light;
+        }
       .col-md-6{
         margin-bottom: 50px;
         h5{
@@ -306,7 +324,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
         }
         p{
           color: $base-light;
-          font-size: 1em;
+          font-size: 18px;
           text-align: left;
           font-size: 14px;
         }
@@ -343,7 +361,19 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     }
 }
  }
-
+.container-bg-color .business-tools .Tools
+{
+  padding: 35px;
+   span {
+    font-size: 17px;
+}
+}
+.Succeed-your-business .company-intro .detail-img p {
+    font-size: 11px;
+}
+.overlay-div .img-div img {
+    margin-left: 62px;
+}
 }
 @media (max-width: 1024px) {
 
@@ -384,7 +414,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     padding: 42px 7px;
 }
 .pricing .inner-pricing-div .user-div {
-    padding: 11px;
+    padding: 30px 0 0 0;
 
 }
   .pricing-detail{
@@ -421,7 +451,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
  }
 }
 .overlay-div p {
-    font-size: 13px;
+    font-size: 14px;
     color: $white;
     margin: 10px 0px;
 }
@@ -466,6 +496,9 @@ h1{
     margin-bottom: 6px;
 }
 }
+.Succeed-your-business .progress-div p {
+    font-size: 14px;
+}
 }
 @media (max-width: 768px) {
 .overlay-div .text-div {
@@ -503,8 +536,8 @@ h1{
     font-size: 19px;
     margin: 9px 0;
 }
-h6{
-  font-size: 12x;
+p{
+  font-size: 18x;
 }
 }
 }

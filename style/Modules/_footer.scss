@@ -6,12 +6,12 @@ width: 150px;
   }
   p{
     color: $base-light;
-    font-size: 14px;
+    font-size: 18px;
   }
   .inner-list{
     padding: 28px 14px;
     li{
-       font-size: 14px;
+       font-size: 18px;
     font-weight: 300;
     padding: 3px 0px;
     cursor: pointer;
@@ -23,17 +23,17 @@ width: 150px;
   background-color: $base-primary;
   .d-flex{
     justify-content: space-between;
+        padding: 5px 0;
   ul{
     margin: 14px 5px;
     li{
       margin: 0 5px;
-      cursor: pointer;
     }
   }
   p{
         color: $white;
     font-weight: 100;
-    font-size: 13px;
+    font-size: 18px;
     margin: 17px 0;
   }
 }
@@ -56,7 +56,6 @@ width: 150px;
 }
 @media (max-width:575px){
   .copy-right .d-flex {
-
     flex-direction: column
 }
 .footer-icon{
