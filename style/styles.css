@@ -17,11 +17,6 @@
   font-weight: 300;
 }
 
-.navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.96);
-  border-color: transparent !important;
-}
-
 .navbar-brand img {
   width: 118px;
 }
@@ -49,18 +44,11 @@
     border-color: #FFFFFF;
     margin: 11px 10px;
   }
-  .header-overlay .navbar-expand-lg .navbar-nav .nav-link {
-    color: #45536B;
-  }
-  .header-overlay .navbar {
-    padding: 27px 0px;
-  }
   .navbar-dark .navbar-brand {
     padding: 5px 18px;
   }
 }
 
-/* The sidebar menu */
 .sidebar {
   height: 100%;
   /* 100% Full-height */
@@ -100,7 +88,6 @@
   background-color: #0d2287;
 }
 
-/* The sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -111,12 +98,10 @@
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -125,7 +110,6 @@
   margin-left: 50px;
 }
 
-/* The button used to open the sidebar */
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -138,7 +122,6 @@
   background-color: #444;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   -webkit-transition: margin-left .5s;
   transition: margin-left .5s;
@@ -161,7 +144,6 @@
   color: #8b98a9 !important;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 68px;
@@ -299,6 +281,10 @@ body {
   color: #45536b !important;
 }
 
+.overlay-div .text-div {
+  padding: 54px 0;
+}
+
 .overlay-div h1 {
   color: #FFFFFF;
   font-family: bold-font;
@@ -342,10 +328,6 @@ body {
   max-width: 100%;
   height: auto;
   margin-left: 80px;
-}
-
-.overlay-div .text-div {
-  padding: 54px 0;
 }
 
 .container-bg-color {
@@ -543,7 +525,6 @@ body {
 
 .Succeed-your-business .Ask-question {
   background-color: #F7FBFF;
-  padding: 20px;
 }
 
 .Succeed-your-business .Ask-question .panel {
@@ -621,7 +602,11 @@ body {
 }
 
 .inner-data .heading {
-  margin-bottom: 50px;
+  padding: 35px 0;
+}
+
+.inner-data .heading h3 {
+  padding: 17px 0;
 }
 
 .inner-data .heading p {
@@ -661,13 +646,17 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .Succeed-your-business .company-intro .detail-img {
-    padding: 2px 35px;
+  .Succeed-your-business .company-intro
+.customer-says .reviews .img-info span {
+    font-weight: 100;
+    font-size: 8px;
   }
-  .Succeed-your-business .company-intro .detail-img h2 {
+  .Succeed-your-business .company-intro
+.customer-says .reviews .img-info span .detail-img h1 {
     font-size: 28px;
   }
-  .Succeed-your-business .company-intro .detail-img p {
+  .Succeed-your-business .company-intro
+.customer-says .reviews .img-info span .detail-img p {
     font-size: 11px;
     margin-bottom: 11px;
   }
@@ -870,7 +859,7 @@ body {
     min-height: 200px;
   }
   .Tools {
-    padding: 25px;
+    padding: 25px !important;
   }
 }
 

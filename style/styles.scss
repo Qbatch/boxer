@@ -2,8 +2,8 @@
 @import "./Modules/footer";
 @import "./fonts";
 @import "./varibale";
-@import "./default"
-;body{
+@import "./default";
+body{
 font-family: myFirstFont!important;
 }
 @mixin Boxer-button {
@@ -39,6 +39,9 @@ font-family: myFirstFont!important;
  }
 }
 .overlay-div{
+  .text-div{
+  padding: 54px 0;
+}
   h1{
     color: $white;
   @include heading;
@@ -71,9 +74,7 @@ height: auto;
 margin-left: 80px;
   }
 }
-.text-div{
-  padding: 54px 0;
-}
+
 }
 .container-bg-color{
   background-color: $base-gray-dark;
@@ -232,7 +233,6 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   }
   .Ask-question{
     background-color: $background-color;
-       padding: 20px;
     .panel{
       padding: 20px 0;
       border-top: 1px solid $border-color;
@@ -290,7 +290,10 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
 }
  .inner-data{
       .heading{
-        margin-bottom: 50px;
+          padding: 35px 0;
+          h3{
+                padding: 17px 0;
+          }
         p{
           font-size: 14px;
         }
@@ -307,12 +310,12 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
           text-align: left;
           font-size: 14px;
         }
-          .shipment-img{
-        img{
-          width: 175px;
+        .shipment-img{
+          img{
+            width: 175px
+          }
         }
-      }
-      }
+        }
   }
 #main{
   img{
@@ -326,9 +329,12 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   display: none;
 }
 @media (max-width: 1200px) {
-.Succeed-your-business .company-intro .detail-img {
-  padding: 2px 35px;
-  h2{
+.Succeed-your-business .company-intro
+.customer-says .reviews .img-info span {
+    font-weight: 100;
+    font-size: 8px;
+ .detail-img {
+  h1{
     font-size: 28px;
   }
      p{
@@ -336,6 +342,8 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
        margin-bottom: 11px;
     }
 }
+ }
+
 }
 @media (max-width: 1024px) {
 
@@ -540,8 +548,9 @@ h6{
 
 .container-bg-color .business-tools {
   min-height: 200px;
-}.Tools {
-    padding: 25px;
+}
+.Tools {
+    padding: 25px!important
 }
 }
 @media (max-width:575px){

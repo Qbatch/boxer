@@ -25,10 +25,6 @@
     font-size: 14px;
     font-weight: 300;
 }
-.navbar-dark .navbar-toggler {
-    color: rgba(255, 255, 255, 0.96);
-    border-color: transparent!important
-}
 .navbar-brand{
   img{
     width: 118px;
@@ -45,7 +41,6 @@
     margin: 0 0 0 6px;
   }
   .button:hover{
-
   background-color: $white;
   color: $base-primary;
   }
@@ -58,18 +53,10 @@
     border-color:$white;
     margin: 11px 10px;
 }
-.header-overlay .navbar-expand-lg .navbar-nav .nav-link {
-    color: $base-light
-}
-.header-overlay .navbar {
-    padding: 27px 0px;
-}
 .navbar-dark .navbar-brand {
     padding: 5px 18px;
 }
-
 }
-/* The sidebar menu */
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -92,8 +79,6 @@
        background-color: #0d2287;
   }
 }
-
-/* The sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -102,13 +87,9 @@
   display: block;
   transition: 0.3s;
 }
-
-/* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #f1f1f1;
 }
-
-/* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -116,8 +97,6 @@
   font-size: 36px;
   margin-left: 50px;
 }
-
-/* The button used to open the sidebar */
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -125,12 +104,9 @@
   border: none;
   background-color: transparent;
 }
-
 .openbtn:hover {
   background-color: #444;
 }
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
   padding: 20px;
@@ -145,7 +121,6 @@
 cursor: pointer;
     color: #8b98a9!important;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 68px;}
   .sidebar a {font-size: 14px;}
