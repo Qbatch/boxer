@@ -10,13 +10,18 @@ font-family: myFirstFont!important;
   color:$white;
     background-color: transparent;
     background-image: none;
-    border-color: $white;
-    padding:7px 0;
+    border:2px solid $white;
+    padding:7px 10px;
     border-radius: 0;
     width: 175px;
+    text-transform: uppercase;
 }
 @mixin heading {
     font-family: bold-font;
+}
+@mixin get-started-button {
+      background-color: $white;
+    color: $base-primary;
 }
 .spacing {
   padding: 45px 0 !important
@@ -45,7 +50,8 @@ font-family: myFirstFont!important;
 .overlay-div{
 
   .text-div{
-     padding: 90px 0;
+     padding: 186px 0;
+     height: 600px;
 }
   h1{
     color: $white;
@@ -60,18 +66,20 @@ font-family: myFirstFont!important;
     @include Boxer-button
   }
   .get-started-buuton{
-    background-color: $white;
-    color: $base-primary;
+@include get-started-button;
   }
   .button:hover{
   background-color: $white;
   color: $base-primary;
+
   }
   .m-4{
     margin-bottom: 30px;
   }
 .img-div{
   text-align: right;
+      padding: 130px 0;
+  height: 600px;
     img{
 max-width:100%;
 height: auto;
@@ -124,8 +132,8 @@ span{
   background-color: $white;
 box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
   border-radius: 5px;
-  margin: 8px 2px;
-  min-height: 270px;
+margin: 15px 2px;
+    min-height: 290px;
   .Tools{
     padding:50px;
     .track-shipment{
@@ -167,7 +175,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
     }
     .inner-pricing-div{
       box-shadow: 0px 3px 6px #DCE6F5;
-      border-radius: 5px;
+      border-radius: 10px;
       background-color: $white;
       .user-div{
           border-bottom: 1px solid #eae8e8;
@@ -177,7 +185,7 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
         .button{
           @include Boxer-button;
           color: $base-primary;
-          border: 1px solid $base-primary ;
+          border: 2px solid $base-primary ;
         }
         :hover{
           background-color: $base-primary;
@@ -272,10 +280,11 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
 .panel-title a{
   color: $heading-color;
     font-size: 20px;
+    font-weight: 600;
 }
 .panel-body{
   padding-left: 45px;
-  font-size: 13px;
+  font-size: 18px;
 }
   }
 .started-business{
@@ -302,6 +311,9 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
       background-color: $white;
       color:$base-primary ;
     }
+    .get-started-button{
+      @include get-started-button
+    }
     }
 }
 }
@@ -312,10 +324,6 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
           }
 
       }
-        p{
-          font-size: 18px;
-          color:$base-light;
-        }
       .col-md-6{
         margin-bottom: 50px;
         h5{
@@ -326,7 +334,6 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
           color: $base-light;
           font-size: 18px;
           text-align: left;
-          font-size: 14px;
         }
         .shipment-img{
           img{
@@ -402,6 +409,10 @@ box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
 }
 .overlay-div .text-div {
     padding: 0px 30px;
+    height: 200px;
+}
+.overlay-div .img-div {
+    height: 260px;
 }
 .container-bg-color .business-tools {
     width: 100%;
@@ -564,6 +575,8 @@ p{
 .company-intro {
   .d-flex{
     flex-direction: column;
+        justify-content: center;
+    align-items: center;
   }
 }
 .Succeed-your-business .company-intro .customer-says .reviews .img-info {
@@ -585,19 +598,16 @@ p{
 .Tools {
     padding: 25px!important
 }
+.Succeed-your-business .started-business .started-buttons button {
+    width: 138px;
+    font-size: 14px;
+}
 }
 @media (max-width:575px){
-.overlay-div .button {
-    padding: 7px 18px;
-}
 .overlay-div h1 {
     font-size: 20px!important
 }
-.Succeed-your-business .started-business .started-buttons button {
-    padding: 7px 20px;
-}
 .Succeed-your-business .pricing {
-    background-color: #F7FBFF;
     padding: 5px!important
 }
 }

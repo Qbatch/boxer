@@ -17,8 +17,9 @@
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #FFFFFF !important;
   padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .navbar-brand img {
@@ -29,10 +30,11 @@
   color: #FFFFFF;
   background-color: transparent;
   background-image: none;
-  border-color: #FFFFFF;
-  padding: 7px 30px;
+  border: 2px solid #FFFFFF;
+  width: 160px;
   border-radius: 0;
   margin: 0 0 0 6px;
+  text-transform: uppercase;
 }
 
 .nav-item .button:hover {
@@ -87,15 +89,15 @@
   background-color: transparent;
   background-image: none;
   border-color: #FFFFFF;
-  padding: 7px 30px;
   border-radius: 0;
+  text-transform: uppercase;
   background-color: #0d2287;
 }
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 14px;
   color: #818181;
   display: block;
   -webkit-transition: 0.3s;
@@ -171,8 +173,12 @@
   padding: 28px 14px;
 }
 
+.footer .inner-list h4 {
+  font-weight: 600;
+}
+
 .footer .inner-list li {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   padding: 3px 0px;
   cursor: pointer;
@@ -290,7 +296,8 @@ body {
 }
 
 .overlay-div .text-div {
-  padding: 90px 0;
+  padding: 186px 0;
+  height: 600px;
 }
 
 .overlay-div h1 {
@@ -308,10 +315,11 @@ body {
   color: #FFFFFF;
   background-color: transparent;
   background-image: none;
-  border-color: #FFFFFF;
-  padding: 7px 0;
+  border: 2px solid #FFFFFF;
+  padding: 7px 10px;
   border-radius: 0;
   width: 175px;
+  text-transform: uppercase;
 }
 
 .overlay-div .get-started-buuton {
@@ -330,6 +338,8 @@ body {
 
 .overlay-div .img-div {
   text-align: right;
+  padding: 130px 0;
+  height: 600px;
 }
 
 .overlay-div .img-div img {
@@ -395,8 +405,8 @@ body {
   -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
           box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
   border-radius: 5px;
-  margin: 8px 2px;
-  min-height: 270px;
+  margin: 15px 2px;
+  min-height: 290px;
 }
 
 .container-bg-color .business-tools .Tools {
@@ -446,7 +456,7 @@ body {
 .Succeed-your-business .pricing .inner-pricing-div {
   -webkit-box-shadow: 0px 3px 6px #DCE6F5;
           box-shadow: 0px 3px 6px #DCE6F5;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #FFFFFF;
 }
 
@@ -459,12 +469,13 @@ body {
   color: #FFFFFF;
   background-color: transparent;
   background-image: none;
-  border-color: #FFFFFF;
-  padding: 7px 0;
+  border: 2px solid #FFFFFF;
+  padding: 7px 10px;
   border-radius: 0;
   width: 175px;
+  text-transform: uppercase;
   color: #0D2187;
-  border: 1px solid #0D2187;
+  border: 2px solid #0D2187;
 }
 
 .Succeed-your-business .pricing .inner-pricing-div .place-order-button :hover {
@@ -572,11 +583,12 @@ body {
 .Succeed-your-business .Ask-question .panel-title a {
   color: #273245;
   font-size: 20px;
+  font-weight: 600;
 }
 
 .Succeed-your-business .Ask-question .panel-body {
   padding-left: 45px;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .Succeed-your-business .started-business {
@@ -608,10 +620,11 @@ body {
   color: #FFFFFF;
   background-color: transparent;
   background-image: none;
-  border-color: #FFFFFF;
-  padding: 7px 0;
+  border: 2px solid #FFFFFF;
+  padding: 7px 10px;
   border-radius: 0;
   width: 175px;
+  text-transform: uppercase;
 }
 
 .Succeed-your-business .started-business .started-buttons button:hover {
@@ -619,13 +632,13 @@ body {
   color: #0D2187;
 }
 
-.inner-data .heading h3 {
-  padding: 17px 0;
+.Succeed-your-business .started-business .started-buttons .get-started-button {
+  background-color: #FFFFFF;
+  color: #0D2187;
 }
 
-.inner-data p {
-  font-size: 18px;
-  color: #535d73;
+.inner-data .heading h3 {
+  padding: 17px 0;
 }
 
 .inner-data .col-md-6 {
@@ -641,7 +654,6 @@ body {
   color: #535d73;
   font-size: 18px;
   text-align: left;
-  font-size: 14px;
 }
 
 .inner-data .col-md-6 .shipment-img img {
@@ -715,6 +727,10 @@ body {
   }
   .overlay-div .text-div {
     padding: 0px 30px;
+    height: 200px;
+  }
+  .overlay-div .img-div {
+    height: 260px;
   }
   .container-bg-color .business-tools {
     width: 100%;
@@ -872,6 +888,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .Succeed-your-business .company-intro .customer-says .reviews .img-info {
     margin: 7px 3px;
@@ -891,20 +913,17 @@ body {
   .Tools {
     padding: 25px !important;
   }
+  .Succeed-your-business .started-business .started-buttons button {
+    width: 138px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
-  .overlay-div .button {
-    padding: 7px 18px;
-  }
   .overlay-div h1 {
     font-size: 20px !important;
   }
-  .Succeed-your-business .started-business .started-buttons button {
-    padding: 7px 20px;
-  }
   .Succeed-your-business .pricing {
-    background-color: #F7FBFF;
     padding: 5px !important;
   }
 }

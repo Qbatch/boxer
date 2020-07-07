@@ -9,9 +9,12 @@ width: 150px;
     font-size: 18px;
   }
   .inner-list{
+    h4{
+      font-weight: 600;
+    }
     padding: 28px 14px;
     li{
-       font-size: 18px;
+       font-size: 14px;
     font-weight: 300;
     padding: 3px 0px;
     cursor: pointer;
