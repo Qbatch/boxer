@@ -66,7 +66,7 @@
   /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #fffffff7;
+  background-color: #fff;
   overflow-x: hidden;
   padding-top: 60px;
   -webkit-transition: 0.5s;
@@ -826,7 +826,7 @@ body {
             align-items: center;
   }
   .overlay-div .text-div .started-buttons button, .Succeed-your-business .started-business .started-buttons button {
-    margin: 20px 0;
+    margin: 10px 0;
     margin-right: 0 !important;
   }
   .Succeed-your-business .company-intro .customer-says .reviews {
@@ -900,7 +900,7 @@ body {
 
 @media (max-width: 575px) {
   .overlay-div .img-div {
-    height: 220px;
+    height: 400px;
     padding: 140px 0;
   }
   .reserve-data {
@@ -908,6 +908,11 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .container-bg-color .business-tools {
+    width: 100%;
+    padding: 10px !important;
+    min-height: 210px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

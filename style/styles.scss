@@ -494,7 +494,7 @@ h1{
       flex-direction: column;
       align-items: center;
       button{
-        margin: 20px 0;
+        margin: 10px 0;
         margin-right: 0!important;
       }
     }
@@ -563,10 +563,15 @@ h1{
 }
 @media (max-width:575px){
 .overlay-div .img-div{
-    height: 220px;
+    height: 400px;
     padding: 140px 0
 }
 .reserve-data{
   flex-direction:column-reverse;
+}
+.container-bg-color .business-tools {
+    width: 100%;
+    padding: 10px !important;
+    min-height: 210px;
 }
 }
