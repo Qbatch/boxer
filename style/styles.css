@@ -671,7 +671,7 @@ body {
   display: none;
 }
 
-.reserve-column {
+.reserve-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,7 +763,7 @@ body {
     margin-top: 5px;
   }
   .img-info {
-    margin: 0px 3px !important;
+    margin: 3px 3px !important;
   }
   .started-business .heading h1 {
     font-size: 26px;
@@ -791,9 +791,6 @@ body {
   }
   .overlay-div .header-control .img-div img {
     margin-left: 0;
-  }
-  .company-intro .d-flex {
-    padding: 20px 0px !important;
   }
   .Succeed-your-business .company-intro .detail-img {
     padding: 2px 19px;
@@ -832,9 +829,6 @@ body {
     margin: 20px 0;
     margin-right: 0 !important;
   }
-  .pricing h1 {
-    font-size: 27px;
-  }
   .Succeed-your-business .company-intro .customer-says .reviews {
     margin: 5px 2px;
   }
@@ -843,30 +837,14 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .Succeed-your-business .company-intro h1 {
-    font-size: 17px;
-  }
-  .Succeed-your-business .company-intro h5 {
-    font-size: 14px;
-  }
-  .Freq-heading h1 {
-    font-size: 26px;
-  }
-  .started-business .heading h1 {
-    font-size: 19px;
-    margin: 9px 0;
-  }
   .started-business .heading p {
     font-size: 14px !important;
   }
 }
 
 @media (max-width: 767px) {
-  .container-bg-color .business-tools {
-    margin: 8px 0;
-  }
   .Succeed-your-business .inner-data .col-md-6 h5, .Succeed-your-business .inner-data .col-md-6 p {
-    text-align: center;
+    text-align: left;
     font-size: 14px;
   }
   .Succeed-your-business .Ask-question .panel-title a {
@@ -875,11 +853,6 @@ body {
   .Succeed-your-business .Ask-question .panel-title > a:before {
     padding: 10px 7px;
     font-size: 14px;
-  }
-  .Succeed-your-business .inner-data {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
   }
   .company-intro .d-flex {
     -webkit-box-orient: vertical;
@@ -893,10 +866,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .Succeed-your-business .company-intro .customer-says .reviews .img-info {
-    margin: 7px 3px;
-    text-align: center;
-  }
   .Succeed-your-business .company-intro .detail-img {
     border-radius: 0 0 10px 10px;
     padding: 20px;
@@ -905,11 +874,8 @@ body {
     padding-left: 26px;
     font-size: 11px;
   }
-  .container-bg-color .business-tools {
-    min-height: 200px;
-  }
   .Tools {
-    padding: 25px !important;
+    padding: 14px !important;
   }
   .Succeed-your-business .started-business .started-buttons button {
     width: 138px;
@@ -924,24 +890,24 @@ body {
   .progress-div .container .row .col-md-4 {
     padding: 15px 7px;
   }
-  .reserve-column {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  .reserve-data {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
   }
 }
 
 @media (max-width: 575px) {
-  .overlay-div h1 {
-    font-size: 20px !important;
-  }
-  .Succeed-your-business .pricing {
-    padding: 5px !important;
-  }
   .overlay-div .img-div {
     height: 220px;
-    padding: 123px 0;
+    padding: 140px 0;
+  }
+  .reserve-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=styles.css.map */

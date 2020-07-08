@@ -71,7 +71,6 @@ font-family: myFirstFont!important;
   .button:hover{
   background-color: $white;
   color: $base-primary;
-
   }
   .m-4{
     margin-bottom: 30px;
@@ -86,7 +85,6 @@ height: auto;
 margin-left: 80px;
   }
 }
-
 }
 .container-bg-color{
   background-color: $base-gray-dark;
@@ -101,7 +99,6 @@ margin-left: 80px;
           width: 100px;
           height: 30px;
         }
-
   }
     .sound-cloud{
           width: 150px!important
@@ -113,7 +110,6 @@ margin-left: 80px;
     p{
       color: #535d73;
       font-size: 18px;
-
     }
   }
   .business-1{
@@ -155,7 +151,6 @@ margin: 15px 2px;
   }
 }
 }
-
   }
 .Succeed-your-business{
     background-color:$white;
@@ -323,7 +318,6 @@ margin: 15px 2px;
           h3{
                 padding: 17px 0;
           }
-
       }
       .col-md-6{
         margin-bottom: 50px;
@@ -354,7 +348,7 @@ margin: 15px 2px;
 .boxer-sidemenu{
   display: none;
 }
-.reserve-column{
+.reserve-data{
   display: flex;
 }
 @media (max-width: 1200px) {
@@ -398,7 +392,6 @@ margin: 15px 2px;
     padding: 10px!important
 }
 }
-
 @media (max-width: 991px) {
 .navbar{
   display: none!important;
@@ -415,10 +408,8 @@ margin: 15px 2px;
     font-size: 40px;
 }
 }
-
 .overlay-div .img-div {
     height: 475px;
-
 }
 .container-bg-color .business-tools {
     width: 100%;
@@ -450,7 +441,7 @@ margin: 15px 2px;
     margin-top: 5px;
 }
 .img-info {
-    margin: 0px 3px !important;
+    margin: 3px 3px!important
 }
 .started-business{
  .heading{
@@ -465,7 +456,6 @@ margin: 15px 2px;
     color: $white;
     margin: 10px 0px;
 }
-
 .started-buttons{
   justify-content: center;
 }
@@ -480,9 +470,6 @@ margin: 15px 2px;
       margin-left: 0;
     }
   }
-}
-.company-intro .d-flex {
-    padding: 20px 0px!important
 }
 .Succeed-your-business .company-intro .detail-img{
     padding: 2px 19px;
@@ -512,34 +499,14 @@ h1{
       }
     }
 }
-.pricing h1{
-      font-size: 27px;
-}
 .Succeed-your-business .company-intro .customer-says .reviews {
     margin: 5px 2px;
 }
 .client-info{
   justify-content: center;
 }
-.Succeed-your-business .company-intro{
-h1{
-  font-size: 17px;
-}
-  h5 {
-    font-size: 14px;
-}
-}
-.Freq-heading {
-  h1{
-    font-size: 26px;
-  }
-}
 .started-business{
   .heading{
-    h1 {
-    font-size: 19px;
-    margin: 9px 0;
-}
 p{
   font-size: 14px!important
 }
@@ -547,12 +514,10 @@ p{
 }
 }
 @media (max-width: 767px) {
-.container-bg-color .business-tools {
-        margin: 8px 0;
-}
 .Succeed-your-business .inner-data .col-md-6 h5,.Succeed-your-business .inner-data .col-md-6 p {
-    text-align: center;
+    text-align: left;
     font-size: 14px;
+
 }
 .Succeed-your-business .Ask-question .panel-title a {
     font-size: 14px;
@@ -561,21 +526,12 @@ p{
     padding: 10px 7px;
     font-size: 14px;
 }
-.Succeed-your-business .inner-data {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-}
 .company-intro {
   .d-flex{
     flex-direction: column;
         justify-content: center;
     align-items: center;
   }
-}
-.Succeed-your-business .company-intro .customer-says .reviews .img-info {
-    margin: 7px 3px;
-    text-align: center;
 }
 .Succeed-your-business .company-intro .detail-img {
     border-radius: 0 0 10px 10px;
@@ -585,12 +541,8 @@ p{
     padding-left: 26px;
     font-size: 11px;
 }
-
-.container-bg-color .business-tools {
-  min-height: 200px;
-}
 .Tools {
-    padding: 25px!important
+    padding: 14px!important
 }
 .Succeed-your-business .started-business .started-buttons button {
     width: 138px;
@@ -605,19 +557,16 @@ h1{
 .progress-div .container .row .col-md-4 {
     padding: 15px 7px;
 }
-.reserve-column{
-  flex-direction: column-reverse;;
+.reserve-data{
+  flex-direction:initial;
 }
 }
 @media (max-width:575px){
-.overlay-div h1 {
-    font-size: 20px!important
-}
-.Succeed-your-business .pricing {
-    padding: 5px!important
-}
 .overlay-div .img-div{
     height: 220px;
-    padding: 123px 0
+    padding: 140px 0
+}
+.reserve-data{
+  flex-direction:column-reverse;
 }
 }
