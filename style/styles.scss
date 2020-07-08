@@ -418,6 +418,7 @@ margin: 15px 2px;
 
 .overlay-div .img-div {
     height: 475px;
+
 }
 .container-bg-color .business-tools {
     width: 100%;
@@ -499,7 +500,7 @@ h1{
 }
 @media (max-width: 768px) {
 .overlay-div .text-div ,.Succeed-your-business .started-business{
-    padding: 0px 27px;
+    padding: 10px 27px;
     text-align: center;
     .started-buttons{
       justify-content: center;
@@ -614,5 +615,9 @@ h1{
 }
 .Succeed-your-business .pricing {
     padding: 5px!important
+}
+.overlay-div .img-div{
+    height: 220px;
+    padding: 123px 0
 }
 }
