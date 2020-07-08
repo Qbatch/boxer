@@ -295,7 +295,6 @@ body {
 
 .overlay-div .text-div {
   padding: 130px 0;
-  height: 600px;
 }
 
 .overlay-div h1 {
@@ -826,7 +825,7 @@ body {
             align-items: center;
   }
   .overlay-div .text-div .started-buttons button, .Succeed-your-business .started-business .started-buttons button {
-    margin: 10px 0;
+    margin: 15px 0;
     margin-right: 0 !important;
   }
   .Succeed-your-business .company-intro .customer-says .reviews {
@@ -875,7 +874,7 @@ body {
     font-size: 11px;
   }
   .Tools {
-    padding: 14px !important;
+    padding: 7px !important;
   }
   .Succeed-your-business .started-business .started-buttons button {
     width: 138px;

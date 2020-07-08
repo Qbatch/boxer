@@ -42,7 +42,7 @@ font-family: myFirstFont!important;
        color: $white!important
      }
      .nav-link{
-       color:#45536b!important;
+       color:$navlink-color!important;
      }
    }
  }
@@ -51,7 +51,6 @@ font-family: myFirstFont!important;
 
   .text-div{
      padding: 130px 0;
-     height: 600px;
 }
   h1{
     color: $white;
@@ -108,7 +107,7 @@ margin-left: 80px;
     font-weight: 600;
     }
     p{
-      color: #535d73;
+      color: $base-light;
       font-size: 18px;
     }
   }
@@ -169,7 +168,7 @@ margin: 15px 2px;
       padding-bottom: 4rem;
     }
     .inner-pricing-div{
-      box-shadow: 0px 3px 6px #DCE6F5;
+      box-shadow: 0px 3px 6px $base-box-shadow;
       border-radius: 10px;
       background-color: $white;
       .user-div{
@@ -494,7 +493,7 @@ h1{
       flex-direction: column;
       align-items: center;
       button{
-        margin: 10px 0;
+        margin: 15px 0;
         margin-right: 0!important;
       }
     }
@@ -542,7 +541,7 @@ p{
     font-size: 11px;
 }
 .Tools {
-    padding: 14px!important
+    padding: 7px!important
 }
 .Succeed-your-business .started-business .started-buttons button {
     width: 138px;
