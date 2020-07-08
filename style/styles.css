@@ -30,7 +30,7 @@
   color: #FFFFFF;
   background-color: transparent;
   background-image: none;
-  border: 2px solid #FFFFFF;
+  border: 1.5px solid #FFFFFF;
   width: 160px;
   border-radius: 0;
   margin: 0 0 0 6px;
@@ -89,6 +89,7 @@
   border-radius: 0;
   text-transform: uppercase;
   background-color: #0d2287;
+  font-weight: 100 !important;
 }
 
 .sidebar a {
@@ -204,7 +205,7 @@
 .copy-right .d-flex p {
   color: #FFFFFF;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 14px;
   margin: 17px 0;
 }
 
@@ -670,6 +671,12 @@ body {
   display: none;
 }
 
+.reserve-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 1200px) {
   .Succeed-your-business .company-intro
 .customer-says .reviews .img-info span {
@@ -709,10 +716,6 @@ body {
   .Succeed-your-business .company-intro .customer-says .reviews {
     padding: 10px !important;
   }
-  .overlay-div h1 {
-    color: #FFFFFF;
-    font-weight: 600;
-  }
 }
 
 @media (max-width: 991px) {
@@ -721,11 +724,15 @@ body {
   }
   .boxer-sidemenu {
     display: block;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
   .overlay-div .text-div {
     padding: 0px 30px;
     height: 200px;
+    text-align: center;
+  }
+  .overlay-div .text-div h1 {
+    font-size: 40px;
   }
   .overlay-div .img-div {
     height: 475px;
@@ -733,14 +740,9 @@ body {
   .container-bg-color .business-tools {
     width: 100%;
     padding: 10px !important;
-    font-size: 13px;
   }
   .progress-div .container .row .col-md-4 {
-    color: #FFFFFF;
     padding: 42px 7px;
-  }
-  .pricing .inner-pricing-div .user-div {
-    padding: 30px 0 0 0;
   }
   .pricing-detail .p-4 {
     padding: 15px !important;
@@ -772,16 +774,7 @@ body {
     color: #FFFFFF;
     margin: 10px 0px;
   }
-  .overlay-div
-.text-div {
-    text-align: center;
-  }
-  .overlay-div
-.text-div h1 {
-    font-size: 40px;
-  }
-  .overlay-div
-.text-div .started-buttons {
+  .started-buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -789,11 +782,6 @@ body {
   .Succeed-your-business .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 18px;
     font-size: 0.9em;
-  }
-  .overlay-div .img-div img {
-    max-width: 100%;
-    height: auto;
-    margin-left: 55px;
   }
   .overlay-div .header-control {
     -webkit-box-orient: vertical;
@@ -841,7 +829,7 @@ body {
             align-items: center;
   }
   .overlay-div .text-div .started-buttons button, .Succeed-your-business .started-business .started-buttons button {
-    margin: 8px 0;
+    margin: 20px 0;
     margin-right: 0 !important;
   }
   .pricing h1 {
@@ -932,6 +920,18 @@ body {
   }
   h1 {
     font-size: 24px !important;
+  }
+  .progress-div .container .row .col-md-4 {
+    padding: 15px 7px;
+  }
+  .reserve-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 

@@ -354,6 +354,9 @@ margin: 15px 2px;
 .boxer-sidemenu{
   display: none;
 }
+.reserve-column{
+  display: flex;
+}
 @media (max-width: 1200px) {
 .Succeed-your-business .company-intro
 .customer-says .reviews .img-info span {
@@ -394,10 +397,6 @@ margin: 15px 2px;
 .Succeed-your-business .company-intro .customer-says .reviews {
     padding: 10px!important
 }
-.overlay-div h1 {
-    color: $white;
-    font-weight: 600;
-}
 }
 
 @media (max-width: 991px) {
@@ -406,28 +405,26 @@ margin: 15px 2px;
 }
 .boxer-sidemenu{
   display: block;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 .overlay-div .text-div {
     padding: 0px 30px;
     height: 200px;
+      text-align: center;
+      h1 {
+    font-size: 40px;
 }
+}
+
 .overlay-div .img-div {
     height: 475px;
 }
 .container-bg-color .business-tools {
     width: 100%;
     padding: 10px!important;
-    font-size: 13px;
-
 }
 .progress-div .container .row .col-md-4 {
-    color: $white;
     padding: 42px 7px;
-}
-.pricing .inner-pricing-div .user-div {
-    padding: 30px 0 0 0;
-
 }
   .pricing-detail{
     .p-4{
@@ -467,25 +464,13 @@ margin: 15px 2px;
     color: $white;
     margin: 10px 0px;
 }
-.overlay-div
-.text-div{
-  text-align: center;
-h1 {
-    font-size: 40px;
-}
+
 .started-buttons{
   justify-content: center;
-}
 }
 .Succeed-your-business .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 18px;
     font-size: 0.9em;
-}
-
-.overlay-div .img-div img {
-    max-width: 100%;
-    height: auto;
-    margin-left: 55px;
 }
 .overlay-div{
   .header-control{
@@ -521,7 +506,7 @@ h1{
       flex-direction: column;
       align-items: center;
       button{
-        margin: 8px 0;
+        margin: 20px 0;
         margin-right: 0!important;
       }
     }
@@ -615,6 +600,12 @@ h3{
 }
 h1{
   font-size: 24px!important;
+}
+.progress-div .container .row .col-md-4 {
+    padding: 15px 7px;
+}
+.reserve-column{
+  flex-direction: column-reverse;;
 }
 }
 @media (max-width:575px){
