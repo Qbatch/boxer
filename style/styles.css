@@ -1,6 +1,6 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 .header-spacing {
-  padding: 45px 0 !important;
+  padding: 45px 0;
 }
 
 .navbar {
@@ -8,14 +8,14 @@
   width: 100%;
   height: 60px;
   padding: 18px;
-  position: fixed !important;
+  position: fixed;
   background-color: transparent;
-  -webkit-transition: all ease-out .5s;
-  transition: all ease-out .5s;
+  -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   padding: 10px 15px;
   font-size: 16px;
   font-weight: 100;
@@ -27,10 +27,10 @@
 }
 
 .nav-item .button {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
-  border: 1.5px solid #FFFFFF;
+  border: 1.5px solid #ffffff;
   width: 160px;
   border-radius: 0;
   margin: 0 0 0 6px;
@@ -38,16 +38,34 @@
 }
 
 .nav-item .button:hover {
-  background-color: #FFFFFF;
-  color: #0D2187;
+  background-color: #ffffff;
+  color: #0d2187;
+}
+
+.active {
+  background-color: #ffffff !important;
+  -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
+          box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
+}
+
+.active .navbar-nav .nav-item .button {
+  background-color: #0d2287;
+}
+
+.active .navbar-nav .nav-item .button:hover {
+  color: #ffffff;
+}
+
+.active .navbar-nav .nav-item .nav-link {
+  color: #45536b !important;
 }
 
 @media (max-width: 991px) {
   .header-overlay .nav-item .button {
-    color: #FFFFFF;
-    background-color: #3C5BFF;
+    color: #ffffff;
+    background-color: #3c5bff;
     background-image: none;
-    border-color: #FFFFFF;
+    border-color: #ffffff;
     margin: 11px 10px;
   }
   .navbar-dark .navbar-brand {
@@ -57,16 +75,12 @@
 
 .sidebar {
   height: 100%;
-  /* 100% Full-height */
   width: 0;
-  /* 0 width - change this with JavaScript */
   position: fixed;
-  /* Stay in place */
   z-index: 1003;
-  /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   overflow-x: hidden;
   padding-top: 60px;
   -webkit-transition: 0.5s;
@@ -80,16 +94,15 @@
   left: 25px;
 }
 
-.sidebar button {
-  color: #FFFFFF;
+.sidebar .get-started {
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
-  border-color: #FFFFFF;
-  font-weight: 600;
+  border-color: #ffffff;
   border-radius: 0;
   text-transform: uppercase;
   background-color: #0d2287;
-  font-weight: 100 !important;
+  font-weight: 100;
 }
 
 .sidebar a {
@@ -103,7 +116,7 @@
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 .sidebar .closebtn {
@@ -117,19 +130,14 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  color: white;
+  color: #ffffff;
   border: none;
   background-color: transparent;
 }
 
-.openbtn:hover {
-  background-color: #444;
-}
-
 #main {
-  -webkit-transition: margin-left .5s;
-  transition: margin-left .5s;
-  /* If you want a transition effect */
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
   padding: 20px;
   background-color: #0d2287;
   display: -webkit-box;
@@ -145,7 +153,7 @@
 
 .close-btn {
   cursor: pointer;
-  color: #8b98a9 !important;
+  color: #8b98a9;
 }
 
 @media screen and (max-height: 450px) {
@@ -184,7 +192,7 @@
 }
 
 .copy-right {
-  background-color: #0D2187;
+  background-color: #0d2187;
 }
 
 .copy-right .d-flex {
@@ -200,10 +208,11 @@
 
 .copy-right .d-flex ul li {
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .copy-right .d-flex p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 100;
   font-size: 14px;
   margin: 17px 0;
@@ -215,9 +224,6 @@
   }
   .footer p {
     font-size: 11px;
-  }
-  .footer {
-    padding: 38px 10px;
   }
 }
 
@@ -258,7 +264,10 @@
   src: url("Avenr-Font/Avenir Heavy.ttf");
 }
 
-h1, h2, h3, h6 {
+h1,
+h2,
+h3,
+h6 {
   font-weight: 600 !important;
 }
 
@@ -267,52 +276,33 @@ body {
 }
 
 .spacing {
-  padding: 45px 0 !important;
+  padding: 45px 0;
 }
 
-.jumbotron {
-  background-color: #0D2187 !important;
-  border-radius: 0 !important;
-}
-
-.active {
-  background-color: #FFFFFF !important;
-  -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
-          box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
-}
-
-.active .navbar-nav .nav-item .button {
-  background-color: #0d2287 !important;
-}
-
-.active .navbar-nav .nav-item .button:hover {
-  color: #FFFFFF !important;
-}
-
-.active .navbar-nav .nav-item .nav-link {
-  color: #45536b !important;
+.overlay-div {
+  background-color: #0d2187;
 }
 
 .overlay-div .text-div {
   padding: 130px 0;
 }
 
-.overlay-div h1 {
-  color: #FFFFFF;
+.overlay-div .h1-heading {
+  color: #ffffff;
   font-family: bold-font;
 }
 
 .overlay-div p {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 22px 0px;
 }
 
 .overlay-div .button {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
-  border: 1.5px solid #FFFFFF;
+  border: 1.5px solid #ffffff;
   padding: 7px 10px;
   border-radius: 0;
   width: 175px;
@@ -320,13 +310,13 @@ body {
 }
 
 .overlay-div .get-started-buuton {
-  background-color: #FFFFFF;
-  color: #0D2187;
+  background-color: #ffffff;
+  color: #0d2187;
 }
 
 .overlay-div .button:hover {
-  background-color: #FFFFFF;
-  color: #0D2187;
+  background-color: #ffffff;
+  color: #0d2187;
 }
 
 .overlay-div .m-4 {
@@ -346,7 +336,7 @@ body {
 }
 
 .container-bg-color {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
   padding-bottom: 8em;
 }
 
@@ -363,13 +353,13 @@ body {
   padding: 30px;
 }
 
-.container-bg-color .logs img {
+.container-bg-color .logs .logo-img {
   width: 100px;
   height: 30px;
 }
 
-.container-bg-color .sound-cloud {
-  width: 150px !important;
+.container-bg-color .logs .sound-cloud {
+  width: 150px;
 }
 
 .container-bg-color .heading h3 {
@@ -382,9 +372,9 @@ body {
 }
 
 .container-bg-color .business-1 {
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 0px 3px 6px #DCE6F5;
-          box-shadow: 0px 3px 6px #DCE6F5;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 3px 6px #dce6f5;
+          box-shadow: 0px 3px 6px #dce6f5;
   border-radius: 5px;
   min-height: 210px;
 }
@@ -398,7 +388,7 @@ body {
 }
 
 .container-bg-color .business-tools {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
           box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
   border-radius: 5px;
@@ -429,12 +419,12 @@ body {
 }
 
 .Succeed-your-business {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .Succeed-your-business .progress-div {
-  background-color: #0D2187;
-  color: #FFFFFF;
+  background-color: #0d2187;
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -443,18 +433,18 @@ body {
 }
 
 .Succeed-your-business .pricing {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
-.Succeed-your-business .pricing h1 {
-  padding-bottom: 4rem;
+.Succeed-your-business .pricing .h1-heading {
+  padding: 2rem;
 }
 
 .Succeed-your-business .pricing .inner-pricing-div {
-  -webkit-box-shadow: 0px 3px 6px #DCE6F5;
-          box-shadow: 0px 3px 6px #DCE6F5;
+  -webkit-box-shadow: 0px 3px 6px #dce6f5;
+          box-shadow: 0px 3px 6px #dce6f5;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .Succeed-your-business .pricing .inner-pricing-div .user-div {
@@ -463,21 +453,21 @@ body {
 }
 
 .Succeed-your-business .pricing .inner-pricing-div .place-order-button .button {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
-  border: 1.5px solid #FFFFFF;
+  border: 1.5px solid #ffffff;
   padding: 7px 10px;
   border-radius: 0;
   width: 175px;
   text-transform: uppercase;
-  color: #0D2187;
-  border: 1.5px solid #0D2187;
+  color: #0d2187;
+  border: 1.5px solid #0d2187;
 }
 
 .Succeed-your-business .pricing .inner-pricing-div .place-order-button :hover {
-  background-color: #0D2187;
-  color: #FFFFFF;
+  background-color: #0d2187;
+  color: #ffffff;
 }
 
 .Succeed-your-business .pricing .inner-pricing-div .order-list li {
@@ -488,7 +478,7 @@ body {
 
 .Succeed-your-business .pricing .inner-pricing-div .order-list li i {
   margin-right: 10px;
-  color: #0D2187;
+  color: #0d2187;
   font-size: 14px;
 }
 
@@ -497,8 +487,8 @@ body {
 }
 
 .Succeed-your-business .company-intro .detail-img {
-  background-color: #0D2187;
-  color: #FFFFFF;
+  background-color: #0d2187;
+  color: #ffffff;
   border-radius: 0px 10px 10px 0px;
   padding: 6px 38px;
 }
@@ -513,10 +503,10 @@ body {
 }
 
 .Succeed-your-business .company-intro .customer-says .reviews {
-  -webkit-box-shadow: 7px 7px 10px #0000001A;
-          box-shadow: 7px 7px 10px #0000001A;
-  background-color: #F7FBFF;
-  border: 1px solid #BACEE4;
+  -webkit-box-shadow: 7px 7px 10px #0000001a;
+          box-shadow: 7px 7px 10px #0000001a;
+  background-color: #f7fbff;
+  border: 1px solid #bacee4;
   border-radius: 5px;
   padding: 30px 20px;
 }
@@ -549,7 +539,7 @@ body {
 }
 
 .Succeed-your-business .Ask-question {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
   padding-bottom: 70px;
 }
 
@@ -559,7 +549,7 @@ body {
 }
 
 .Succeed-your-business .Ask-question .panel-title > a:before {
-  float: left !important;
+  float: left;
   font-family: FontAwesome;
   content: "\f068";
   padding-right: 30px;
@@ -568,7 +558,7 @@ body {
 }
 
 .Succeed-your-business .Ask-question .panel-title > a.collapsed:before {
-  float: left !important;
+  float: left;
   content: "\f067";
 }
 
@@ -590,13 +580,13 @@ body {
 }
 
 .Succeed-your-business .started-business {
-  background-color: #0D2187;
-  color: #FFFFFF;
+  background-color: #0d2187;
+  color: #ffffff;
   padding: 60px 0;
   text-align: center;
 }
 
-.Succeed-your-business .started-business .heading h1 {
+.Succeed-your-business .started-business .heading .h1-heading {
   font-family: bold-font;
 }
 
@@ -615,10 +605,10 @@ body {
 }
 
 .Succeed-your-business .started-business .started-buttons button {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
-  border: 1.5px solid #FFFFFF;
+  border: 1.5px solid #ffffff;
   padding: 7px 10px;
   border-radius: 0;
   width: 175px;
@@ -626,13 +616,13 @@ body {
 }
 
 .Succeed-your-business .started-business .started-buttons button:hover {
-  background-color: #FFFFFF;
-  color: #0D2187;
+  background-color: #ffffff;
+  color: #0d2187;
 }
 
 .Succeed-your-business .started-business .started-buttons .get-started-button {
-  background-color: #FFFFFF;
-  color: #0D2187;
+  background-color: #ffffff;
+  color: #0d2187;
 }
 
 .inner-data .heading h3 {
@@ -663,7 +653,7 @@ body {
 }
 
 .header-color {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff;
 }
 
 .boxer-sidemenu {
@@ -677,17 +667,11 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .Succeed-your-business .company-intro
-.customer-says .reviews .img-info span {
+  .Succeed-your-business .company-intro .customer-says .reviews .img-info span {
     font-weight: 100;
     font-size: 8px;
   }
-  .Succeed-your-business .company-intro
-.customer-says .reviews .img-info span .detail-img h1 {
-    font-size: 28px;
-  }
-  .Succeed-your-business .company-intro
-.customer-says .reviews .img-info span .detail-img p {
+  .Succeed-your-business .company-intro .customer-says .reviews .img-info span .detail-img p {
     font-size: 11px;
     margin-bottom: 11px;
   }
@@ -713,7 +697,7 @@ body {
     padding: 15px;
   }
   .Succeed-your-business .company-intro .customer-says .reviews {
-    padding: 10px !important;
+    padding: 10px;
   }
 }
 
@@ -726,11 +710,11 @@ body {
     padding-bottom: 70px;
   }
   .overlay-div .text-div {
-    padding: 0px 30px;
+    padding: 5px 30px;
     height: 200px;
     text-align: center;
   }
-  .overlay-div .text-div h1 {
+  .overlay-div .text-div .h1-heading {
     font-size: 40px;
   }
   .overlay-div .img-div {
@@ -738,14 +722,15 @@ body {
   }
   .container-bg-color .business-tools {
     width: 100%;
-    padding: 10px !important;
+    padding: 10px;
   }
   .progress-div .container .row .col-md-4 {
     padding: 42px 7px;
   }
-  .pricing-detail .p-4 {
-    padding: 15px !important;
-    font-size: 25px;
+  .pricing-detail .text-center {
+    padding: 15px;
+    font-size: 16px;
+    padding-bottom: 0;
   }
   .pricing-detail h5 {
     font-size: 14px;
@@ -761,16 +746,16 @@ body {
     line-height: 24px;
     margin-top: 5px;
   }
-  .img-info {
-    margin: 3px 3px !important;
+  .Succeed-your-business .company-intro .customer-says .reviews .img-info {
+    margin: 3px 3px;
   }
-  .started-business .heading h1 {
+  .started-business .heading .h1-heading {
     font-size: 26px;
     margin: 9px 0;
   }
   .overlay-div p {
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 10px 0px;
   }
   .started-buttons {
@@ -794,9 +779,9 @@ body {
   .Succeed-your-business .company-intro .detail-img {
     padding: 2px 19px;
   }
-  .Succeed-your-business .company-intro .detail-img h1 {
+  .Succeed-your-business .company-intro .detail-img .h1-heading {
     font-size: 26px;
-    margin-bottom: 3px !important;
+    margin-bottom: 3px;
   }
   .Succeed-your-business .company-intro .detail-img p {
     font-size: 11px;
@@ -808,11 +793,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .overlay-div .text-div, .Succeed-your-business .started-business {
+  .overlay-div .text-div,
+  .Succeed-your-business .started-business {
     padding: 10px 27px;
     text-align: center;
   }
-  .overlay-div .text-div .started-buttons, .Succeed-your-business .started-business .started-buttons {
+  .overlay-div .text-div .started-buttons,
+  .Succeed-your-business .started-business .started-buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -824,9 +811,12 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .overlay-div .text-div .started-buttons button, .Succeed-your-business .started-business .started-buttons button {
+  .overlay-div .text-div .started-buttons button,
+  .overlay-div .text-div .started-buttons .mr-3,
+  .Succeed-your-business .started-business .started-buttons button,
+  .Succeed-your-business .started-business .started-buttons .mr-3 {
     margin: 15px 0;
-    margin-right: 0 !important;
+    margin-right: 0;
   }
   .Succeed-your-business .company-intro .customer-says .reviews {
     margin: 5px 2px;
@@ -836,13 +826,14 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .started-business .heading p {
-    font-size: 14px !important;
+  .Succeed-your-business .started-business .heading p {
+    font-size: 14px;
   }
 }
 
 @media (max-width: 767px) {
-  .Succeed-your-business .inner-data .col-md-6 h5, .Succeed-your-business .inner-data .col-md-6 p {
+  .Succeed-your-business .inner-data .col-md-6 h5,
+  .Succeed-your-business .inner-data .col-md-6 p {
     text-align: left;
     font-size: 14px;
   }
@@ -873,18 +864,20 @@ body {
     padding-left: 26px;
     font-size: 11px;
   }
-  .Tools {
-    padding: 7px !important;
+  .container-bg-color .business-tools .Tools {
+    padding: 7px;
   }
   .Succeed-your-business .started-business .started-buttons button {
     width: 138px;
     font-size: 14px;
   }
-  h3 {
-    font-size: 20px !important;
+  .Shipment-heading,
+  .User-heading {
+    font-size: 20px;
   }
-  h1 {
-    font-size: 24px !important;
+  .overlay-div .text-div h1,
+  .h1-heading {
+    font-size: 24px;
   }
   .progress-div .container .row .col-md-4 {
     padding: 15px 7px;
@@ -910,7 +903,7 @@ body {
   }
   .container-bg-color .business-tools {
     width: 100%;
-    padding: 10px !important;
+    padding: 10px;
     min-height: 210px;
   }
 }

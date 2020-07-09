@@ -1,73 +1,71 @@
 @import "../varibale";
-.footer{
-  img{
-width: 150px;
+.footer {
+  img {
+    width: 150px;
     margin: 15px 0 0 0;
   }
-  p{
+  p {
     color: $base-light;
     font-size: 18px;
   }
-  .inner-list{
-    h4{
+  .inner-list {
+    h4 {
       font-weight: 600;
     }
     padding: 28px 14px;
-    li{
-       font-size: 14px;
-    font-weight: 300;
-    padding: 3px 0px;
-    cursor: pointer;
-    color: #525f75;
+    li {
+      font-size: 14px;
+      font-weight: 300;
+      padding: 3px 0px;
+      cursor: pointer;
+      color: $footer-li-color;
     }
   }
 }
-.copy-right{
+.copy-right {
   background-color: $base-primary;
-  .d-flex{
+  .d-flex {
     justify-content: space-between;
-        padding: 5px 0;
-  ul{
-    margin: 14px 5px;
-    li{
-      margin: 0 5px;
+    padding: 5px 0;
+    ul {
+      margin: 14px 5px;
+      li {
+        margin: 0 5px;
+        cursor: pointer;
+      }
+    }
+    p {
+      color: $white;
+      font-weight: 100;
+      font-size: 14px;
+      margin: 17px 0;
     }
   }
-  p{
-        color: $white;
-    font-weight: 100;
-    font-size: 14px;
-    margin: 17px 0;
-  }
 }
-}
-@media (max-width:991px){
+@media (max-width: 991px) {
   .footer .inner-list li {
     font-size: 12px;
-}
-.footer p {
+  }
+  .footer p {
     font-size: 11px;
-}
-.footer {
-    padding: 38px 10px;
-}
-}
-@media (max-width:1024px){
-  .footer {
-    padding: 50px 22px;
-}
-}
-@media (max-width:575px){
-  .copy-right .d-flex {
-    flex-direction: column
-}
-.footer-icon{
-  .d-flex{
-        flex-direction: row;
-    justify-content: center;
   }
 }
-.copyright-2020{
-  text-align: center;
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 22px;
+  }
 }
+@media (max-width: 575px) {
+  .copy-right .d-flex {
+    flex-direction: column;
+  }
+  .footer-icon {
+    .d-flex {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  .copyright-2020 {
+    text-align: center;
+  }
 }

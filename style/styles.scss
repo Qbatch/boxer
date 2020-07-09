@@ -3,574 +3,554 @@
 @import "./fonts";
 @import "./varibale";
 @import "./default";
-body{
-font-family: myFirstFont!important;
+body {
+  font-family: myFirstFont !important;
 }
 @mixin Boxer-button {
-  color:$white;
-    background-color: transparent;
-    background-image: none;
-    border:1.5px solid $white;
-    padding:7px 10px;
-    border-radius: 0;
-    width: 175px;
-    text-transform: uppercase;
+  color: $white;
+  background-color: transparent;
+  background-image: none;
+  border: 1.5px solid $white;
+  padding: 7px 10px;
+  border-radius: 0;
+  width: 175px;
+  text-transform: uppercase;
 }
 @mixin heading {
-    font-family: bold-font;
+  font-family: bold-font;
 }
 @mixin get-started-button {
-      background-color: $white;
-    color: $base-primary;
+  background-color: $white;
+  color: $base-primary;
 }
 .spacing {
-  padding: 45px 0 !important
+  padding: 45px 0;
 }
-.jumbotron {
-  background-color: $base-primary!important;
-  border-radius: 0!important;
+.overlay-div {
+  background-color: $base-primary;
 }
-.active {
-  background-color: $white!important;
- box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
- .navbar-nav{
-   .nav-item{
-     .button{
-       background-color: $base-secondary!important
-     }
-     .button:hover{
-       color: $white!important
-     }
-     .nav-link{
-       color:$navlink-color!important;
-     }
-   }
- }
-}
-.overlay-div{
 
-  .text-div{
-     padding: 130px 0;
-}
-  h1{
-    color: $white;
-  @include heading;
+.overlay-div {
+  .text-div {
+    padding: 130px 0;
   }
-  p{
- font-size: 18px;
+  .h1-heading {
+    color: $white;
+    @include heading;
+  }
+  p {
+    font-size: 18px;
     color: $white;
     margin: 22px 0px;
   }
-  .button{
-    @include Boxer-button
+  .button {
+    @include Boxer-button;
   }
-  .get-started-buuton{
-@include get-started-button;
+  .get-started-buuton {
+    @include get-started-button;
   }
-  .button:hover{
-  background-color: $white;
-  color: $base-primary;
+  .button:hover {
+    background-color: $white;
+    color: $base-primary;
   }
-  .m-4{
+  .m-4 {
     margin-bottom: 30px;
   }
-.img-div{
-  text-align: right;
-      padding: 100px 0;
-  height: 600px;
-    img{
-max-width:100%;
-height: auto;
-margin-left: 80px;
+  .img-div {
+    text-align: right;
+    padding: 100px 0;
+    height: 600px;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-left: 80px;
+    }
   }
 }
-}
-.container-bg-color{
+.container-bg-color {
   background-color: $base-gray-dark;
-  padding-bottom:8em;
-  .brand-9{
+  padding-bottom: 8em;
+  .brand-9 {
     display: flex;
     justify-content: center;
   }
-  .logs{
-        padding: 30px;
-        img{
-          width: 100px;
-          height: 30px;
-        }
-  }
-    .sound-cloud{
-          width: 150px!important
-        }
-  .heading{
-    h3{
-    font-weight: 600;
+  .logs {
+    padding: 30px;
+    .logo-img {
+      width: 100px;
+      height: 30px;
     }
-    p{
+    .sound-cloud {
+      width: 150px;
+    }
+  }
+
+  .heading {
+    h3 {
+      font-weight: 600;
+    }
+    p {
       color: $base-light;
       font-size: 18px;
     }
   }
-  .business-1{
-    background-color: $white;
-    box-shadow: 0px 3px 6px #DCE6F5;
-border-radius: 5px;
-min-height: 210px;
-span{
-  font-weight: 600;
-}
-.paragraph p{
-  color: $base-light;;
-}
-}
-.business-tools{
-  background-color: $white;
-box-shadow: 0 4px 3px 0 rgba(34,90,182,.12), 0 0 1px 0 rgba(41,92,176,.25);
-  border-radius: 5px;
-margin: 15px 2px;
-    min-height: 290px;
-  .Tools{
-    padding:50px;
-    .track-shipment{
-      margin-bottom: 20px;
 
+  .business-1 {
+    background-color: $white;
+    box-shadow: 0px 3px 6px $base-box-shadow;
+    border-radius: 5px;
+    min-height: 210px;
+    span {
+      font-weight: 600;
     }
-   .paragraph {
-   p{
-        color: $paragraph-color;
-        font-size: 18px;
-      }
+    .paragraph p {
+      color: $base-light;
     }
-  img{
-    width: 35px;
   }
-  span{
+  .business-tools {
+    background-color: $white;
+    box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12),
+      0 0 1px 0 rgba(41, 92, 176, 0.25);
+    border-radius: 5px;
+    margin: 15px 2px;
+    min-height: 290px;
+    .Tools {
+      padding: 50px;
+      .track-shipment {
+        margin-bottom: 20px;
+      }
+      .paragraph {
+        p {
+          color: $paragraph-color;
+          font-size: 18px;
+        }
+      }
+      img {
+        width: 35px;
+      }
+      span {
         font-weight: 800;
         font-size: 20px;
-  }
-}
-}
-  }
-.Succeed-your-business{
-    background-color:$white;
-
-  .progress-div{
-    background-color: $base-primary;
-        color: $white;
-    padding: 10px;
-          p{
-            font-size: 18px;
-          }
-  }
-  .pricing{
-    background-color: $background-color;
-    h1{
-      padding-bottom: 4rem;
+      }
     }
-    .inner-pricing-div{
+  }
+}
+.Succeed-your-business {
+  background-color: $white;
+
+  .progress-div {
+    background-color: $base-primary;
+    color: $white;
+    padding: 10px;
+    p {
+      font-size: 18px;
+    }
+  }
+  .pricing {
+    background-color: $background-color;
+    .h1-heading {
+      padding: 2rem;
+    }
+    .inner-pricing-div {
       box-shadow: 0px 3px 6px $base-box-shadow;
       border-radius: 10px;
       background-color: $white;
-      .user-div{
-          border-bottom: 1px solid #eae8e8;
-    padding: 30px;
+      .user-div {
+        border-bottom: 1px solid #eae8e8;
+        padding: 30px;
       }
-      .place-order-button{
-        .button{
+      .place-order-button {
+        .button {
           @include Boxer-button;
           color: $base-primary;
-          border: 1.5px solid $base-primary ;
+          border: 1.5px solid $base-primary;
         }
-        :hover{
+        :hover {
           background-color: $base-primary;
-          color:$white;
+          color: $white;
         }
       }
-      .order-list{
-        li{
-           padding:7px 0 7px 80px;
-            font-size: 14px;
-            font-weight: 200;
-        i{
-          margin-right: 10px;
-          color: $base-primary;
+      .order-list {
+        li {
+          padding: 7px 0 7px 80px;
           font-size: 14px;
+          font-weight: 200;
+          i {
+            margin-right: 10px;
+            color: $base-primary;
+            font-size: 14px;
+          }
         }
-      }
       }
     }
   }
-  .company-intro{
-    img{
+  .company-intro {
+    img {
       max-width: 100%;
     }
-    .detail-img{
+    .detail-img {
       background-color: $base-primary;
-    color: $white;
-    border-radius: 0px 10px 10px 0px;
-        padding: 6px 38px;
+      color: $white;
+      border-radius: 0px 10px 10px 0px;
+      padding: 6px 38px;
 
-    p{
-      font-size: 14px;
-    font-weight: 100;
+      p {
+        font-size: 14px;
+        font-weight: 100;
+      }
     }
-    }
-    .customer-says{
+    .customer-says {
       margin-bottom: 4em;
-      .reviews{
-     box-shadow: 7px 7px 10px #0000001A;
+      .reviews {
+        box-shadow: 7px 7px 10px #0000001a;
         background-color: $background-color;
-         border: 1px solid #BACEE4;
-         border-radius: 5px;
-         padding: 30px 20px;
-        p{
-          color: $base-light;;
-           font-size: 18x;
-             line-height: 28px;
-            margin-top: 20px;
-              font-weight: 300;
+        border: 1px solid #bacee4;
+        border-radius: 5px;
+        padding: 30px 20px;
+        p {
+          color: $base-light;
+          font-size: 18x;
+          line-height: 28px;
+          margin-top: 20px;
+          font-weight: 300;
         }
-        .img-info{
+        .img-info {
           margin: 7px 13px;
-          h6{
+          h6 {
             font-weight: 400;
-    font-size: 15px;
-    margin: 0;
+            font-size: 15px;
+            margin: 0;
           }
-          span{
+          span {
             font-weight: 100;
-                font-size: 12px;
+            font-size: 12px;
           }
         }
       }
     }
-        h5{
-          color:$base-light;;
-        }
+    h5 {
+      color: $base-light;
+    }
   }
-  .Ask-question{
+  .Ask-question {
     background-color: $background-color;
     padding-bottom: 70px;
-    .panel{
+    .panel {
       padding: 30px 0;
       border-top: 1px solid $border-color;
     }
-.panel-title > a:before {
-    float: left !important;
-    font-family: FontAwesome;
-    content:"\f068";
-    padding-right: 30px;
-    font-size: 20px;
-    color: $heading-color;
-}
-.panel-title > a.collapsed:before {
-    float: left !important;
-    content:"\f067";
-}
-.panel-title > a:hover,
-.panel-title > a:active,
-.panel-title > a:focus  {
-    text-decoration:none;
-}
-.panel-title a{
-  color: $heading-color;
-    font-size: 20px;
-    font-weight: 600;
-}
-.panel-body{
-  padding-left: 45px;
-  font-size: 18px;
-}
+    .panel-title > a:before {
+      float: left;
+      font-family: FontAwesome;
+      content: "\f068";
+      padding-right: 30px;
+      font-size: 20px;
+      color: $heading-color;
+    }
+    .panel-title > a.collapsed:before {
+      float: left;
+      content: "\f067";
+    }
+    .panel-title > a:hover,
+    .panel-title > a:active,
+    .panel-title > a:focus {
+      text-decoration: none;
+    }
+    .panel-title a {
+      color: $heading-color;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .panel-body {
+      padding-left: 45px;
+      font-size: 18px;
+    }
   }
-.started-business{
-  background-color: $base-primary;
-  color: $white;
-  padding: 60px 0;
+  .started-business {
+    background-color: $base-primary;
+    color: $white;
+    padding: 60px 0;
     text-align: center;
-    .heading{
-      h1{
+    .heading {
+      .h1-heading {
         @include heading;
       }
-      p{
+      p {
         font-size: 18px;
       }
     }
-     .started-buttons {
-          justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    button{
-      @include Boxer-button;
-    }
-    button:hover{
-      background-color: $white;
-      color:$base-primary ;
-    }
-    .get-started-button{
-      @include get-started-button
-    }
-    }
-}
-}
- .inner-data{
-      .heading{
-          h3{
-                padding: 17px 0;
-          }
+    .started-buttons {
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      button {
+        @include Boxer-button;
       }
-      .col-md-6{
-        margin-bottom: 50px;
-        h5{
-          font-weight: 600;
-          color: $heading-color;
-        }
-        p{
-          color: $base-light;
-          font-size: 18px;
-          text-align: left;
-        }
-        .shipment-img{
-          img{
-            width: 175px
-          }
-        }
-        }
+      button:hover {
+        background-color: $white;
+        color: $base-primary;
+      }
+      .get-started-button {
+        @include get-started-button;
+      }
+    }
   }
-#main{
-  img{
+}
+.inner-data {
+  .heading {
+    h3 {
+      padding: 17px 0;
+    }
+  }
+  .col-md-6 {
+    margin-bottom: 50px;
+    h5 {
+      font-weight: 600;
+      color: $heading-color;
+    }
+    p {
+      color: $base-light;
+      font-size: 18px;
+      text-align: left;
+    }
+    .shipment-img {
+      img {
+        width: 175px;
+      }
+    }
+  }
+}
+#main {
+  img {
     width: 118px;
   }
 }
-.header-color{
-  background-color: $white!important
+.header-color {
+  background-color: $white;
 }
-.boxer-sidemenu{
+.boxer-sidemenu {
   display: none;
 }
-.reserve-data{
+.reserve-data {
   display: flex;
 }
 @media (max-width: 1200px) {
-.Succeed-your-business .company-intro
-.customer-says .reviews .img-info span {
+  .Succeed-your-business .company-intro .customer-says .reviews .img-info span {
     font-weight: 100;
     font-size: 8px;
- .detail-img {
-  h1{
-    font-size: 28px;
-  }
-     p{
-   font-size: 11px;
-       margin-bottom: 11px;
+    .detail-img {
+      p {
+        font-size: 11px;
+        margin-bottom: 11px;
+      }
     }
-}
- }
-.container-bg-color .business-tools .Tools
-{
-  padding: 35px;
-   span {
-    font-size: 17px;
-}
-}
-.Succeed-your-business .company-intro .detail-img p {
+  }
+  .container-bg-color .business-tools .Tools {
+    padding: 35px;
+    span {
+      font-size: 17px;
+    }
+  }
+  .Succeed-your-business .company-intro .detail-img p {
     font-size: 11px;
-}
-.overlay-div .img-div img {
+  }
+  .overlay-div .img-div img {
     margin-left: 62px;
-}
+  }
 }
 @media (max-width: 1024px) {
-
-.Succeed-your-business .pricing .inner-pricing-div .order-list li {
+  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 60px;
-}
-.Succeed-your-business .pricing .inner-pricing-div .user-div {
+  }
+  .Succeed-your-business .pricing .inner-pricing-div .user-div {
     padding: 15px;
-}
-.Succeed-your-business .company-intro .customer-says .reviews {
-    padding: 10px!important
-}
+  }
+  .Succeed-your-business .company-intro .customer-says .reviews {
+    padding: 10px;
+  }
 }
 @media (max-width: 991px) {
-.navbar{
-  display: none!important;
-}
-.boxer-sidemenu{
-  display: block;
-  padding-bottom: 70px;
-}
-.overlay-div .text-div {
-    padding: 0px 30px;
+  .navbar {
+    display: none !important;
+  }
+  .boxer-sidemenu {
+    display: block;
+    padding-bottom: 70px;
+  }
+  .overlay-div .text-div {
+    padding: 5px 30px;
     height: 200px;
-      text-align: center;
-      h1 {
-    font-size: 40px;
-}
-}
-.overlay-div .img-div {
-    height: 475px;
-}
-.container-bg-color .business-tools {
-    width: 100%;
-    padding: 10px!important;
-}
-.progress-div .container .row .col-md-4 {
-    padding: 42px 7px;
-}
-  .pricing-detail{
-    .p-4{
-    padding: 15px !important;
-    font-size: 25px;
+    text-align: center;
+    .h1-heading {
+      font-size: 40px;
     }
-    h5{
+  }
+  .overlay-div .img-div {
+    height: 475px;
+  }
+  .container-bg-color .business-tools {
+    width: 100%;
+    padding: 10px;
+  }
+  .progress-div .container .row .col-md-4 {
+    padding: 42px 7px;
+  }
+  .pricing-detail {
+    .text-center {
+      padding: 15px;
+      font-size: 16px;
+      padding-bottom: 0;
+    }
+    h5 {
       font-size: 14px;
     }
   }
-   .pricing{
-        h1{
-          font-size: 28px;
-        }
-        .inner-pricing-div .order-list li {
-    padding: 7px 0 7px 22px
-}
-      }
-.Succeed-your-business .company-intro .customer-says .reviews p {
+  .pricing {
+    h1 {
+      font-size: 28px;
+    }
+    .inner-pricing-div .order-list li {
+      padding: 7px 0 7px 22px;
+    }
+  }
+  .Succeed-your-business .company-intro .customer-says .reviews p {
     font-size: 10px;
     line-height: 24px;
     margin-top: 5px;
-}
-.img-info {
-    margin: 3px 3px!important
-}
-.started-business{
- .heading{
-   h1{
-         font-size: 26px;
-    margin: 9px 0;
-   }
- }
-}
-.overlay-div p {
+  }
+  .Succeed-your-business .company-intro .customer-says .reviews .img-info {
+    margin: 3px 3px;
+  }
+  .started-business {
+    .heading {
+      .h1-heading {
+        font-size: 26px;
+        margin: 9px 0;
+      }
+    }
+  }
+  .overlay-div p {
     font-size: 14px;
     color: $white;
     margin: 10px 0px;
-}
-.started-buttons{
-  justify-content: center;
-}
-.Succeed-your-business .pricing .inner-pricing-div .order-list li {
+  }
+  .started-buttons {
+    justify-content: center;
+  }
+  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
     padding: 7px 0 7px 18px;
     font-size: 0.9em;
-}
-.overlay-div{
-  .header-control{
-    flex-direction: column;
-    .img-div img{
-      margin-left: 0;
+  }
+  .overlay-div {
+    .header-control {
+      flex-direction: column;
+      .img-div img {
+        margin-left: 0;
+      }
     }
   }
-}
-.Succeed-your-business .company-intro .detail-img{
+  .Succeed-your-business .company-intro .detail-img {
     padding: 2px 19px;
-h1{
-  font-size: 26px;
-  margin-bottom: 3px!important;
-} p {
-    font-size: 11px;
-    margin-bottom: 6px;
-}
-}
-.Succeed-your-business .progress-div p {
+    .h1-heading {
+      font-size: 26px;
+      margin-bottom: 3px;
+    }
+    p {
+      font-size: 11px;
+      margin-bottom: 6px;
+    }
+  }
+  .Succeed-your-business .progress-div p {
     font-size: 14px;
-}
+  }
 }
 @media (max-width: 768px) {
-.overlay-div .text-div ,.Succeed-your-business .started-business{
+  .overlay-div .text-div,
+  .Succeed-your-business .started-business {
     padding: 10px 27px;
     text-align: center;
-    .started-buttons{
+    .started-buttons {
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      button{
+      button,
+      .mr-3 {
         margin: 15px 0;
-        margin-right: 0!important;
+        margin-right: 0;
       }
     }
-}
-.Succeed-your-business .company-intro .customer-says .reviews {
-    margin: 5px 2px;
-}
-.client-info{
-  justify-content: center;
-}
-.started-business{
-  .heading{
-p{
-  font-size: 14px!important
-}
   }
-}
+  .Succeed-your-business .company-intro .customer-says .reviews {
+    margin: 5px 2px;
+  }
+  .client-info {
+    justify-content: center;
+  }
+  .Succeed-your-business .started-business .heading p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
-.Succeed-your-business .inner-data .col-md-6 h5,.Succeed-your-business .inner-data .col-md-6 p {
+  .Succeed-your-business .inner-data .col-md-6 h5,
+  .Succeed-your-business .inner-data .col-md-6 p {
     text-align: left;
     font-size: 14px;
-
-}
-.Succeed-your-business .Ask-question .panel-title a {
+  }
+  .Succeed-your-business .Ask-question .panel-title a {
     font-size: 14px;
-}
-.Succeed-your-business .Ask-question .panel-title > a:before {
+  }
+  .Succeed-your-business .Ask-question .panel-title > a:before {
     padding: 10px 7px;
     font-size: 14px;
-}
-.company-intro {
-  .d-flex{
-    flex-direction: column;
-        justify-content: center;
-    align-items: center;
   }
-}
-.Succeed-your-business .company-intro .detail-img {
+  .company-intro {
+    .d-flex {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .Succeed-your-business .company-intro .detail-img {
     border-radius: 0 0 10px 10px;
-    padding: 20px
-}
-.Succeed-your-business .Ask-question .panel-body {
+    padding: 20px;
+  }
+  .Succeed-your-business .Ask-question .panel-body {
     padding-left: 26px;
     font-size: 11px;
-}
-.Tools {
-    padding: 7px!important
-}
-.Succeed-your-business .started-business .started-buttons button {
+  }
+  .container-bg-color .business-tools .Tools {
+    padding: 7px;
+  }
+  .Succeed-your-business .started-business .started-buttons button {
     width: 138px;
     font-size: 14px;
-}
-h3{
-  font-size: 20px!important;
-}
-h1{
-  font-size: 24px!important;
-}
-.progress-div .container .row .col-md-4 {
+  }
+  .Shipment-heading,
+  .User-heading {
+    font-size: 20px;
+  }
+  .overlay-div .text-div h1,
+  .h1-heading {
+    font-size: 24px;
+  }
+  .progress-div .container .row .col-md-4 {
     padding: 15px 7px;
+  }
+  .reserve-data {
+    flex-direction: initial;
+  }
 }
-.reserve-data{
-  flex-direction:initial;
-}
-}
-@media (max-width:575px){
-.overlay-div .img-div{
+@media (max-width: 575px) {
+  .overlay-div .img-div {
     height: 400px;
-    padding: 140px 0
-}
-.reserve-data{
-  flex-direction:column-reverse;
-}
-.container-bg-color .business-tools {
+    padding: 140px 0;
+  }
+  .reserve-data {
+    flex-direction: column-reverse;
+  }
+  .container-bg-color .business-tools {
     width: 100%;
-    padding: 10px !important;
+    padding: 10px;
     min-height: 210px;
-}
+  }
 }
