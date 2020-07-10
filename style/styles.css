@@ -1,5 +1,5 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
-.header-spacing {
+#Header {
   padding: 45px 0;
 }
 
@@ -14,19 +14,19 @@
   transition: all ease-out 0.5s;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  color: #ffffff !important;
-  padding: 10px 15px;
-  font-size: 16px;
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  padding: 10px 8px;
+  font-size: 15px;
   font-weight: 100;
   letter-spacing: 1px;
 }
 
-.navbar-brand img {
+.navbar-brand .navbar-img {
   width: 118px;
 }
 
-.nav-item .button {
+.nav-item .get-started-button {
   color: #ffffff;
   background-color: transparent;
   background-image: none;
@@ -37,30 +37,19 @@
   text-transform: uppercase;
 }
 
-.nav-item .button:hover {
+.nav-item .get-started-button .get-started-button:hover {
   background-color: #ffffff;
   color: #0d2187;
 }
 
-.active {
-  background-color: #ffffff !important;
-  -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
-          box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
-}
-
-.active .navbar-nav .nav-item .button {
-  background-color: #0d2287;
-}
-
-.active .navbar-nav .nav-item .button:hover {
-  color: #ffffff;
-}
-
-.active .navbar-nav .nav-item .nav-link {
-  color: #45536b !important;
+.boxer-sidemenu {
+  display: none;
 }
 
 @media (max-width: 991px) {
+  #Header {
+    display: none !important;
+  }
   .header-overlay .nav-item .button {
     color: #ffffff;
     background-color: #3c5bff;
@@ -87,7 +76,7 @@
   transition: 0.5s;
 }
 
-.sidebar img {
+.sidebar .sidebar-img {
   width: 118px;
   position: absolute;
   top: 15px;
@@ -105,7 +94,7 @@
   font-weight: 100;
 }
 
-.sidebar a {
+.sidebar .sidebar-link {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 12px;
@@ -115,7 +104,7 @@
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar .sidebar-link:hover {
   color: #ffffff;
 }
 
@@ -135,7 +124,7 @@
   background-color: transparent;
 }
 
-#main {
+.sidemenu {
   -webkit-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
   padding: 20px;
@@ -160,17 +149,35 @@
   .sidebar {
     padding-top: 68px;
   }
-  .sidebar a {
+  .sidebar .sidebar-link {
     font-size: 12px;
   }
 }
 
-.footer img {
+.active {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
+          box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
+}
+
+.active #navbarResponsive .navbar-nav .nav-item .button {
+  background-color: #0d2287;
+}
+
+.active #navbarResponsive .navbar-nav .nav-item .button:hover {
+  color: #ffffff;
+}
+
+.active #navbarResponsive .navbar-nav .nav-item .nav-link {
+  color: #45536b;
+}
+
+.footer .footer-logo {
   width: 150px;
   margin: 15px 0 0 0;
 }
 
-.footer p {
+.footer .footer-paragraph {
   color: #535d73;
   font-size: 18px;
 }
@@ -179,11 +186,11 @@
   padding: 28px 14px;
 }
 
-.footer .inner-list h4 {
+.footer .inner-list .footer-heading {
   font-weight: 600;
 }
 
-.footer .inner-list li {
+.footer .inner-list .footer-links {
   font-size: 14px;
   font-weight: 300;
   padding: 3px 0px;
@@ -202,27 +209,27 @@
   padding: 5px 0;
 }
 
-.copy-right .d-flex ul {
+.copy-right .d-flex .copyright-list {
   margin: 14px 5px;
 }
 
-.copy-right .d-flex ul li {
+.copy-right .d-flex .copyright-list .social-icon {
   margin: 0 5px;
   cursor: pointer;
 }
 
-.copy-right .d-flex p {
+.copy-right .d-flex .copyright-paragraph {
   color: #ffffff;
   font-weight: 100;
   font-size: 14px;
-  margin: 17px 0;
+  margin: 26px 0;
 }
 
 @media (max-width: 991px) {
-  .footer .inner-list li {
+  .footer .inner-list .footer-links {
     font-size: 12px;
   }
-  .footer p {
+  .footer .footer-paragraph {
     font-size: 11px;
   }
 }
@@ -264,15 +271,8 @@
   src: url("Avenr-Font/Avenir Heavy.ttf");
 }
 
-h1,
-h2,
-h3,
-h6 {
-  font-weight: 600 !important;
-}
-
-body {
-  font-family: myFirstFont !important;
+.body {
+  font-family: myFirstFont;
 }
 
 .spacing {
@@ -292,7 +292,7 @@ body {
   font-family: bold-font;
 }
 
-.overlay-div p {
+.overlay-div .amazon-para {
   font-size: 18px;
   color: #ffffff;
   margin: 22px 0px;
@@ -309,9 +309,10 @@ body {
   text-transform: uppercase;
 }
 
-.overlay-div .get-started-buuton {
+.overlay-div .get-started-button {
   background-color: #ffffff;
   color: #0d2187;
+  margin-right: 10px;
 }
 
 .overlay-div .button:hover {
@@ -329,7 +330,7 @@ body {
   height: 600px;
 }
 
-.overlay-div .img-div img {
+.overlay-div .img-div .laptop-img {
   max-width: 100%;
   height: auto;
   margin-left: 80px;
@@ -362,29 +363,9 @@ body {
   width: 150px;
 }
 
-.container-bg-color .heading h3 {
-  font-weight: 600;
-}
-
-.container-bg-color .heading p {
+.container-bg-color .heading .business-paragraph {
   color: #535d73;
   font-size: 18px;
-}
-
-.container-bg-color .business-1 {
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 6px #dce6f5;
-          box-shadow: 0px 3px 6px #dce6f5;
-  border-radius: 5px;
-  min-height: 210px;
-}
-
-.container-bg-color .business-1 span {
-  font-weight: 600;
-}
-
-.container-bg-color .business-1 .paragraph p {
-  color: #535d73;
 }
 
 .container-bg-color .business-tools {
@@ -404,18 +385,32 @@ body {
   margin-bottom: 20px;
 }
 
-.container-bg-color .business-tools .Tools .paragraph p {
+.container-bg-color .business-tools .Tools .paragraph .pl-2 {
   color: #535d73;
   font-size: 18px;
 }
 
-.container-bg-color .business-tools .Tools img {
+.container-bg-color .business-tools .Tools .Tools-img {
   width: 35px;
 }
 
-.container-bg-color .business-tools .Tools span {
+.container-bg-color .business-tools .Tools .img-detail {
   font-weight: 800;
   font-size: 20px;
+}
+
+.inner-data .col-md-6 {
+  margin-bottom: 50px;
+}
+
+.inner-data .col-md-6 .business-detail {
+  color: #535d73;
+  font-size: 18px;
+  text-align: left;
+}
+
+.inner-data .col-md-6 .shipment .shipment-img {
+  width: 175px;
 }
 
 .Succeed-your-business {
@@ -428,7 +423,7 @@ body {
   padding: 10px;
 }
 
-.Succeed-your-business .progress-div p {
+.Succeed-your-business .progress-div .revenue-heading {
   font-size: 18px;
 }
 
@@ -470,19 +465,19 @@ body {
   color: #ffffff;
 }
 
-.Succeed-your-business .pricing .inner-pricing-div .order-list li {
+.Succeed-your-business .pricing .inner-pricing-div .order-list .check-li {
   padding: 7px 0 7px 80px;
   font-size: 14px;
   font-weight: 200;
 }
 
-.Succeed-your-business .pricing .inner-pricing-div .order-list li i {
+.Succeed-your-business .pricing .inner-pricing-div .order-list .check-li .check-icon {
   margin-right: 10px;
   color: #0d2187;
   font-size: 14px;
 }
 
-.Succeed-your-business .company-intro img {
+.Succeed-your-business .company-intro .client-img {
   max-width: 100%;
 }
 
@@ -493,7 +488,7 @@ body {
   padding: 6px 38px;
 }
 
-.Succeed-your-business .company-intro .detail-img p {
+.Succeed-your-business .company-intro .detail-img .company-paragraph {
   font-size: 14px;
   font-weight: 100;
 }
@@ -506,12 +501,12 @@ body {
   -webkit-box-shadow: 7px 7px 10px #0000001a;
           box-shadow: 7px 7px 10px #0000001a;
   background-color: #f7fbff;
-  border: 1px solid #bacee4;
+  border: 1px solid #eae8e8;
   border-radius: 5px;
   padding: 30px 20px;
 }
 
-.Succeed-your-business .company-intro .customer-says .reviews p {
+.Succeed-your-business .company-intro .customer-says .reviews .reviews-paragraph {
   color: #535d73;
   font-size: 18x;
   line-height: 28px;
@@ -523,19 +518,15 @@ body {
   margin: 7px 13px;
 }
 
-.Succeed-your-business .company-intro .customer-says .reviews .img-info h6 {
+.Succeed-your-business .company-intro .customer-says .reviews .img-info .client-heading {
   font-weight: 400;
   font-size: 15px;
   margin: 0;
 }
 
-.Succeed-your-business .company-intro .customer-says .reviews .img-info span {
+.Succeed-your-business .company-intro .customer-says .reviews .img-info .client-title {
   font-weight: 100;
   font-size: 12px;
-}
-
-.Succeed-your-business .company-intro h5 {
-  color: #535d73;
 }
 
 .Succeed-your-business .Ask-question {
@@ -590,7 +581,7 @@ body {
   font-family: bold-font;
 }
 
-.Succeed-your-business .started-business .heading p {
+.Succeed-your-business .started-business .heading .business-paragraph {
   font-size: 18px;
 }
 
@@ -604,7 +595,7 @@ body {
   margin-top: 20px;
 }
 
-.Succeed-your-business .started-business .started-buttons button {
+.Succeed-your-business .started-business .started-buttons .button {
   color: #ffffff;
   background-color: transparent;
   background-image: none;
@@ -613,9 +604,10 @@ body {
   border-radius: 0;
   width: 175px;
   text-transform: uppercase;
+  margin-right: 10px;
 }
 
-.Succeed-your-business .started-business .started-buttons button:hover {
+.Succeed-your-business .started-business .started-buttons .button:hover {
   background-color: #ffffff;
   color: #0d2187;
 }
@@ -625,39 +617,12 @@ body {
   color: #0d2187;
 }
 
-.inner-data .heading h3 {
-  padding: 17px 0;
-}
-
-.inner-data .col-md-6 {
-  margin-bottom: 50px;
-}
-
-.inner-data .col-md-6 h5 {
-  font-weight: 600;
-  color: #273245;
-}
-
-.inner-data .col-md-6 p {
-  color: #535d73;
-  font-size: 18px;
-  text-align: left;
-}
-
-.inner-data .col-md-6 .shipment-img img {
-  width: 175px;
-}
-
 #main img {
   width: 118px;
 }
 
 .header-color {
   background-color: #ffffff;
-}
-
-.boxer-sidemenu {
-  display: none;
 }
 
 .reserve-data {
@@ -671,26 +636,26 @@ body {
     font-weight: 100;
     font-size: 8px;
   }
-  .Succeed-your-business .company-intro .customer-says .reviews .img-info span .detail-img p {
+  .Succeed-your-business .company-intro .customer-says .reviews .img-info span .detail-img .company-paragraph {
     font-size: 11px;
     margin-bottom: 11px;
   }
   .container-bg-color .business-tools .Tools {
     padding: 35px;
   }
-  .container-bg-color .business-tools .Tools span {
+  .container-bg-color .business-tools .Tools .img-detail {
     font-size: 17px;
   }
-  .Succeed-your-business .company-intro .detail-img p {
+  .Succeed-your-business .company-intro .detail-img .company-paragraph {
     font-size: 11px;
   }
-  .overlay-div .img-div img {
+  .overlay-div .img-div .laptop-img {
     margin-left: 62px;
   }
 }
 
 @media (max-width: 1024px) {
-  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
+  .Succeed-your-business .pricing .inner-pricing-div .order-list .check-li {
     padding: 7px 0 7px 60px;
   }
   .Succeed-your-business .pricing .inner-pricing-div .user-div {
@@ -702,15 +667,12 @@ body {
 }
 
 @media (max-width: 991px) {
-  .navbar {
-    display: none !important;
-  }
   .boxer-sidemenu {
     display: block;
     padding-bottom: 70px;
   }
   .overlay-div .text-div {
-    padding: 5px 30px;
+    padding: 10px 30px;
     height: 200px;
     text-align: center;
   }
@@ -727,33 +689,42 @@ body {
   .progress-div .container .row .col-md-4 {
     padding: 42px 7px;
   }
-  .pricing-detail .text-center {
+  .Succeed-your-business .pricing-detail .text-center {
     padding: 15px;
     font-size: 16px;
     padding-bottom: 0;
+    font-weight: 600;
   }
-  .pricing-detail h5 {
+  .Succeed-your-business .pricing-detail .user-limit {
     font-size: 14px;
   }
-  .pricing h1 {
-    font-size: 28px;
+  .pricing .h1-heading {
+    font-size: 30px;
   }
-  .pricing .inner-pricing-div .order-list li {
+  .pricing .inner-pricing-div .order-list .check-li {
     padding: 7px 0 7px 22px;
   }
-  .Succeed-your-business .company-intro .customer-says .reviews p {
+  .Succeed-your-business
+.company-intro
+.customer-says
+.reviews
+.reviews-paragraph {
     font-size: 10px;
     line-height: 24px;
     margin-top: 5px;
   }
-  .Succeed-your-business .company-intro .customer-says .reviews .img-info {
+  .Succeed-your-business .company-intro .customer-says .h1-heading {
+    font-size: 30px;
+  }
+  .reviews .img-info {
     margin: 3px 3px;
+    text-align: center;
   }
   .started-business .heading .h1-heading {
     font-size: 26px;
     margin: 9px 0;
   }
-  .overlay-div p {
+  .overlay-div .amazon-para {
     font-size: 14px;
     color: #ffffff;
     margin: 10px 0px;
@@ -763,7 +734,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .Succeed-your-business .pricing .inner-pricing-div .order-list li {
+  .Succeed-your-business .pricing .inner-pricing-div .order-list .check-li {
     padding: 7px 0 7px 18px;
     font-size: 0.9em;
   }
@@ -773,7 +744,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .overlay-div .header-control .img-div img {
+  .overlay-div .header-control .img-div .laptop-img {
     margin-left: 0;
   }
   .Succeed-your-business .company-intro .detail-img {
@@ -783,23 +754,30 @@ body {
     font-size: 26px;
     margin-bottom: 3px;
   }
-  .Succeed-your-business .company-intro .detail-img p {
+  .Succeed-your-business .company-intro .detail-img .company-paragraph {
     font-size: 11px;
     margin-bottom: 6px;
   }
-  .Succeed-your-business .progress-div p {
+  .Succeed-your-business .progress-div .revenue-heading {
     font-size: 14px;
+  }
+  .Freq-heading,
+  .heading .h1-heading {
+    font-size: 30px;
+  }
+  .Shipment-heading {
+    font-size: 24px;
+  }
+  .inner-data .col-md-6 .business-detail {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .overlay-div .text-div,
-  .Succeed-your-business .started-business {
+  .overlay-div .text-div .started-buttons,
+  .started-business .started-buttons {
     padding: 10px 27px;
     text-align: center;
-  }
-  .overlay-div .text-div .started-buttons,
-  .Succeed-your-business .started-business .started-buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -811,10 +789,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .overlay-div .text-div .started-buttons button,
+  .overlay-div .text-div .started-buttons .button,
   .overlay-div .text-div .started-buttons .mr-3,
-  .Succeed-your-business .started-business .started-buttons button,
-  .Succeed-your-business .started-business .started-buttons .mr-3 {
+  .started-business .started-buttons .button,
+  .started-business .started-buttons .mr-3 {
     margin: 15px 0;
     margin-right: 0;
   }
@@ -826,14 +804,13 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .Succeed-your-business .started-business .heading p {
+  .Succeed-your-business .started-business .heading .business-paragraph {
     font-size: 14px;
   }
 }
 
 @media (max-width: 767px) {
-  .Succeed-your-business .inner-data .col-md-6 h5,
-  .Succeed-your-business .inner-data .col-md-6 p {
+  .Succeed-your-business .inner-data .col-md-6 .business-detail {
     text-align: left;
     font-size: 14px;
   }
@@ -867,7 +844,7 @@ body {
   .container-bg-color .business-tools .Tools {
     padding: 7px;
   }
-  .Succeed-your-business .started-business .started-buttons button {
+  .Succeed-your-business .started-business .get-started-button {
     width: 138px;
     font-size: 14px;
   }
@@ -875,7 +852,7 @@ body {
   .User-heading {
     font-size: 20px;
   }
-  .overlay-div .text-div h1,
+  .overlay-div .text-div .h1-heading,
   .h1-heading {
     font-size: 24px;
   }

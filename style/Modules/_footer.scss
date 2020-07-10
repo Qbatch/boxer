@@ -1,19 +1,19 @@
 @import "../varibale";
 .footer {
-  img {
+  .footer-logo {
     width: 150px;
     margin: 15px 0 0 0;
   }
-  p {
+  .footer-paragraph {
     color: $base-light;
     font-size: 18px;
   }
   .inner-list {
-    h4 {
+    .footer-heading {
       font-weight: 600;
     }
     padding: 28px 14px;
-    li {
+    .footer-links {
       font-size: 14px;
       font-weight: 300;
       padding: 3px 0px;
@@ -27,26 +27,26 @@
   .d-flex {
     justify-content: space-between;
     padding: 5px 0;
-    ul {
+    .copyright-list {
       margin: 14px 5px;
-      li {
+      .social-icon {
         margin: 0 5px;
         cursor: pointer;
       }
     }
-    p {
+    .copyright-paragraph {
       color: $white;
       font-weight: 100;
       font-size: 14px;
-      margin: 17px 0;
+      margin: 26px 0;
     }
   }
 }
 @media (max-width: 991px) {
-  .footer .inner-list li {
+  .footer .inner-list .footer-links {
     font-size: 12px;
   }
-  .footer p {
+  .footer .footer-paragraph {
     font-size: 11px;
   }
 }

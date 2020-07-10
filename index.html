@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +10,12 @@
   <script src="./js/Header.js"></script>
   <title>Boxer</title>
 </head>
+<body class="body">
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark header-spacing fixed-top">
+  <nav id="Header" class="navbar navbar-expand-lg navbar-dark header-spacing fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="Assets/logo.png" id="menu-logo">
+        <img src="Assets/logo.png" id="menu-logo" class="navbar-img">
       </a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -36,7 +36,7 @@
             <a class="nav-link" href="#">TESTMONIALS</a>
           </li>
           <li class="nav-item text-center">
-            <button type="button" class="btn button">Get Started</button>
+            <button type="button" class="btn button get-started-button">Get Started</button>
           </li>
         </ul>
       </div>
@@ -46,24 +46,22 @@
     <div id="mySidebar" class="sidebar">
       <div class="d-flex">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="Assets/WebLogoBlue.png">
+        <img class="sidebar-img" src="Assets/WebLogoBlue.png">
       </div>
-      <a href="#" class="border-top">HOME</a>
-      <a href="#" class="border-top">BENEFITS</a>
-      <a href="#" class="border-top">HOW To</a>
-      <a href="#" class="border-top">PRICING</a>
-      <a href="#" class="border-top border-bottom">TESETMONIALS</a>
+      <a href="#" class="border-top sidebar-link">HOME</a>
+      <a href="#" class="border-top sidebar-link">BENEFITS</a>
+      <a href="#" class="border-top sidebar-link">HOW To</a>
+      <a href="#" class="border-top sidebar-link">PRICING</a>
+      <a href="#" class="border-top border-bottom sidebar-link">TESETMONIALS</a>
       <div class="text-center mt-3">
         <button class="btn button get-started">
           Get Started
         </button>
       </div>
     </div>
-
-    <div id="main" class="">
-      <img src="Assets/logo.png">
+    <div id="main" class="sidemenu">
+      <img class="sidebar-img" src="Assets/logo.png">
       <button class="openbtn text-left" onclick="openNav()">&#9776;</button>
-
     </div>
   </div>
 </header>
@@ -74,18 +72,18 @@
       <div class="text-div">
         <h1 class="h1-heading">Supercharge your Amazon
           Prep & Pack Business</h1>
-        <p class="mb-4">
+        <p class="amazon-para mb-4">
           Boxer connects all the different dots Operations into a single platform ensuring growth for your
           business
         </p>
         <div class="d-flex started-buttons mt-3">
-          <button type="button" class="btn button mr-3 get-started-buuton">Get Started</button>
+          <button type="button" class="btn button  get-started-button">Get Started</button>
           <button type="button" class="btn button">Request Demo</button>
         </div>
       </div>
       <div class="laptop-img p-4 mb-4">
         <div class="img-div">
-          <img src="Assets/laptop.png">
+          <img class="laptop-img" src="Assets/laptop.png">
         </div>
       </div>
     </div>
@@ -129,8 +127,8 @@
           <div class="business-tools">
             <div class="Tools">
               <div class="track-shipment">
-                <img src="Assets/TrackShipments.png">
-                <span>Track Shipment</span>
+                <img class="Tools-img" src="Assets/TrackShipments.png">
+                <span class="img-detail">Track Shipment</span>
               </div>
               <div class="paragraph ">
                 <p class="pl-2">Tracking shipment for seller become easy through boxer.super quick update</p>
@@ -142,8 +140,8 @@
           <div class="business-tools">
             <div class="Tools">
               <div class="track-shipment">
-                <img src="Assets/NoSpreadSheets.png">
-                <span>No Spreadsheets</span>
+                <img class="Tools-img" src="Assets/NoSpreadSheets.png">
+                <span class="img-detail">No Spreadsheets</span>
               </div>
               <div class="paragraph">
                 <p class="pl-2">No hassle to keep the record on sheets.simply put then in box and print the labels</p>
@@ -155,8 +153,8 @@
           <div class="business-tools">
             <div class="Tools">
               <div class="track-shipment">
-                <img src="Assets/EasyTools.png">
-                <span>Easy Tools</span>
+                <img class="Tools-img" src="Assets/EasyTools.png">
+                <span class="img-detail"></span>Easy Tools</span>
               </div>
               <div class="paragraph">
                 <p class="pl-2">Boxer Has super easy features to handle the complex activities in a smooth way.</p>
@@ -168,8 +166,8 @@
           <div class="business-tools">
             <div class="Tools">
               <div class="track-shipment">
-                <img src="Assets/AllLabels.png">
-                <span>All Type Labels</span>
+                <img class="Tools-img" src="Assets/AllLabels.png">
+                <span class="img-detail">All Type Labels</span>
               </div>
               <div class="paragraph ">
                 <p class="pl-2">You can print all types of the FBA-compliant labels for your boxes,that make workflow
@@ -182,8 +180,8 @@
           <div class="business-tools">
             <div class="Tools">
               <div class="track-shipment">
-                <img src="Assets/GenerateLabels.png">
-                <span>Generate Labels</span>
+                <img class="Tools-img" src="Assets/GenerateLabels.png">
+                <span class="img-detail">Generate Labels</span>
               </div>
               <div class="paragraph">
                 <p class="pl-2">Is is easy to automatically printing FBA-compliant expiration date labels as you pack
@@ -196,8 +194,8 @@
           <div class="business-tools">
             <div class="Tools">
               <div class="track-shipment">
-                <img src="Assets/OneClick.png">
-                <span>One Click</span>
+                <img class="Tools-img" src="Assets/OneClick.png">
+                <span class="img-detail">One Click</span>
               </div>
               <div class="paragraph">
                 <p class="pl-2">Just one click to generate the desired and standard lables with no hassle.Thing got easy
@@ -214,7 +212,7 @@
     <div class="inner-data container">
       <div class="heading spacing text-center mb-4 mt-4">
         <h1 class="mb-3 mt-3 h1-heading">How it works to succeed your business </h1>
-        <p class="text-center">
+        <p class="text-center business-detail">
           Barcodes are the easiest way to provide box contents information for your inbound amazon FBA
           shipments.Easily
           Create box content barcodes and validate packed items to the shipment plan.
@@ -223,45 +221,45 @@
       <div class="row m-0 spacing">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <h3 class="Shipment-heading">Track Shipment from amazon</h3>
-          <p>Barcodes are easiest way to provide box contents information for your inbound Amazon FBA shipments.Easily
+          <p class="business-detail">Barcodes are easiest way to provide box contents information for your inbound Amazon FBA shipments.Easily
             Create box content barcodes and validate packed items to shipment plan</p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center ">
-          <div class="shipment-img">
-            <img src="Assets/illustrationTrackShipment.png">
+          <div class="shipment">
+            <img class="shipment-img" src="Assets/illustrationTrackShipment.png">
           </div>
         </div>
         <div class="reserve-data">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-            <div class="shipment-img">
-              <img src="Assets/illustrationExtractPrep.png">
+            <div class="shipment">
+              <img class="shipment-img" src="Assets/illustrationExtractPrep.png">
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
             <h3 class="Shipment-heading">Track Shipment from amazon</h3>
-            <p>Barcodes are easiest way to provide box contents information for your inbound Amazon FBA shipments.Easily
+            <p class="business-detail">Barcodes are easiest way to provide box contents information for your inbound Amazon FBA shipments.Easily
               Create box content barcodes and validate packed items to shipment plan</p>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <h3 class="Shipment-heading">Track Shipment from amazon</h3>
-          <p>Barcodes are easiest way to provide box contents information for your inbound Amazon FBA shipments.Easily
+          <p class="business-detail">Barcodes are easiest way to provide box contents information for your inbound Amazon FBA shipments.Easily
             Create box content barcodes and validate packed items to shipment plan</p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-          <div class="shipment-img">
-            <img src="Assets/illustrationPrepareLabel.png">
+          <div class="shipment">
+            <img class="shipment-img" src="Assets/illustrationPrepareLabel.png">
           </div>
         </div>
         <div class="reserve-data">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-            <div class="shipment-img">
-              <img src="Assets/illustrationGenerateLabels.png">
+            <div class="shipment">
+              <img  class="shipment-img"src="Assets/illustrationGenerateLabels.png">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <h3 class="Shipment-heading"> Track Shipment from amazon</h3>
-            <p>Barcodes are easiest way to provide box contents information for your inbound Amazon FBA shipments.Easily
+            <p class="business-detail">Barcodes are easiest way to provide box contents information for your inbound Amazon FBA shipments.Easily
               Create box content barcodes and validate packed items to shipment plan</p>
           </div>
         </div>
@@ -273,18 +271,18 @@
           <div class="col-md-4 col-sm-12 text-center mt-3">
             <h1 class=" h1-heading">35%</h1>
             <h5>Increased Revenue</h5>
-            <p>Optimize your Amazon business to get increase the revenue. Boxers insure in revenue the increase.</p>
+            <p class="revenue-heading">Optimize your Amazon business to get increase the revenue. Boxers insure in revenue the increase.</p>
           </div>
           <div class="col-md-4 text-center mt-3">
             <h1  class="h1-heading">200<h1>
                 <h5>Businesses Impacted</h5>
-                <p>We’re obsessed with your success, which is why hundreds of Amazon sellers worldwide rely on Boxer.
+                <p class="revenue-heading">We’re obsessed with your success, which is why hundreds of Amazon sellers worldwide rely on Boxer.
                 </p>
           </div>
           <div class="col-md-4 text-center mt-3">
             <h1 class="h1-heading">25%</h1>
             <h5>Sale increase</h5>
-            <p>Work smarter not harder, with automated Boxer system you can increase your sales greatly.</p>
+            <p class="revenue-heading">Work smarter not harder, with automated Boxer system you can increase your sales greatly.</p>
           </div>
         </div>
       </div>
@@ -305,28 +303,28 @@
               <div class="pricing-detail">
                 <h1 class="text-center h1-heading">
                   USD 29
-                  <h5 class="text-center">Per user/month<br>
+                  <h5 class="text-center user-limit">Per user/month<br>
                     only 1 user</h5>
                   <div class="place-order-button text-center pb-4">
                     <button class="btn button">Get Started</button>
                   </div>
                   <div class="order-list">
                     <ul class="list-unstyled pb-4">
-                      <li><i class="fa fa-check"></i>FNSKU Label printing</li>
-                      <li><i class="fa fa-check"></i>Expiration label</li>
-                      <li><i class="fa fa-check"></i>All FBA label</li>
-                      <li><i class="fa fa-check"></i>Amazon compliant barcodes</li>
-                      <li><i class="fa fa-check"></i>Barcodes scanner input</li>
-                      <li><i class="fa fa-check"></i>Unlimited shipment</li>
-                      <li><i class="fa fa-check"></i>Shipment Tracking</li>
-                      <li><i class="fa fa-check"></i>Box labeling</li>
+                      <li class="check-li"><i class="fa fa-check check-icon"></i>FNSKU Label printing</li>
+                      <li class="check-li"><i class="fa fa-check check-icon"></i>Expiration label</li>
+                      <li class="check-li"><i class="fa fa-check check-icon"></i>All FBA label</li>
+                      <li class="check-li"><i class="fa fa-check check-icon"></i>Amazon compliant barcodes</li>
+                      <li class="check-li"><i class="fa fa-check check-icon"></i>Barcodes scanner input</li>
+                      <li class="check-li"><i class="fa fa-check check-icon"></i>Unlimited shipment</li>
+                      <li class="check-li"><i class="fa fa-check check-icon"></i>Shipment Tracking</li>
+                      <li class="check-li"><i class="fa fa-check check-icon"></i>Box labeling</li>
                     </ul>
                   </div>
                 </h1>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class=" inner-pricing-div">
             <div class="user-div text-center">
               <h3 class="User-heading">
@@ -336,21 +334,21 @@
             <div class="pricing-detail">
               <h1 class="text-center   h1-heading">
                 USD 129
-                <h5 class="text-center">Per user/month<br>
+                <h5 class="text-center user-limit">Per user/month<br>
                   only 10 users</h5>
                 <div class="place-order-button text-center pb-4">
                   <button class="btn button">Get Started</button>
                 </div>
                 <div class="order-list">
                   <ul class="list-unstyled pb-4">
-                    <li><i class="fa fa-check"></i>FNSKU Label printing</li>
-                    <li><i class="fa fa-check"></i>Expiration label</li>
-                    <li><i class="fa fa-check"></i>All FBA label</li>
-                    <li><i class="fa fa-check"></i>Amazon compliant barcodes</li>
-                    <li><i class="fa fa-check"></i>Barcodes scanner input</li>
-                    <li><i class="fa fa-check"></i>Unlimited shipment</li>
-                    <li><i class="fa fa-check"></i>Shipment Tracking</li>
-                    <li><i class="fa fa-check"></i>Box labeling</li>
+                     <li class="check-li"><i class="fa fa-check check-icon"></i>FNSKU Label printing</li>
+                    <li class="check-li"><i class="fa fa-check check-icon"></i>Expiration label</li>
+                    <li class="check-li"><i class="fa fa-check check-icon"></i>All FBA label</li>
+                    <li class="check-li"><i class="fa fa-check check-icon"></i>Amazon compliant barcodes</li>
+                    <li class="check-li"><i class="fa fa-check check-icon"></i>Barcodes scanner input</li>
+                    <li class="check-li"><i class="fa fa-check check-icon"></i>Unlimited shipment</li>
+                    <li class="check-li"><i class="fa fa-check check-icon"></i>Shipment Tracking</li>
+                    <li class="check-li"><i class="fa fa-check check-icon"></i>Box labeling</li>
                   </ul>
                 </div>
               </h1>
@@ -367,21 +365,21 @@
           <div class="pricing-detail">
             <h1 class="text-center h1-heading">
               USD 229
-              <h5 class="text-center">Per user/month<br>
+              <h5 class="text-center user-limit">Per user/month<br>
                 only 1 user</h5>
               <div class="place-order-button text-center pb-4">
                 <button class="btn button">Get Started</button>
               </div>
               <div class="order-list">
                 <ul class="list-unstyled pb-4">
-                  <li><i class="fa fa-check"></i>FNSKU Label printing</li>
-                  <li><i class="fa fa-check"></i>Expiration label</li>
-                  <li><i class="fa fa-check"></i>All FBA label</li>
-                  <li><i class="fa fa-check"></i>Amazon compliant barcodes</li>
-                  <li><i class="fa fa-check"></i>Barcodes scanner input</li>
-                  <li><i class="fa fa-check"></i>Unlimited shipment</li>
-                  <li><i class="fa fa-check"></i>Shipment Tracking</li>
-                  <li><i class="fa fa-check"></i>Box labeling</li>
+                   <li class="check-li"><i class="fa fa-check check-icon"></i>FNSKU Label printing</li>
+                  <li class="check-li"><i class="fa fa-check check-icon"></i>Expiration label</li>
+                  <li class="check-li"><i class="fa fa-check check-icon"></i>All FBA label</li>
+                  <li class="check-li"><i class="fa fa-check check-icon"></i>Amazon compliant barcodes</li>
+                  <li class="check-li"><i class="fa fa-check check-icon"></i>Barcodes scanner input</li>
+                  <li class="check-li"><i class="fa fa-check check-icon"></i>Unlimited shipment</li>
+                  <li class="check-li"><i class="fa fa-check check-icon"></i>Shipment Tracking</li>
+                  <li class="check-li"><i class="fa fa-check check-icon"></i>Box labeling</li>
                 </ul>
               </div>
             </h1>
@@ -389,27 +387,26 @@
         </div>
       </div>
     </div>
-
   </div>
   </div>
   <div class="company-intro">
     <div class="container">
       <div class="d-flex spacing">
         <div class="img-div">
-          <img src="Assets/CeoImage.png">
+          <img class="client-img" src="Assets/CeoImage.png">
         </div>
         <div class="detail-img">
           <h1 class="h1-heading">Our company</h1>
-          <p><strong><b>Hi! I'm Matt Olpinski</b> </strong>-- after 10 year of freelancing,drozens of successful
+          <p class="company-paragraph"><strong><b>Hi! I'm Matt Olpinski</b> </strong>-- after 10 year of freelancing,drozens of successful
             projects, and hundreds of inquiries from clients,Idecided to let my web design and development business
             grow beyond myself. </p>
-          <p>In 2018, I created Matthew's Design Co. in an effort to serve more clients and execute larger projects
+          <p class="company-paragraph">In 2018, I created Matthew's Design Co. in an effort to serve more clients and execute larger projects
             without
             sacrificing the expertise my clients value and the personal attention they've come to expect.</p>
-          <p>You'll work directly with me and my small, hand-picked team of experts to make sure your project is
+          <p class="company-paragraph">You'll work directly with me and my small, hand-picked team of experts to make sure your project is
             executed on time, on budget, and with world-class quality.</p>
-          <p>We partner with our clients remotely and expand our team as needed to bring their projects to life.</p>
-          <p>Get all the benefits of hiring an agency, without the hassle or expense.</p>
+          <p class="company-paragraph">We partner with our clients remotely and expand our team as needed to bring their projects to life.</p>
+          <p class="company-paragraph">Get all the benefits of hiring an agency, without the hassle or expense.</p>
         </div>
       </div>
       <div class="customer-says mt-4">
@@ -419,7 +416,7 @@
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="reviews">
               <img src="Assets/quote-icon.png">
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+              <p class="reviews-paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its
                 layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of readable
                 English.</p>
@@ -428,8 +425,8 @@
                   <img src="Assets/TestimonialImage.png">
                 </div>
                 <div class="img-info">
-                  <h6>Victor Simon</h6>
-                  <span>Shop Owner,Free Suites</span>
+                  <h6 class="client-heading">Victor Simon</h6>
+                  <span class="client-title">Shop Owner,Free Suites</span>
                 </div>
               </div>
             </div>
@@ -437,7 +434,7 @@
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="reviews">
               <img src="Assets/quote-icon.png">
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+              <p class="reviews-paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its
                 layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of readable
                 English.</p>
@@ -446,8 +443,8 @@
                   <img src="Assets/TestimonialImage.png">
                 </div>
                 <div class="img-info">
-                  <h6>Victor Simon</h6>
-                  <span>Shop Owner,Free Suites</span>
+                  <h6 class="client-heading">Victor Simon</h6>
+                  <span class="client-title">Shop Owner,Free Suites</span>
                 </div>
               </div>
             </div>
@@ -455,7 +452,7 @@
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="reviews">
               <img src="Assets/quote-icon.png">
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+              <p class="reviews-paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its
                 layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of readable
                 English.</p>
@@ -464,8 +461,8 @@
                   <img src="Assets/TestimonialImage.png">
                 </div>
                 <div class="img-info">
-                  <h6>Victor Simon</h6>
-                  <span>Shop Owner,Free Suites</span>
+                  <h6 class="client-heading">Victor Simon</h6>
+                  <span class="client-title">Shop Owner,Free Suites</span>
                 </div>
               </div>
             </div>
@@ -479,7 +476,6 @@
         <div class="Freq-heading text-center mt-4">
           <h1 class="spacing h1-heading">Frequently Asked Questions</h1>
         </div>
-
         <div class="collapse-2 p-3">
           <div class="panel-group">
             <div class="panel">
@@ -490,7 +486,6 @@
                     Do you have demo?
                   </a>
                 </h4>
-
               </div>
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">Yes! We do have a 7-day free trial period where you could explore and test
@@ -506,7 +501,6 @@
                     What countries does Boxer support?
                   </a>
                 </h4>
-
               </div>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -521,7 +515,6 @@
                     How much does Boxer cost?
                   </a>
                 </h4>
-
               </div>
               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -536,7 +529,6 @@
                     Can this tool be used on multiple computers?
                   </a>
                 </h4>
-
               </div>
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                 <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -551,7 +543,6 @@
                     What label sizes are supported?
                   </a>
                 </h4>
-
               </div>
               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                 <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -566,7 +557,6 @@
                     How does Boxer protect my data?
                   </a>
                 </h4>
-
               </div>
               <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                 <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -581,12 +571,12 @@
   <div class="started-business">
     <div class="heading">
       <h1 class="h1-heading">Ready to Supercharge your Amazon Business</h1>
-      <p>
+      <p class="business-paragraph">
         Boxer connects all the different dots Operations into a single platform ensuring growth <br>and success platform
         ensuring.
       </p>
       <div class="d-flex started-buttons">
-        <button type="button" class="btn button mr-3 get-started-button">Get Started</button>
+        <button type="button" class="btn button  get-started-button">Get Started</button>
         <button type="button" class="btn button">Request Demo</button>
       </div>
     </div>
@@ -597,9 +587,9 @@
       <div class="row m-0 mt-4">
         <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
           <div class="logo">
-            <img src="Assets/WebLogoBlue.png">
+            <img class="footer-logo" src="Assets/WebLogoBlue.png">
           </div>
-          <p>
+          <p class="footer-paragraph">
             FBA-compliant labels are the easiest way to provide box contents information for your inbound Amazon FBA
             shipments.
             Easily create box content barcodes and validate packed items to shipment plan.
@@ -608,32 +598,32 @@
         <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
           <div class="inner-list">
             <h4>Contact Info</h4>
-            <p>
+            <p class="footer-paragraph">
               1450 Hughes Rd. Suite 200, Grapevana, Texas 76051 1.888.786.1512 info@boxer.com
             </p>
           </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
           <div class="inner-list">
-            <h4>Company</h4>
+            <h4 class="footer-heading">Company</h4>
             <ul class="list-unstyled">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Terms & Conditions</li>
-              <li>Blog</li>
+              <li class="footer-links">Home</li>
+              <li class="footer-links">About Us</li>
+              <li class="footer-links">Contact Us</li>
+              <li class="footer-links">Terms & Conditions</li>
+              <li class="footer-links">Blog</li>
             </ul>
           </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
           <div class="inner-list">
-            <h4>Feature</h4>
+            <h4 class="footer-heading">Feature</h4>
             <ul class="list-unstyled">
-              <li>Track Shipment</li>
-              <li>Extra Prep</li>
-              <li>2D labeling</li>
-              <li>One Click Generate</li>
-              <li>No Hassle Sheets</li>
+              <li class="footer-links">Track Shipment</li>
+              <li class="footer-links">Extra Prep</li>
+              <li class="footer-links">2D labeling</li>
+              <li class="footer-links">One Click Generate</li>
+              <li class="footer-links">No Hassle Sheets</li>
             </ul>
           </div>
         </div>
@@ -644,15 +634,15 @@
     <div class="container">
       <div class="d-flex">
         <div class="footer-icon">
-          <ul class="d-flex list-unstyled">
-            <li><a><img src="Assets/Group 454.png"></a></li>
-            <li><a><img src="Assets/Group 455.png"></a></li>
-            <li><a><img src="Assets/Group 456.png"></a></li>
-            <li><a><img src="Assets/Group 457.png"></a></li>
+          <ul class="d-flex list-unstyled copyright-list">
+            <li class="social-icon"><a><img src="Assets/Group 454.png"></a></li>
+            <li class="social-icon"><a><img src="Assets/Group 455.png"></a></li>
+            <li class="social-icon"><a><img src="Assets/Group 456.png"></a></li>
+            <li class="social-icon"><a><img src="Assets/Group 457.png"></a></li>
           </ul>
         </div>
         <div class="copyright-2020">
-          <p>© 2020 Boxer. All Rights Reserved.</p>
+          <p class="copyright-paragraph">© 2020 Boxer. All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -665,7 +655,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<body>
 </body>
-
 </html>

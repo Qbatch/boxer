@@ -1,5 +1,5 @@
-$(function () {
-  $(window).scroll(function () {
+$(() => {
+  $(window).scroll(() => {
     if ($(this).scrollTop() > 50) {
       $("#menu-logo").attr("src", "./Assets/WebLogoBlue.png");
       $("#main img").attr("src", "./Assets/WebLogoBlue.png");

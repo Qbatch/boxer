@@ -7,9 +7,10 @@
   border-radius: 0;
   text-transform: uppercase;
 }
-.header-spacing {
+#Header {
   padding: 45px 0;
 }
+
 .navbar {
   z-index: 1000;
   width: 100%;
@@ -22,20 +23,22 @@
   -o-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
 }
-.navbar-expand-lg .navbar-nav .nav-link {
-  color: $white !important;
-  padding: 10px 15px;
-  font-size: 16px;
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  color: $white;
+  padding: 10px 8px;
+  font-size: 15px;
   font-weight: 100;
   letter-spacing: 1px;
 }
 .navbar-brand {
-  img {
+  .navbar-img {
     width: 118px;
   }
 }
+
 .nav-item {
-  .button {
+  .get-started-button {
     color: $white;
     background-color: transparent;
     background-image: none;
@@ -44,31 +47,19 @@
     border-radius: 0;
     margin: 0 0 0 6px;
     text-transform: uppercase;
-  }
-  .button:hover {
-    background-color: $white;
-    color: $base-primary;
-  }
-}
-.active {
-  background-color: $white !important;
-  box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12),
-    0 0 1px 0 rgba(41, 92, 176, 0.25);
-  .navbar-nav {
-    .nav-item {
-      .button {
-        background-color: $base-secondary;
-      }
-      .button:hover {
-        color: $white;
-      }
-      .nav-link {
-        color: $NavLink-color !important;
-      }
+    .get-started-button:hover {
+      background-color: $white;
+      color: $base-primary;
     }
   }
 }
+.boxer-sidemenu {
+  display: none;
+}
 @media (max-width: 991px) {
+  #Header {
+    display: none !important;
+  }
   .header-overlay .nav-item .button {
     color: $white;
     background-color: $header-button;
@@ -91,7 +82,7 @@
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
-  img {
+  .sidebar-img {
     width: 118px;
     position: absolute;
     top: 15px;
@@ -103,7 +94,7 @@
     font-weight: 100;
   }
 }
-.sidebar a {
+.sidebar .sidebar-link {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 12px;
@@ -111,7 +102,7 @@
   display: block;
   transition: 0.3s;
 }
-.sidebar a:hover {
+.sidebar .sidebar-link:hover {
   color: $white;
 }
 .sidebar .closebtn {
@@ -128,7 +119,7 @@
   border: none;
   background-color: transparent;
 }
-#main {
+.sidemenu {
   transition: margin-left 0.5s;
   padding: 20px;
   background-color: $base-secondary;
@@ -146,7 +137,25 @@
   .sidebar {
     padding-top: 68px;
   }
-  .sidebar a {
+  .sidebar .sidebar-link {
     font-size: 12px;
+  }
+}
+
+.active {
+  background-color: $white;
+  box-shadow: $scroll-box-shahdow;
+  #navbarResponsive .navbar-nav {
+    .nav-item {
+      .button {
+        background-color: $base-secondary;
+      }
+      .button:hover {
+        color: $white;
+      }
+      .nav-link {
+        color: $NavLink-color;
+      }
+    }
   }
 }
