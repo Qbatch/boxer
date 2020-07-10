@@ -91,19 +91,6 @@
       font-size: 18px;
     }
   }
-
-  // .business-1 {
-  //   background-color: $white;
-  //   box-shadow: 0px 3px 6px $base-box-shadow;
-  //   border-radius: 5px;
-  //   min-height: 210px;
-  //   span {
-  //     font-weight: 600;
-  //   }
-  //   .paragraph p {
-  //     color: $base-light;
-  //   }
-  // }
   .business-tools {
     background-color: $white;
     box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12),
@@ -239,9 +226,6 @@
         }
       }
     }
-    // h5 {
-    //   color: $base-light;
-    // }
   }
   .Ask-question {
     background-color: $background-color;
@@ -346,15 +330,6 @@
   }
 }
 @media (max-width: 1024px) {
-  .Succeed-your-business .pricing .inner-pricing-div .order-list .check-li {
-    padding: 7px 0 7px 60px;
-  }
-  .Succeed-your-business .pricing .inner-pricing-div .user-div {
-    padding: 15px;
-  }
-  .Succeed-your-business .company-intro .customer-says .reviews {
-    padding: 10px;
-  }
 }
 @media (max-width: 991px) {
   .boxer-sidemenu {
@@ -490,8 +465,6 @@
   .Succeed-your-business .started-business .heading .business-paragraph {
     font-size: 14px;
   }
-}
-@media (max-width: 767px) {
   .Succeed-your-business .inner-data .col-md-6 .business-detail {
     text-align: left;
     font-size: 14px;
@@ -531,7 +504,7 @@
   }
   .overlay-div .text-div .h1-heading,
   .h1-heading {
-    font-size: 24px;
+    font-size: 32px;
   }
   .progress-div .container .row .col-md-4 {
     padding: 15px 7px;

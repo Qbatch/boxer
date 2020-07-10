@@ -37,7 +37,7 @@
   text-transform: uppercase;
 }
 
-.nav-item .get-started-button .get-started-button:hover {
+.nav-item .get-started-button:hover {
   background-color: #ffffff;
   color: #0d2187;
 }
@@ -654,18 +654,6 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .Succeed-your-business .pricing .inner-pricing-div .order-list .check-li {
-    padding: 7px 0 7px 60px;
-  }
-  .Succeed-your-business .pricing .inner-pricing-div .user-div {
-    padding: 15px;
-  }
-  .Succeed-your-business .company-intro .customer-says .reviews {
-    padding: 10px;
-  }
-}
-
 @media (max-width: 991px) {
   .boxer-sidemenu {
     display: block;
@@ -807,9 +795,6 @@
   .Succeed-your-business .started-business .heading .business-paragraph {
     font-size: 14px;
   }
-}
-
-@media (max-width: 767px) {
   .Succeed-your-business .inner-data .col-md-6 .business-detail {
     text-align: left;
     font-size: 14px;
@@ -854,7 +839,7 @@
   }
   .overlay-div .text-div .h1-heading,
   .h1-heading {
-    font-size: 24px;
+    font-size: 32px;
   }
   .progress-div .container .row .col-md-4 {
     padding: 15px 7px;
