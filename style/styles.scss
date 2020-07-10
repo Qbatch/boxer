@@ -140,7 +140,7 @@
   .progress-div {
     background-color: $base-primary;
     color: $white;
-    padding: 10px;
+    padding: 45px 0;
     .revenue-heading {
       font-size: 18px;
     }
@@ -525,5 +525,9 @@
     width: 100%;
     padding: 10px;
     min-height: 210px;
+  }
+  .overlay-div .text-div .h1-heading,
+  .h1-heading {
+    font-size: 23px;
   }
 }

@@ -420,7 +420,7 @@
 .Succeed-your-business .progress-div {
   background-color: #0d2187;
   color: #ffffff;
-  padding: 10px;
+  padding: 45px 0;
 }
 
 .Succeed-your-business .progress-div .revenue-heading {
@@ -867,6 +867,10 @@
     width: 100%;
     padding: 10px;
     min-height: 210px;
+  }
+  .overlay-div .text-div .h1-heading,
+  .h1-heading {
+    font-size: 23px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
